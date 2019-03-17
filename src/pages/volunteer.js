@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../themes/volunteer.css';
 import '../themes/animate.css';
+import sosconfJPG from '../images/sosconf.jpg';
 
 class Comming extends Component { 
   render() {
@@ -39,10 +40,6 @@ class Comming extends Component {
 
                     <p>设计组是一个（可能）偏离技术路线，但对于活动的举办有锦上添花的作用的画风清奇小组。</p>
                     <p>人员要求：</p>
-                    
-
-
-
                     <ul>
                         <li>不鸽（分配的任务可以及时完成）</li>
                         <li>善于交流思路，说出想法</li>
@@ -51,11 +48,6 @@ class Comming extends Component {
                     </ul>
 
                     <p>具体的工作有：</p>
-                    
-
-
-
-
                     <ul>
                         <li>视频剪辑</li>
                         <li>宣传资料设计，如海报、宣传单、展板……</li>
@@ -107,72 +99,131 @@ class Comming extends Component {
                     </ul>
                 </div>
             </div>
-
+        </div>
+        <div className="sosconf-volunteer__card-group">
             <div className="sosconf-volunteer__card">
-                <div className="sosconf-volunteer__card-header">
-                    <span>赞助组</span>
+                    <div className="sosconf-volunteer__card-header">
+                        <span>赞助组</span>
+                    </div>
+                    <div className="sosconf-volunteer__card-text">
+                        <p>赞助组主要负责对外联系潜在的赞助商，商务谈判和招募启动资金，也会行使一部分联系媒体或社区的职能。（是 sosconf 联系社会的纽带）</p>
+                        <p>人员要求</p>
+                        <ul>
+                            <li>不限国籍</li>
+                            <li>学生身份（不限于中学生、大学生、硕博生、留学生</li>
+                            <li>请优先分配女生，目前组内男生过于饱和（并不是说不要男生啦~而是在人手盈余和条件满足的情况下，请优先分配女生( •̀ ω •́ )y</li>
+                            <li>善于交流思路，口头表达能力较好</li>
+                            <li>具备一定的社交礼仪（现实 or 网络</li>
+                            <li>无人数要求</li>
+                        </ul>
+                        <p>技能要求（除了外语水平是硬性需求，其他均是可选项）</p>
+                        <ul>
+                            <li>英语六级 & 雅思5分及以上 & 托福60分及以上（满足任一条件即可</li>
+                            <li>口语流利和不怯场，能够同外国人进行一般及以上程度的的交流</li>
+                            <li>外语&法律/金融/计算机相关背景的同学（优先级从左到右依次排列，前两者是并列关系，起草赞助合同需要法学背景的同学帮忙</li>
+                            <li>会科学上网（约定使用统一的沟通模式，邮件+Skype</li>
+                            <li>撰写文案能力较强，思维活跃</li>
+                        </ul>
+                        <p>具体的工作</p>
+                        <ul>
+                            <li>制定年度 Call for Sponsors</li>
+                            <li>牵头起草赞助合同</li>
+                            <li>联系赞助商，与赞助商进行谈判，尽力促成赞助（每个人负责哪几家公司，跟进哪几条线索</li>
+                            <li>作为赞助商、媒体、社区三者之间的纽带，协助其他组共同推进事务进度</li>
+                            <li>运营和维护赞助商及合作伙伴的良好关系</li>
+                        </ul>
+                        <p>以上配置不一定完全合理且周到，欢迎有兴趣的同学加入并提出建议！</p>
+                    </div>
                 </div>
-                <div className="sosconf-volunteer__card-text">
-                    <p>赞助组主要负责对外联系潜在的赞助商，商务谈判和招募启动资金，也会行使一部分联系媒体或社区的职能。（是 sosconf 联系社会的纽带）</p>
-                    <p>人员要求</p>
-                    <ul>
-                        <li>不限国籍</li>
-                        <li>学生身份（不限于中学生、大学生、硕博生、留学生</li>
-                        <li>请优先分配女生，目前组内男生过于饱和（并不是说不要男生啦~而是在人手盈余和条件满足的情况下，请优先分配女生( •̀ ω •́ )y</li>
-                        <li>善于交流思路，口头表达能力较好</li>
-                        <li>具备一定的社交礼仪（现实 or 网络</li>
-                        <li>无人数要求</li>
-                    </ul>
-                    <p>技能要求（除了外语水平是硬性需求，其他均是可选项）</p>
-                    <ul>
-                        <li>英语六级 & 雅思5分及以上 & 托福60分及以上（满足任一条件即可</li>
-                        <li>口语流利和不怯场，能够同外国人进行一般及以上程度的的交流</li>
-                        <li>外语&法律/金融/计算机相关背景的同学（优先级从左到右依次排列，前两者是并列关系，起草赞助合同需要法学背景的同学帮忙</li>
-                        <li>会科学上网（约定使用统一的沟通模式，邮件+Skype</li>
-                        <li>撰写文案能力较强，思维活跃</li>
-                    </ul>
-                    <p>具体的工作</p>
-                    <ul>
-                        <li>制定年度 Call for Sponsors</li>
-                        <li>牵头起草赞助合同</li>
-                        <li>联系赞助商，与赞助商进行谈判，尽力促成赞助（每个人负责哪几家公司，跟进哪几条线索</li>
-                        <li>作为赞助商、媒体、社区三者之间的纽带，协助其他组共同推进事务进度</li>
-                        <li>运营和维护赞助商及合作伙伴的良好关系</li>
-                    </ul>
-                    <p>以上配置不一定完全合理且周到，欢迎有兴趣的同学加入并提出建议！</p>
+
+                <div className="sosconf-volunteer__card">
+                    <div className="sosconf-volunteer__card-header">
+                        <span>市场组</span>
+                    </div>
+                    <div className="sosconf-volunteer__card-text">
+                        <p>我们希望你：</p>
+                        <ul>
+                            <li>有良好的沟通表达能力及人际交往能力</li>
+                            <li>善于合作以及协调</li>
+                            <li>有较强的责任感，执行力强</li>
+                            <li>有创造力及较强思维逻辑能力，能够提出想法</li>
+                        </ul>
+                        <p>具体的工作：</p>
+                        <ul>
+                            <li>协助构建大会品牌，并将其推广出去</li>
+                            <li>吸引更多喜欢开源开发和文化或对开源感兴趣的人们参与到大会中</li>
+                            <li>后期进行调查，为下一届大会提供改进意见</li>
+                        </ul>
+                        <p>欢迎有兴趣的同学加入，我们一起努力！</p>
+                    </div>
                 </div>
-                
 
+                <div className="sosconf-volunteer__card">
+                    <div className="sosconf-volunteer__card-header">
+                        <span>媒体组</span>
+                    </div>
+                    <div className="sosconf-volunteer__card-text">
+                        <p>我们希望你：</p>
+                        <ul>
+                            <li>有良好的沟通表达能力及人际交往能力</li>
+                            <li>善于合作以及协调</li>
+                            <li>熟悉国内外常用社交媒体平台</li>
+                            <li>热情积极，活泼机智</li>
+                        </ul>
+                        <p>具体的工作：</p>
+                        <ul>
+                            <li>了解大会实时动向</li>
+                            <li>能够发挥自己的聪明才智做好大会的宣传工作</li>
+                            <li>做大会的小喇叭和代言人o(*￣︶￣*)o</li>
+                        </ul>
+                        <p>欢迎各位同学加入！</p>
+                    </div>
+                </div>
+        </div>
 
+        <div className="sosconf-volunteer__card-group">
+                <div className="sosconf-volunteer__card">
+                    <div className="sosconf-volunteer__card-header">
+                        <span>机动组</span>
+                    </div>
+                    <div className="sosconf-volunteer__card-text">
+                        <p>我们的口号是 ：我是革命一块砖，哪里需要哪里搬！</p>
+                        <p>也许上述并没有你感兴趣的工作，要这样子错失了认识更多志同道合的小伙伴的机会了吗？NO！Whatever，你可以做什么，你想要做什么，尽管讲出来~ </p>
+                        <p>只要你喜欢开源开发和文化或对开源感兴趣，只要你愿意加入我们，just try!</p>
+                    </div>
+                </div>
+                <div className="sosconf-volunteer__card--none sosconf-volunteer__card">
+                </div>
+                <div className="sosconf-volunteer__card--none sosconf-volunteer__card">
+                </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <div className="sosconf-volunteer__card-group">
+            <div className="sosconf-volunteer__card">
+                    <div className="sosconf-volunteer__card-header">
+                        <span>志愿者福利</span>
+                    </div>
+                    <div className="sosconf-volunteer__card-text sosconf-volunteer__card-text--big">
+                        <ul>
+                            <li>获得免费参与sosconf 2019的资格 </li>
+                            <li>与会志愿者将由组委会负责午餐或餐补</li>
+                            <li>官方志愿者证书</li>
+                            <li>sosconf 2019志愿者纪念品礼包 </li>
+                            <li>与国内外技术大神交流的宝贵经历、与国外社区活跃者成为知己好友的机会</li>
+                            <li>通过此次参与国际开源会议的机会，更有可能获得国外知名企业的认可</li>
+                            <li>优秀的志愿者将有机会由组委会承担部分费用前往美国洛杉矶南加州大学参会</li>
+                        </ul>
+                        <p>联系方式：</p>
+                        <p>QQ群：928111041</p>
+                        <p>电报群：https://t.me/joinchat/LK3swBM0tPqV-nR8BwrLUA</p>
+                        <p>微信群：</p>
+                        <img src={sosconfJPG} className="sosconf-volunteer__card-image"/>
+                    </div>
             </div>
         </div>
 
         <div className="sosconf-volunteer__button-group">
-            <a href="./" className="animated bounce">APPLY</a>
+            <a target="_black" href="https://wj.qq.com/s2/3377452/b8e9/" className="animated bounce">APPLY</a>
         </div>
       </div>
     );
