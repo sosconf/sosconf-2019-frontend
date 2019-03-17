@@ -1,0 +1,64 @@
+.sosconf-volunteer__wrap {
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(241, 242, 246);
+}
+
+.sosconf-volunteer__text {
+    text-align: center;
+    line-height: 150px;
+    color: black;
+    font-size: 30px;
+}
+@media screen and (max-width: 1050px) {
+    .sosconf-volunteer__card-group {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 1050px) {
+    .sosconf-volunteer__card-group {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.sosconf-volunteer__card {
+    flex: 1;
+    margin: 50px;
+    background: white;
+    min-height: 400px;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 0.5px #7b7b7b;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.sosconf-volunteer__card-header {
+    line-height: 80px;
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 1px solid rgb(71, 71, 71);
+    width: 80%;
+}
+
+.sosconf-volunteer__button-group a{
+    display: inline-block;
+    line-height: 60px;
+    height: 60px;
+    width: 150px;
+    border-radius: 5px;
+    background: rgb(0, 127, 178);
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.sosconf-volunteer__button-group {
+    text-align: center;
+    margin-bottom: 30px;
+}
