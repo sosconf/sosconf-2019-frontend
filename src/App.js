@@ -11,6 +11,7 @@ import Introduce from './pages/introduce';
 import Sponsor from './pages/sponsor';
 import Coming from './pages/comingSoon';
 import Volunteer from './pages/volunteer';
+import News from './pages/news';
 
 
 // React-transition-group
@@ -40,6 +41,7 @@ class App extends Component {
               <Route exact path="/sponsor" component={Sponsor} />
               <Route exact path="/coming" component={Coming} />
               <Route exact path="/volunteer" component={Volunteer} />
+              <Route exact path="/news" component={News} />
             </Switch>
           </div>
           <footer className="sosconf-footer">

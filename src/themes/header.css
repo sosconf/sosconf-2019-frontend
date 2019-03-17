@@ -56,7 +56,7 @@
         background: transparent;
         height: 100%;
         font-size: 14px;
-        width: calc(100% / 6);
+        width: calc(100% / 7);
     }
 
     .sosconf-header__button:hover {
@@ -65,7 +65,7 @@
     }
 
     .sosconf-header__button-group {
-        width: calc(100% / 6);
+        width: calc(100% / 7);
         display: inline-block;
         height: 100%;
         overflow: visible;
@@ -149,7 +149,6 @@
         display: flex;
         height: 5vh;
         justify-content: center;
-        /* align-content: center; */
         align-items:center;
     }
 
@@ -180,8 +179,6 @@
         border: 0px solid rgb(215, 255, 199);
         color: white;
         width: 100%;
-        /* visibility: hidden; */
-        /* border-bottom: 0.1px solid rgb(124, 124, 124); */
     }
 
     .sosconf-header-mobile__active {
@@ -196,7 +193,6 @@
         border: none;
         background: white;
         width: 100%;
-        /* border-bottom: 0.1px solid rgb(220, 253, 205); */
     }
 
     .sosconf-header__menu-icon {

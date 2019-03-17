@@ -32,8 +32,8 @@
     background: white;
     height: 700px;
     overflow: auto;
-    border-radius: 5px;
-    box-shadow: 0.5px 0.5px 0.5px #7b7b7b;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #7b7b7b;
     border: none;
     display: flex;
     flex-direction: column;
@@ -54,7 +54,7 @@
     line-height: 60px;
     height: 60px;
     width: 150px;
-    border-radius: 5px;
+    border-radius: 10px;
     background: rgb(0, 127, 178);
     text-decoration: none;
     text-align: center;

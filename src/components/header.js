@@ -50,6 +50,11 @@ class Header extends Component {
                 id="home"
               />
             </button>
+            <button className="sosconf-header__button" onClick={() => { this.props.history.push("/news"); }}>
+              <FormattedMessage
+                id="news"
+              />
+            </button>
             <div className="sosconf-header__button-group sosconf-header__button-group--about">
               <button className="sosconf-header__group-button-title" id="sosconf-header__button--about">
                 <FormattedMessage
@@ -161,6 +166,11 @@ class Header extends Component {
             <FormattedMessage
               id="home"
             />
+            </button>
+            <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/news"); }}>
+              <FormattedMessage
+                id="news"
+              />
             </button>
             <div className="sosconf-header-mobile__button-group">
               <button className="sosconf-header-mobile__button" onClick={() => {

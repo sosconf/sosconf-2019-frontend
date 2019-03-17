@@ -13,8 +13,9 @@ const enUS = {
   about: 'About',
   english: 'English',
   chinese: 'Chinese',
-  meetingPosition: 'University of Southern California',
+  meetingPosition: 'University of Southern California,Los Angeles, CA, USA',
   sponsorship: 'Sponsorship',
+  news: 'News'
 };
 
 export default enUS;

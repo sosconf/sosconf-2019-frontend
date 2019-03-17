@@ -16,13 +16,24 @@ class Comming extends Component {
                     <span>技术组</span>
                 </div>
                 <div className="sosconf-volunteer__card-text">
+                    <p>技术组志愿者需求</p>
                     <p>按照当前的进度考虑和技术复杂度, 以及考虑在开发中培养更多同学的技术能力, 技术组目前计划人员需求如下:</p>
                     <ul>
-                        <li>前端组*3 [ ]</li>
-                        <li>后端组*3 [ ]</li>
-                        <li>前端设计小组(包含UI) *2 [ ]</li>
-                        <li>运维(包含各种注册/查询系统维护)*2 [ ]</li>
-                        <li>萌新若干 [ ]</li>
+                        <li>前端组</li>
+                        <li>后端组</li>
+                        <li>前端设计小组(包含UI)</li>
+                        <li>运维(包含各种注册/查询系统维护)</li>
+                        <li>萌新若干</li>
+                    </ul>
+                    <p>技术组同学主要负责开发：</p>
+                    <ul>
+                        <li>sosconf网站</li>
+                        <li>sosconf志愿者管理系统</li>
+                        <li>sosconf票务系统</li>
+                        <li>sosconf系统维护</li>
+                        <li>会议现场紧急技术支持</li>
+                        <li>LDAP统一认证系统接入支持</li>
+                        <li>DevOps及sosconf集群维护</li>
                     </ul>
 
                     <p>注: 其中DevOps部分由后端组配合运维组共同维护</p>
@@ -111,7 +122,6 @@ class Comming extends Component {
                         <ul>
                             <li>不限国籍</li>
                             <li>学生身份（不限于中学生、大学生、硕博生、留学生</li>
-                            <li>请优先分配女生，目前组内男生过于饱和（并不是说不要男生啦~而是在人手盈余和条件满足的情况下，请优先分配女生( •̀ ω •́ )y</li>
                             <li>善于交流思路，口头表达能力较好</li>
                             <li>具备一定的社交礼仪（现实 or 网络</li>
                             <li>无人数要求</li>
