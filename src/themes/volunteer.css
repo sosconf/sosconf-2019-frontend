@@ -11,12 +11,14 @@
     color: black;
     font-size: 30px;
 }
+
 @media screen and (max-width: 1050px) {
     .sosconf-volunteer__card-group {
         display: flex;
         flex-direction: column;
     }
 }
+
 @media screen and (min-width: 1050px) {
     .sosconf-volunteer__card-group {
         display: flex;
@@ -28,7 +30,8 @@
     flex: 1;
     margin: 50px;
     background: white;
-    min-height: 400px;
+    height: 700px;
+    overflow: auto;
     border-radius: 5px;
     box-shadow: 0.5px 0.5px 0.5px #7b7b7b;
     border: none;
@@ -61,4 +64,13 @@
 .sosconf-volunteer__button-group {
     text-align: center;
     margin-bottom: 30px;
+}
+
+.sosconf-volunteer__card-text {
+    padding: 30px;
+}
+
+.sosconf-volunteer__card-text ul {
+    padding-bottom: 10px;
+    margin-top: 5px;
 }
