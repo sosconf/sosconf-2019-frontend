@@ -23,16 +23,35 @@ import store from './stores/store';
 const language = [...zh, ...en];
 addLocaleData(language);
 
+let locate = 'en'
+let msg = en_US;
 
-ReactDOM.render((
+function render () {
+    ReactDOM.render((
         <Provider store={store}>
-            <IntlProvider locale={'zh'} messages={zh_CN}>
+            <IntlProvider locale={locate} messages={msg}>
                 <App>
                 </App>
             </IntlProvider>
         </Provider>
     )
-, document.getElementById('root'));
+    , document.getElementById('root'));
+}
+
+store.subscribe(() => {
+    let { language } = store.getState();
+    if (language === 'en') {
+        locate = 'en';
+        msg = en_US;
+        render();
+    } else if (language === 'ch') {
+        locate = 'zh'
+        msg = zh_CN
+        render();
+    }
+})
+
+render();
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -9,7 +9,7 @@ const enUS = {
   sponsorContact: 'Sponsor contact',
   talkerContact: 'Talker contact',
   volunteerContact: 'Volunteer contact',
-  language: 'language',
+  language: 'Language',
   about: 'About',
   english: 'English',
   chinese: 'Chinese',

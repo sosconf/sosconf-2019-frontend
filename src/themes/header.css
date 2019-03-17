@@ -230,7 +230,7 @@
         transition: all .5s ease;
     }
 
-    .sosconf-header-mobile__button-group span {
+    .sosconf-header-mobile__button-group span:nth-child(2) {
         display: inline-block;
         transition: all .2s;
         font-size: 18px;
