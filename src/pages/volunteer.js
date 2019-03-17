@@ -83,8 +83,53 @@ class Comming extends Component {
                     <p>以上配置不一定完全合理且周到，欢迎有兴趣的同学联系。</p>
                 </div>
             </div>
-
             <div className="sosconf-volunteer__card">
+                    <div className="sosconf-volunteer__card-header">
+                        <span>市场组</span>
+                    </div>
+                    <div className="sosconf-volunteer__card-text">
+                        <p>我们希望你：</p>
+                        <ul>
+                            <li>有良好的沟通表达能力及人际交往能力</li>
+                            <li>善于合作以及协调</li>
+                            <li>有较强的责任感，执行力强</li>
+                            <li>有创造力及较强思维逻辑能力，能够提出想法</li>
+                        </ul>
+                        <p>具体的工作：</p>
+                        <ul>
+                            <li>协助构建大会品牌，并将其推广出去</li>
+                            <li>吸引更多喜欢开源开发和文化或对开源感兴趣的人们参与到大会中</li>
+                            <li>后期进行调查，为下一届大会提供改进意见</li>
+                        </ul>
+                        <p>欢迎有兴趣的同学加入，我们一起努力！</p>
+                    </div>
+                </div>
+        </div>
+        <div className="sosconf-volunteer__card-group">
+
+                <div className="sosconf-volunteer__card">
+                    <div className="sosconf-volunteer__card-header">
+                        <span>媒体组</span>
+                    </div>
+                    <div className="sosconf-volunteer__card-text">
+                        <p>我们希望你：</p>
+                        <ul>
+                            <li>有良好的沟通表达能力及人际交往能力</li>
+                            <li>善于合作以及协调</li>
+                            <li>熟悉国内外常用社交媒体平台</li>
+                            <li>热情积极，活泼机智</li>
+                        </ul>
+                        <p>具体的工作：</p>
+                        <ul>
+                            <li>了解大会实时动向</li>
+                            <li>能够发挥自己的聪明才智做好大会的宣传工作</li>
+                            <li>做大会的小喇叭和代言人o(*￣︶￣*)o</li>
+                        </ul>
+                        <p>欢迎各位同学加入！</p>
+                    </div>
+                </div>
+
+                <div className="sosconf-volunteer__card">
                 <div className="sosconf-volunteer__card-header">
                     <span>议程组</span>
                 </div>
@@ -110,8 +155,6 @@ class Comming extends Component {
                     </ul>
                 </div>
             </div>
-        </div>
-        <div className="sosconf-volunteer__card-group">
             <div className="sosconf-volunteer__card">
                     <div className="sosconf-volunteer__card-header">
                         <span>赞助组</span>
@@ -146,49 +189,6 @@ class Comming extends Component {
                     </div>
                 </div>
 
-                <div className="sosconf-volunteer__card">
-                    <div className="sosconf-volunteer__card-header">
-                        <span>市场组</span>
-                    </div>
-                    <div className="sosconf-volunteer__card-text">
-                        <p>我们希望你：</p>
-                        <ul>
-                            <li>有良好的沟通表达能力及人际交往能力</li>
-                            <li>善于合作以及协调</li>
-                            <li>有较强的责任感，执行力强</li>
-                            <li>有创造力及较强思维逻辑能力，能够提出想法</li>
-                        </ul>
-                        <p>具体的工作：</p>
-                        <ul>
-                            <li>协助构建大会品牌，并将其推广出去</li>
-                            <li>吸引更多喜欢开源开发和文化或对开源感兴趣的人们参与到大会中</li>
-                            <li>后期进行调查，为下一届大会提供改进意见</li>
-                        </ul>
-                        <p>欢迎有兴趣的同学加入，我们一起努力！</p>
-                    </div>
-                </div>
-
-                <div className="sosconf-volunteer__card">
-                    <div className="sosconf-volunteer__card-header">
-                        <span>媒体组</span>
-                    </div>
-                    <div className="sosconf-volunteer__card-text">
-                        <p>我们希望你：</p>
-                        <ul>
-                            <li>有良好的沟通表达能力及人际交往能力</li>
-                            <li>善于合作以及协调</li>
-                            <li>熟悉国内外常用社交媒体平台</li>
-                            <li>热情积极，活泼机智</li>
-                        </ul>
-                        <p>具体的工作：</p>
-                        <ul>
-                            <li>了解大会实时动向</li>
-                            <li>能够发挥自己的聪明才智做好大会的宣传工作</li>
-                            <li>做大会的小喇叭和代言人o(*￣︶￣*)o</li>
-                        </ul>
-                        <p>欢迎各位同学加入！</p>
-                    </div>
-                </div>
         </div>
 
         <div className="sosconf-volunteer__card-group">
