@@ -1,0 +1,193 @@
+@media screen and (min-width: 1050px) {
+    .sosconf-footer__wrap {
+        color: white;
+        height: 100%;
+    }
+
+    .sosconf-footer__logo-wrap {
+        width: 300px;
+        height: 100%;
+        float: left;
+    }
+
+    .sosconf-footer__left-logo {
+        background: url(../images/Logo_full.svg);
+    }
+
+    .sosconf-footer__left-logo {
+        position: relative;
+        top: 50%;
+        left: 50px;
+        transform: translateY(-50%);
+        width: 200px;
+        height: 100px;
+        background-size: 200px 100px;
+    }
+
+    .sosconf-footer__copyleft {
+        float: right;
+        position: relative;
+        top: 50%;
+        right: 50px;
+        transform: translateY(-50%);
+    }
+
+    .sosconf-footer__middle-buttons {
+        position: relative;
+        width: 50%;
+        float: left;
+        height: 100%;
+    }
+
+    .sosconf-footer__middle-button {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        float: left;
+        margin-right: 10px;
+        border: none;
+        border-radius: 50%;
+        background: transparent;
+    }
+
+    .sosconf-footer__middle-button:hover {
+        transform: translateY(-50%) scale(1.1);
+        transition: all .5s;
+    }
+
+    .sosconf-footer__middle-button--openingsource {
+        background: url("../images/logo_openingsource.svg");
+        background-size: contain;
+    }
+
+    .sosconf-footer__middle-mail {
+        background: url("../images/logo_mail.svg");
+        background-size: contain;
+    }
+
+    .sosconf-footer__middle-facebook {
+        background: url("../images/logo_facebook.svg");
+        background-size: contain;
+    }
+
+    .sosconf-footer__middle-twitter {
+        background: url("../images/logo_twitter.svg");
+        background-size: contain;
+    }
+
+    .sosconf-footer__middle-flickr {
+        background: url("../images/logo_flickr.svg");
+        background-size: contain;
+    }
+
+    .sosconf-footer__middle-youtube {
+        background: url("../images/logo_youtube.svg");
+        background-size: contain;
+    }
+
+    .sosconf-footer__middle-weibo {
+        background: url("../images/logo_weibo.svg");
+        background-size: contain;
+    }
+} @media screen and (max-width: 1050px) {
+    .sosconf-footer {
+        padding-top: 180px;
+    }
+
+    .sosconf-footer__wrap {
+        color: white;
+        background: rgb(7, 7, 22);
+        /* height: 100%; */
+    }
+
+    .sosconf-footer__logo-wrap {
+        width: 300px;
+        height: 100%;
+        margin: 0 auto;
+        /* float: left; */
+    }
+
+    .sosconf-footer__left-logo {
+        background: url(../images/Logo_full.svg);
+    }
+
+    .sosconf-footer__left-logo {
+        position: relative;
+        top: 50%;
+        left: 50px;
+        transform: translateY(-50%);
+        width: 200px;
+        height: 100px;
+        background-size: 200px 100px;
+    }
+
+    .sosconf-footer__copyleft {
+        text-align: center;
+        /* float: right; */
+        position: relative;
+        top: 50%;
+        /* right: 50px; */
+        transform: translateY(-50%);
+    }
+
+    .sosconf-footer__middle-buttons {
+        position: relative;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sosconf-footer__middle-button {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 10px;
+        border: none;
+        border-radius: 50%;
+        background: transparent;
+    }
+
+    .sosconf-footer__middle-button:hover {
+        transform: translateY(-50%) scale(1.1);
+        transition: all .5s;
+    }
+
+    .sosconf-footer__middle-button--openingsource {
+        background: url("../images/logo_openingsource.svg");
+        background-size: contain;
+    }
+
+    .sosconf-footer__middle-mail {
+        background: url("../images/logo_mail.svg");
+        background-size: contain;
+    }
+
+    .sosconf-footer__middle-facebook {
+        background: url("../images/logo_facebook.svg");
+        background-size: contain;
+    }
+
+    .sosconf-footer__middle-twitter {
+        background: url("../images/logo_twitter.svg");
+        background-size: contain;
+    }
+
+    .sosconf-footer__middle-flickr {
+        background: url("../images/logo_flickr.svg");
+        background-size: contain;
+    }
+
+    .sosconf-footer__middle-youtube {
+        background: url("../images/logo_youtube.svg");
+        background-size: contain;
+    }
+
+    .sosconf-footer__middle-weibo {
+        background: url("../images/logo_weibo.svg");
+        background-size: contain;
+    }
+}

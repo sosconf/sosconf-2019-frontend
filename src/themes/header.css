@@ -1,0 +1,241 @@
+@media screen and (min-width: 1050px) {
+    .sosconf-header-mobile__active {
+        display: none;
+    }
+
+    .sosconf-header-mobile {
+        display: none;
+    }
+
+    .sosconf-header__wrap {
+        height: 100%;
+        position: relative;
+    }
+
+    .sosconf-header__logo {
+        float: left;
+        width: 150px;
+        margin-left: 10px;
+        height: 100%;
+    }
+
+    .sosconf-header__logo--svg {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 20px;
+        width: 20px;
+        float: left;
+        background: url(../images/Logo_nano.svg);
+    }
+
+    .sosconf-header__logo--name {
+        position: relative;
+        top: 50%;
+        left: 10px;
+        float: left;
+        transform: translateY(-50%);
+    }
+
+    .sosconf-header__logo--name-number {
+        position: relative;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        color: rgb(1, 191, 144);
+    }
+
+    .sosconf-header__buttons {
+        height: 100%;
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .sosconf-header__button {
+        border: none;
+        background: transparent;
+        height: 100%;
+        font-size: 14px;
+        width: calc(100% / 6);
+    }
+
+    .sosconf-header__button:hover {
+        transition: all .2s;
+        border-bottom: 3px solid rgb(1, 191, 144);
+    }
+
+    .sosconf-header__button-group {
+        width: calc(100% / 6);
+        display: inline-block;
+        height: 100%;
+        overflow: visible;
+        position: relative;
+    }
+
+    .sosconf-header__button-group:hover > .sosconf-header__gourp-drop-down {
+        display: inline;
+        background: white;
+        top: 100%;
+        z-index: 1;
+        left: -10%;
+        width: 100%;
+        height: auto;
+        border: none;
+        transition: all .5s;
+    }
+
+    .sosconf-header__button-group:hover .sosconf-header__group-button {
+        height: 40px;
+        transition: all .1s;
+        visibility: unset;
+    }
+
+    .sosconf-header__group-button-title:hover {
+        transition: all .2s;
+    }
+
+    .sosconf-header__group-button-title {
+        display: inline-block;
+        border: none;
+        background: transparent;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    .sosconf-header__gourp-drop-down {
+        position: absolute;
+        top: 100%;
+        left: -10%;
+        height: 0;
+    }
+
+    .sosconf-header__group-button {
+        visibility: hidden;
+        height: 0;
+        width: 120%;
+        border: none;
+        color: black;
+    }
+
+    .sosconf-header__group-button:hover {
+        background: rgb(6, 183, 133);
+        transition: all .5s;
+        color: white;
+    }
+
+    .sosconf-header-pc {
+        height: 100%;
+    }
+
+    .sosconf-header__button-group--language{
+        position: absolute;
+        top: 1px;
+        right: 10px;
+        width: 100px;
+    }
+
+} @media screen and (max-width: 1050px) {
+    .sosconf-header__wrap {
+        height: 100%;
+    }
+
+    .sosconf-header-pc {
+        display: none;
+    }
+
+    .sosconf-header-mobile {
+        display: flex;
+        height: 5vh;
+        justify-content: center;
+        /* align-content: center; */
+        align-items:center;
+    }
+
+    .sosconf-header-mobile__logo {
+        height: 100%;
+        width: 20px;
+        height: 20px;
+        background: url(../images/Logo_nano.svg);
+    }
+
+    .sosconf-header__logo--name {
+        margin-left: 10px;
+    }
+
+    .sosconf-header__logo--name-number {
+        margin-left: 5px;
+        color: rgb(1, 191, 144);
+    }
+
+    .sosconf-header-mobile__active {
+        background: white;
+    }
+
+    .sosconf-header-mobile__button {
+        height: 40px;
+        text-align: center;
+        background: rgb(1, 191, 144);
+        border: 0px solid rgb(215, 255, 199);
+        color: white;
+        width: 100%;
+        /* visibility: hidden; */
+        /* border-bottom: 0.1px solid rgb(124, 124, 124); */
+    }
+
+    .sosconf-header-mobile__active {
+        transition:max-height .5s ease-in-out;
+        overflow: hidden;
+    }
+
+    
+    .sosconf-header-mobile__button-group-buttons  button{
+        height: 30px;
+        text-align: center;
+        border: none;
+        background: white;
+        width: 100%;
+        /* border-bottom: 0.1px solid rgb(220, 253, 205); */
+    }
+
+    .sosconf-header__menu-icon {
+        transition: all .2s ease-in-out;
+        position: relative;
+        left: -20%;
+        width: 30px;
+        height: 5px;
+        border-top: 5px solid rgb(1, 191, 144);
+        border-bottom: 5px solid rgb(1, 191, 144);
+        background: rgb(1, 191, 144);
+        padding: 5px 0;
+        background-clip:content-box;
+    }
+
+    .sosconf-header__menu-icon--vertical {
+        transition: all .2s ease-in-out;
+        transform: rotateZ(90deg);
+        position: relative;
+        left: -20%;
+        width: 30px;
+        height: 5px;
+        border-top: 5px solid rgb(1, 191, 144);
+        border-bottom: 5px solid rgb(1, 191, 144);
+        background: rgb(1, 191, 144);
+        padding: 5px 0;
+        background-clip:content-box;
+    }
+
+    .sosconf-header-mobile__button-group-buttons {
+        transition: all .5s ease;
+    }
+
+    .sosconf-header-mobile__button-group span {
+        display: inline-block;
+        transition: all .2s;
+        font-size: 18px;
+        width: 20px;
+        height: 20px;
+        position: relative;
+    }
+}
