@@ -11,35 +11,43 @@ import Introduce from './pages/introduce';
 import Sponsor from './pages/sponsor';
 import Coming from './pages/comingSoon';
 
+
+// React-transition-group
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+
 // Themes
 import './themes/common.css';
 
 
 class App extends Component {
+  constructor() {
+    super();
+  }
+
   render() {
     return (
       <HashRouter>
-          <div className="sosconf-app">
-            <header className="sosconf-header">
-              <Header>
-              </Header>
-            </header>
-            <div className="sosconf-body">
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/introduce" component={Introduce} />
-                <Route exact path="/sponsor" component={Sponsor} />
-                <Route exact path="/coming" component={Coming} />
-              </Switch>
-            </div>
-            <footer className="sosconf-footer">
-              <Footer>
-                {/* Footer */}
-              </Footer>
-            </footer>
-
-
+        <div className="sosconf-app">
+          <header className="sosconf-header">
+            <Header>
+            </Header>
+          </header>
+          <div className="sosconf-body">
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/introduce" component={Introduce} />
+              <Route exact path="/sponsor" component={Sponsor} />
+              <Route exact path="/coming" component={Coming} />
+            </Switch>
           </div>
+          <footer className="sosconf-footer">
+            <Footer>
+              {/* Footer */}
+            </Footer>
+          </footer>
+
+
+        </div>
       </HashRouter>
     );
   }

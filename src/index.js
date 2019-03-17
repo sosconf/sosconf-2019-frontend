@@ -19,6 +19,11 @@ import { Provider } from 'react-redux';
 // Store
 import store from './stores/store';
 
+// React-transition-group
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+
+import './themes/common.css'
+
 // init react-intl
 const language = [...zh, ...en];
 addLocaleData(language);
@@ -30,8 +35,16 @@ function render () {
     ReactDOM.render((
         <Provider store={store}>
             <IntlProvider locale={locate} messages={msg}>
-                <App>
-                </App>
+                <TransitionGroup>
+                    <CSSTransition
+                    appear={true}
+                    classNames="appAppear"
+                    timeout={500}
+                    >
+                        <App>
+                        </App>
+                    </CSSTransition>
+                </TransitionGroup>    
             </IntlProvider>
         </Provider>
     )
