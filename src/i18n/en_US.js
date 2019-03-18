@@ -7,7 +7,7 @@ const enUS = {
   navigation: 'Navigation',
   contact: 'Contact',
   sponsorContact: 'Sponsor contact',
-  talkerContact: 'Talker contact',
+  talkerContact: 'Speakers contact',
   volunteerContact: 'Volunteer contact',
   language: 'Language',
   about: 'About',

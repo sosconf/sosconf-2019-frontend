@@ -18,7 +18,7 @@ class Home extends Component {
             <div className="sosconf-home__title--span"></div>
             <h2 className="sosconf-home__title--down">Students Open Source Conference</h2>
             <div className="sosconf-home__position">
-              <h2 className="sosconf-home__position--time">August 24 & 25th, 2019</h2>
+              <h2 className="sosconf-home__position--time">August 24 & 25, 2019</h2>
               <h2 className="sosconf-home__position--position">
               <FormattedMessage
                 id="meetingPosition"

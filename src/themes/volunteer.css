@@ -55,7 +55,7 @@
     height: 60px;
     width: 150px;
     border-radius: 10px;
-    background: rgb(0, 127, 178);
+    background: rgb(0, 207, 179);
     text-decoration: none;
     text-align: center;
     color: white;
@@ -89,4 +89,8 @@
 .sosconf-volunteer__card-image {
     height: 400px;
     width: 260px;
+}
+
+.sosconf-volunteer__button-group-span {
+    color: grey;
 }

@@ -10,6 +10,10 @@ class Comming extends Component {
         <div className="sosconf-volunteer__text">
             Welcome to be a volunteer
         </div>
+        <div className="sosconf-volunteer__button-group">
+            <a target="_black" href="http://sosconf2019.mikecrm.com/pS483cs" className="animated bounce">APPLY</a>
+            <p className="sosconf-volunteer__button-group-span">“（近期会有专门的账号系统上线，敬请期待）”</p>
+        </div>
         <div className="sosconf-volunteer__card-group">
             <div className="sosconf-volunteer__card">
                 <div className="sosconf-volunteer__card-header">
@@ -202,7 +206,29 @@ class Comming extends Component {
                         <p>只要你喜欢开源开发和文化或对开源感兴趣，只要你愿意加入我们，just try!</p>
                     </div>
                 </div>
-                <div className="sosconf-volunteer__card--none sosconf-volunteer__card">
+                <div className="sosconf-volunteer__card">
+                    <div className="sosconf-volunteer__card-header">
+                        <span>Conference Affairs Team</span>
+                    </div>
+                    <div className="sosconf-volunteer__card-text">
+                        <p>Requirements</p>
+                        <ul>
+                            <li>Interested in or passionate about the practice or idea of open-source.</li>
+                            <li>Language fluency: as the conference will be held in English, you are required to be fluent in English.</li>
+                            <li>Team player.</li>
+                            <li>Similar experience is a plus (see below for specific responsibilities).</li>
+                            <li>Please ensure you can be on site during the meeting. We want you here in Los Angeles</li>
+                        </ul>
+                        <p>Responsibilities</p>
+                        <ul>
+                            <li>General Affairs Volunteers</li>
+                            <li>You will be working with a group of people with similar interests as yours coming from all over the world. You may choose to help us set up on the day before the conference, guide attendees and speakers to where their destinations, set up the dinner party, or cleaning things up after the conference concludes.</li>
+                        </ul>
+                        <p>Track Hosts</p>
+                        <p>You can apply to be a track hosts that will be hosting talks of some track. You will be responsible for checking status of devices and communicating with speakers before talks, mediating Q&A sessions, wrapping things up when the talk ends and also handling other possible situations. Note that there will be a female-only track where the host should be female as well.</p>
+                        <p>Technical Volunteers</p>
+                        <p>You will be specifically helping us and track hosts with electronic devices at each room/hall/location of the conference, including audio/video systems.</p>
+                    </div>
                 </div>
                 <div className="sosconf-volunteer__card--none sosconf-volunteer__card">
                 </div>
@@ -233,7 +259,8 @@ class Comming extends Component {
         </div>
 
         <div className="sosconf-volunteer__button-group">
-            <a target="_black" href="https://wj.qq.com/s2/3377452/b8e9/" className="animated bounce">APPLY</a>
+            <a target="_black" href="http://sosconf2019.mikecrm.com/pS483cs" className="animated bounce">APPLY</a>
+            <p  className="sosconf-volunteer__button-group-span">“（近期会有专门的账号系统上线，敬请期待）”</p>
         </div>
       </div>
     );
