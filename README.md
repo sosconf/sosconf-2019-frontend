@@ -1,5 +1,5 @@
-# sosconf-2019
-sosconf 2019 Official Website
+# sosconf-2019 
+sosconf 2019 Official Website（V2.2）
 [sosconf](https://sosconf.org)
 
 这里是sosconf 2019官网源码的镜像
