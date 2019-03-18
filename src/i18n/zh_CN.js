@@ -13,7 +13,7 @@ const zhCN = {
   about: '关于',
   english: '英文',
   chinese: '简体中文',
-  meetingPosition: '美国南加州大学',
+  meetingPosition: '美国南加州大学，洛杉矶',
   sponsorship: '提供赞助',
   news: '新闻'
 };

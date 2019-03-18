@@ -213,11 +213,6 @@ class Header extends Component {
               id="agenda"
             />
             </button>
-            <button className="sosconf-header-mobile__button"  onClick={() => { this.props.history.push("/coming"); }}>
-            <FormattedMessage
-              id="agenda"
-            />
-            </button>
             <div className="sosconf-header-mobile__button-group">
               <button className="sosconf-header-mobile__button" onClick={() => {
                 this.setState({

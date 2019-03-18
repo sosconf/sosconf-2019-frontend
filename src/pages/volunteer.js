@@ -160,7 +160,7 @@ class Comming extends Component {
                         <span>赞助组</span>
                     </div>
                     <div className="sosconf-volunteer__card-text">
-                        <p>赞助组主要负责对外联系潜在的赞助商，商务谈判和招募启动资金，也会行使一部分联系媒体或社区的职能。（是 sosconf 联系社会的纽带）</p>
+                        <p>赞助组主要负责对外联系潜在的赞助商，赞助交涉和招募启动资金，也会行使一部分联系媒体或社区的职能。（是 sosconf 联系社会的纽带）</p>
                         <p>人员要求</p>
                         <ul>
                             <li>不限国籍</li>

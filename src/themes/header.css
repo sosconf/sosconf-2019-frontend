@@ -77,8 +77,8 @@
         background: white;
         top: 100%;
         z-index: 1;
-        left: -10%;
-        width: 100%;
+        left: -30%;
+        width: 140%;
         height: auto;
         border: none;
         transition: all .5s;
@@ -107,7 +107,7 @@
     .sosconf-header__gourp-drop-down {
         position: absolute;
         top: 100%;
-        left: -10%;
+        left: -30%;
         height: 0;
     }
 
@@ -132,7 +132,7 @@
     .sosconf-header__button-group--language{
         position: absolute;
         top: 1px;
-        right: 10px;
+        right: 50px;
         width: 100px;
     }
 

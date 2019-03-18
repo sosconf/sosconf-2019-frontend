@@ -21,6 +21,11 @@
         position: relative;
         bottom: 5px;
     }
+
+    .sosconf-home__news--content p {
+        font-weight: 300;
+        margin-top: 10px;
+    }
     
     .sosconf-home__title--down {
         font-size: 24px;
