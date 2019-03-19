@@ -30,7 +30,7 @@ class App extends Component {
     return (
       <HashRouter>
         <div className="sosconf-app">
-          <header className="sosconf-header">
+          <header className="sosconf-header sosconf-header--pop">
             <Header>
             </Header>
           </header>

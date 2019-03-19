@@ -26,17 +26,17 @@ class Home extends Component {
               </h2>
             </div>
             <div className="sosconf-home__buttons">
-              <a className="sosconf-home__button--green" href="https://fb.com/sosconf">
+              <a className="sosconf-home__button--black" href="https://fb.com/sosconf">
               <FormattedMessage
                 id="Facebook"
               />
               </a>
-              <a className="sosconf-home__button--green" href="https://twitter.com/sosconf">
+              <a className="sosconf-home__button--black" href="https://twitter.com/sosconf">
               <FormattedMessage
                 id="Twitter"
               />
               </a>
-              <a className="sosconf-home__button--green" href="https://github.com/sosconf">
+              <a className="sosconf-home__button--black" href="https://github.com/sosconf">
               <FormattedMessage
                 id="Github"
               />

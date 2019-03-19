@@ -52,6 +52,7 @@
     }
 
     .sosconf-header__button {
+        color: white;
         border: none;
         background: transparent;
         height: 100%;
@@ -73,12 +74,11 @@
     }
 
     .sosconf-header__button-group:hover > .sosconf-header__gourp-drop-down {
-        display: inline;
         background: white;
-        top: 100%;
         z-index: 1;
-        left: -30%;
-        width: 140%;
+        left: 0;
+        text-align: center;
+        width: 100%;
         height: auto;
         border: none;
         transition: all .5s;
@@ -86,7 +86,7 @@
 
     .sosconf-header__button-group:hover .sosconf-header__group-button {
         height: 40px;
-        transition: all .1s;
+        transition: all .5s;
         visibility: unset;
     }
 
@@ -96,6 +96,7 @@
 
     .sosconf-header__group-button-title {
         display: inline-block;
+        color: white;
         border: none;
         background: transparent;
         height: 100%;
@@ -105,16 +106,16 @@
     }
 
     .sosconf-header__gourp-drop-down {
-        position: absolute;
-        top: 100%;
-        left: -30%;
+        position: fixed;
+        top: 5vh;
         height: 0;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
     }
 
     .sosconf-header__group-button {
         visibility: hidden;
         height: 0;
-        width: 120%;
+        width: 10%;
         border: none;
         color: black;
     }
@@ -199,12 +200,12 @@
         transition: all .2s ease-in-out;
         position: relative;
         left: -20%;
-        width: 30px;
-        height: 5px;
-        border-top: 5px solid rgb(1, 191, 144);
-        border-bottom: 5px solid rgb(1, 191, 144);
+        width: 20px;
+        height: 4px;
+        border-top: 4px solid rgb(1, 191, 144);
+        border-bottom: 4px solid rgb(1, 191, 144);
         background: rgb(1, 191, 144);
-        padding: 5px 0;
+        padding: 4px 0;
         background-clip:content-box;
     }
 
@@ -213,12 +214,12 @@
         transform: rotateZ(90deg);
         position: relative;
         left: -20%;
-        width: 30px;
-        height: 5px;
-        border-top: 5px solid rgb(1, 191, 144);
-        border-bottom: 5px solid rgb(1, 191, 144);
+        width: 20px;
+        height: 4px;
+        border-top: 4px solid rgb(1, 191, 144);
+        border-bottom: 4px solid rgb(1, 191, 144);
         background: rgb(1, 191, 144);
-        padding: 5px 0;
+        padding: 4px 0;
         background-clip:content-box;
     }
 

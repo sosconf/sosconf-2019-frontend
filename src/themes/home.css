@@ -4,7 +4,7 @@
     }
     
     .sosconf-home__title {
-        margin-top: 20vh;
+        padding-top: 20vh;
         text-align: center;
         color: white;
     }
@@ -58,21 +58,21 @@
         transform: scale(1.1)
     }
     
-    .sosconf-home__button--green {
+    .sosconf-home__button--black {
         border: none;
         display: inline-block;
-        background: rgb(1, 191, 144);
+        background: black;
         border-radius: 25px;
         color: white;
         text-decoration: none;
-        line-height: 30px;
+        line-height: 40px;
         font-size: 20px;
         width: 120px;
-        height: 30px;
+        height: 40px;
         margin-right: 20px;
     }
     
-    .sosconf-home__button--green:hover {
+    .sosconf-home__button--black:hover {
         transition: all .3s;
         transform: scale(1.1)
     }
@@ -190,14 +190,14 @@
         transform: scale(1.1)
     }
     
-    .sosconf-home__button--green {
+    .sosconf-home__button--black {
         display: inline-block;
         text-decoration: none;
         line-height: 50px;
         margin: 0 auto;
         border: none;
         display: block;
-        background: rgb(1, 191, 144);
+        background: black;
         border-radius: 25px;
         color: white;
         font-size: 20px;
@@ -206,11 +206,11 @@
         margin-top: 20px;
     }
 
-    .sosconf-home__button--green span {
+    .sosconf-home__button--black span {
         text-decoration: none;
     }
     
-    .sosconf-home__button--green:hover {
+    .sosconf-home__button--black:hover {
         transition: all .3s;
         transform: scale(1.1)
     }

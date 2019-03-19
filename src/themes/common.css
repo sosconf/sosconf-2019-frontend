@@ -23,21 +23,37 @@ body {
 }
 
 .sosconf-app {
-    background: url(../images/Background.svg) no-repeat;
+    background: url(../images/Background.jpg) no-repeat;
+    background-color: #f3f3f3;
     background-size:  100%;
+    background-attachment: fixed;
 }
 
 /* Header */
 @media screen and (min-width: 1050px) {
     .sosconf-header {
         height: 5vh;
-        background: rgb(213, 246, 240);
+        background: black;
+        color: white;
         box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
     }   
+    .sosconf-header--pop {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+    }   
 } @media screen and (max-width: 1050px) {
+    .sosconf-app {
+        background: url(../images/Background.jpg) no-repeat;
+        background-color: #f3f3f3;
+        background-size:  250%;
+        background-attachment: fixed;
+    }
     .sosconf-header {
         min-height: 5vh;
-        background: rgb(213, 246, 240);
+        background: black;
+        color: white;
         box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
     }   
 }
@@ -45,6 +61,7 @@ body {
 /* Body */
 .sosconf-body {
     height: auto;
+    padding-top: 5vh;
 }
 
 /* Footer */

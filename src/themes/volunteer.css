@@ -2,7 +2,6 @@
     min-height: 800px;
     display: flex;
     flex-direction: column;
-    background: rgb(241, 242, 246);
 }
 
 .sosconf-volunteer__text {
@@ -55,7 +54,7 @@
     height: 60px;
     width: 150px;
     border-radius: 10px;
-    background: rgb(0, 207, 179);
+    background: rgb(0, 233, 155);
     text-decoration: none;
     text-align: center;
     color: white;

@@ -22,6 +22,17 @@ class Header extends Component {
     };
     this.handleChangeToChinese.bind(this);
     this.handleChangeToEnglish.bind(this);
+    this.closeAllBar.bind(this);
+
+    document.addEventListener('scroll', function (target) {
+      let nowScroll = window.scrollY;
+      let innerHeight = window.innerHeight;
+      if (nowScroll > innerHeight) {
+        
+      } else {
+
+      }
+    }, false);
   }
 
   // 切换英文
@@ -32,6 +43,21 @@ class Header extends Component {
   // 切换中文
   handleChangeToChinese() {
     this.props.changeToChinese();
+  }
+
+  // 悬浮
+  pop() {
+
+  }
+
+  // 关闭所有bar
+  closeAllBar() {
+    this.setState({
+      displayMobileBar: false,
+      displayAboutBar: false,
+      displayContactBar: false,
+      displayLanguageBar: false
+    })
   }
 
   render() {
@@ -144,6 +170,7 @@ class Header extends Component {
               this.setState({
                 displayMobileBar: false
               });
+              this.closeAllBar();
             } else {
               this.setState({
                 displayMobileBar: true
