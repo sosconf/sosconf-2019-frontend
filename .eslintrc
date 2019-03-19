@@ -1,6 +1,5 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb",
   "rules": {
     "no-restricted-globals": "off",
     "generator-star-spacing": [0],
@@ -42,7 +41,6 @@
     "no-unused-expressions": [0],
     "react/sort-comp":[0],
     "max-lines": [2,500],
-    "max-len": [2,125],
     "react/jsx-boolean-value": [0],
     "react/react-in-jsx-scope": [0],
     "operator-assignment": [0],

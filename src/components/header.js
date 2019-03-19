@@ -44,7 +44,7 @@ class Header extends Component {
             <div className="sosconf-header__logo--name-number">2019</div>
           </div>
           <div className="sosconf-header__buttons">
-          
+
             <button className="sosconf-header__button" onClick={() => { this.props.history.push("/"); }}>
               <FormattedMessage
                 id="home"
@@ -80,58 +80,58 @@ class Header extends Component {
               />
             </button>
             <button className="sosconf-header__button" onClick={() => { this.props.history.push("/coming"); }}>
-            <FormattedMessage
-              id="agenda"
-            />
+              <FormattedMessage
+                id="agenda"
+              />
             </button>
             <button className="sosconf-header__button" onClick={() => { this.props.history.push("/coming"); }}>
-            <FormattedMessage
-              id="navigation"
-            />
+              <FormattedMessage
+                id="navigation"
+              />
             </button>
             <div className="sosconf-header__button-group sosconf-header__button-group--about">
               <button className="sosconf-header__group-button-title" id="sosconf-header__button--contact" >
-              <FormattedMessage
-                id="contact"
-              />
+                <FormattedMessage
+                  id="contact"
+                />
               </button>
               <div className="sosconf-header__gourp-drop-down">
                 <button className="sosconf-header__group-button" onClick={() => { this.props.history.push("/sponsor"); }}>
-                <FormattedMessage
-                  id="sponsorContact"
-                />
+                  <FormattedMessage
+                    id="sponsorContact"
+                  />
                 </button>
                 <button className="sosconf-header__group-button" onClick={() => { this.props.history.push("/coming"); }}>
-                <FormattedMessage
-                  id="talkerContact"
-                />
+                  <FormattedMessage
+                    id="talkerContact"
+                  />
                 </button>
                 <button className="sosconf-header__group-button" onClick={() => { this.props.history.push("/volunteer"); }}>
-                <FormattedMessage
-                  id="volunteerContact"
-                />
+                  <FormattedMessage
+                    id="volunteerContact"
+                  />
                 </button>
               </div>
             </div>
-              <div className="sosconf-header__button-group sosconf-header__button-group--language">
-                  <button className="sosconf-header__group-button-title" id="sosconf-header__button--language" >
+            <div className="sosconf-header__button-group sosconf-header__button-group--language">
+              <button className="sosconf-header__group-button-title" id="sosconf-header__button--language" >
+                <FormattedMessage
+                  id="language"
+                />
+              </button>
+              <div className="sosconf-header__gourp-drop-down">
+                <button className="sosconf-header__group-button" onClick={() => { this.handleChangeToEnglish() }}>
                   <FormattedMessage
-                   id="language"
+                    id="english"
                   />
-                  </button>
-                  <div className="sosconf-header__gourp-drop-down">
-                      <button className="sosconf-header__group-button" onClick={() => {this.handleChangeToEnglish()}}>
-                      <FormattedMessage
-                        id="english"
-                      />
-                      </button>
-                      <button className="sosconf-header__group-button" onClick={() => {this.handleChangeToChinese()}}>
-                      <FormattedMessage
-                        id="chinese"
-                      />
-                      </button>
-                  </div>
+                </button>
+                <button className="sosconf-header__group-button" onClick={() => { this.handleChangeToChinese() }}>
+                  <FormattedMessage
+                    id="chinese"
+                  />
+                </button>
               </div>
+            </div>
           </div>
           <div className="sosconf-header__choose">
 
@@ -162,10 +162,10 @@ class Header extends Component {
           }
         }>
           <div className="sosconf-header-mobile__wrap">
-            <button className="sosconf-header-mobile__button"  onClick={() => { this.props.history.push("/"); }}>
-            <FormattedMessage
-              id="home"
-            />
+            <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/"); }}>
+              <FormattedMessage
+                id="home"
+              />
             </button>
             <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/news"); }}>
               <FormattedMessage
@@ -184,34 +184,34 @@ class Header extends Component {
                 <span style={
                   {
                     transform: this.state.displayAboutBar ? 'rotateZ(0deg)' : 'rotateZ(180deg)',
-                    top: this.state.displayAboutBar ? '4px': '0px'
+                    top: this.state.displayAboutBar ? '4px' : '0px'
                   }
                 }>^</span>
               </button>
               <div className="sosconf-header-mobile__button-group-buttons" style={{
                 maxHeight: this.state.displayAboutBar ? '1000px' : '0px'
               }}>
-                <button  onClick={() => { this.props.history.push("/coming"); }}>
-                <FormattedMessage
-                  id="aboutAnnualConvention"
-                />
+                <button onClick={() => { this.props.history.push("/coming"); }}>
+                  <FormattedMessage
+                    id="aboutAnnualConvention"
+                  />
                 </button>
-                <button  onClick={() => { this.props.history.push("/coming"); }}>
-                <FormattedMessage
-                  id="staffList"
-                />
+                <button onClick={() => { this.props.history.push("/coming"); }}>
+                  <FormattedMessage
+                    id="staffList"
+                  />
                 </button>
               </div>
             </div>
-            <button className="sosconf-header-mobile__button"  onClick={() => { this.props.history.push("/sponsor"); }}>
-            <FormattedMessage
-              id="sponsor"
-            />
+            <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/sponsor"); }}>
+              <FormattedMessage
+                id="sponsor"
+              />
             </button>
-            <button className="sosconf-header-mobile__button"  onClick={() => { this.props.history.push("/coming"); }}>
-            <FormattedMessage
-              id="agenda"
-            />
+            <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/coming"); }}>
+              <FormattedMessage
+                id="agenda"
+              />
             </button>
             <div className="sosconf-header-mobile__button-group">
               <button className="sosconf-header-mobile__button" onClick={() => {
@@ -219,67 +219,67 @@ class Header extends Component {
                   displayContactBar: !this.state.displayContactBar
                 })
               }}>
-              <FormattedMessage
+                <FormattedMessage
                   id="contact"
                 />
                 <span style={
                   {
                     transform: this.state.displayContactBar ? 'rotateZ(0deg)' : 'rotateZ(180deg)',
-                    top: this.state.displayContactBar ? '4px': '0px'
+                    top: this.state.displayContactBar ? '4px' : '0px'
                   }
                 }>^</span>
               </button>
               <div className="sosconf-header-mobile__button-group-buttons" style={{
                 maxHeight: this.state.displayContactBar ? '1000px' : '0px'
               }}>
-                <button  onClick={() => { this.props.history.push("/sponsor"); }}>
-                <FormattedMessage
-                  id="sponsorContact"
-                />
+                <button onClick={() => { this.props.history.push("/sponsor"); }}>
+                  <FormattedMessage
+                    id="sponsorContact"
+                  />
                 </button>
-                <button  onClick={() => { this.props.history.push("/coming"); }}>
-                <FormattedMessage
-                  id="talkerContact"
-                />
+                <button onClick={() => { this.props.history.push("/coming"); }}>
+                  <FormattedMessage
+                    id="talkerContact"
+                  />
                 </button>
-                <button  onClick={() => { this.props.history.push("/volunteer"); }}>
-                <FormattedMessage
-                  id="volunteerContact"
-                />
+                <button onClick={() => { this.props.history.push("/volunteer"); }}>
+                  <FormattedMessage
+                    id="volunteerContact"
+                  />
                 </button>
               </div>
             </div>
-              <div className="sosconf-header-mobile__button-group">
-                  <button className="sosconf-header-mobile__button" onClick={() => {
-                      this.setState({
-                          displayLanguageBar: !this.state.displayLanguageBar
-                      })
-                  }}>
+            <div className="sosconf-header-mobile__button-group">
+              <button className="sosconf-header-mobile__button" onClick={() => {
+                this.setState({
+                  displayLanguageBar: !this.state.displayLanguageBar
+                })
+              }}>
+                <FormattedMessage
+                  id="language"
+                />
+                <span style={
+                  {
+                    transform: this.state.displayLanguageBar ? 'rotateZ(0deg)' : 'rotateZ(180deg)',
+                    top: this.state.displayLanguageBar ? '4px' : '0px'
+                  }
+                }>^</span>
+              </button>
+              <div className="sosconf-header-mobile__button-group-buttons" style={{
+                maxHeight: this.state.displayLanguageBar ? '1000px' : '0px'
+              }}>
+                <button onClick={() => { this.handleChangeToEnglish() }}>
                   <FormattedMessage
-                    id="language"
+                    id="english"
                   />
-                      <span style={
-                          {
-                              transform: this.state.displayLanguageBar ? 'rotateZ(0deg)' : 'rotateZ(180deg)',
-                              top: this.state.displayLanguageBar ? '4px': '0px'
-                          }
-                      }>^</span>
-                  </button>
-                  <div className="sosconf-header-mobile__button-group-buttons" style={{
-                      maxHeight: this.state.displayLanguageBar ? '1000px' : '0px'
-                  }}>
-                      <button onClick={() => {this.handleChangeToEnglish()}}>
-                        <FormattedMessage
-                          id="english"
-                        />
-                      </button>
-                      <button onClick={() => {this.handleChangeToChinese()}}>
-                        <FormattedMessage
-                          id="chinese"
-                        />
-                      </button>
-                  </div>
+                </button>
+                <button onClick={() => { this.handleChangeToChinese() }}>
+                  <FormattedMessage
+                    id="chinese"
+                  />
+                </button>
               </div>
+            </div>
           </div>
         </div>
       </div>
@@ -293,4 +293,4 @@ export default connect(
       language: state.language
     }
   },
-  {changeToChinese, changeToEnglish})(withRouter(Header));
+  { changeToChinese, changeToEnglish })(withRouter(Header));
