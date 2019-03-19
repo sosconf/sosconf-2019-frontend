@@ -140,8 +140,8 @@
     }
 
     .sosconf-footer__middle-button {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         position: relative;
         top: 50%;
         transform: translateY(-50%);

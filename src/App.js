@@ -24,13 +24,44 @@ import './themes/common.css';
 class App extends Component {
   constructor() {
     super();
+    this.state = {
+      popState:true,
+      scrollPosition:0
+    }
+    const that = this;
+    document.addEventListener('scroll', function (target) {
+      let nowScroll = window.scrollY;
+      if (nowScroll < that.state.scrollPosition) {
+        if (!that.state.popState)
+          that.setState({
+            popState:true
+          })
+      } else {
+        if (that.state.popState)
+          that.setState({
+            popState:false
+          })
+      }
+      that.setState({
+        scrollPosition:nowScroll
+      })
+    }, false);
   }
 
   render() {
     return (
       <HashRouter>
         <div className="sosconf-app">
-          <header className="sosconf-header sosconf-header--pop">
+          <header className="sosconf-header sosconf-header--pop"  style={
+            {
+              position:'fixed',
+              width:'100%',
+              height:this.state.popState?'5vh':'',
+              opacity:this.state.popState?1:0,
+              zIndex:1,
+              transition:'all .3s'
+            }
+          }>
             <Header>
             </Header>
           </header>

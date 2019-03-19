@@ -23,16 +23,6 @@ class Header extends Component {
     this.handleChangeToChinese.bind(this);
     this.handleChangeToEnglish.bind(this);
     this.closeAllBar.bind(this);
-
-    document.addEventListener('scroll', function (target) {
-      let nowScroll = window.scrollY;
-      let innerHeight = window.innerHeight;
-      if (nowScroll > innerHeight) {
-        
-      } else {
-
-      }
-    }, false);
   }
 
   // 切换英文
@@ -56,7 +46,8 @@ class Header extends Component {
       displayMobileBar: false,
       displayAboutBar: false,
       displayContactBar: false,
-      displayLanguageBar: false
+      displayLanguageBar: false,
+      popState: true
     })
   }
 
