@@ -2,6 +2,8 @@
 sosconf 2019 Official Website（V2.2）
 [sosconf](https://sosconf.org)
 
+![](https://travis-ci.com/sosconf/sosconf-2019.svg?branch=master)
+
 这里是sosconf 2019官网源码的镜像
 
 ## 部署方案
