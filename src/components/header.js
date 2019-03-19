@@ -211,9 +211,8 @@ class Header extends Component {
                 <span style={
                   {
                     transform: this.state.displayAboutBar ? 'rotateZ(0deg)' : 'rotateZ(180deg)',
-                    top: this.state.displayAboutBar ? '4px' : '0px'
                   }
-                }>^</span>
+                }></span>
               </button>
               <div className="sosconf-header-mobile__button-group-buttons" style={{
                 maxHeight: this.state.displayAboutBar ? '1000px' : '0px'
@@ -252,9 +251,8 @@ class Header extends Component {
                 <span style={
                   {
                     transform: this.state.displayContactBar ? 'rotateZ(0deg)' : 'rotateZ(180deg)',
-                    top: this.state.displayContactBar ? '4px' : '0px'
                   }
-                }>^</span>
+                }></span>
               </button>
               <div className="sosconf-header-mobile__button-group-buttons" style={{
                 maxHeight: this.state.displayContactBar ? '1000px' : '0px'
@@ -288,9 +286,8 @@ class Header extends Component {
                 <span style={
                   {
                     transform: this.state.displayLanguageBar ? 'rotateZ(0deg)' : 'rotateZ(180deg)',
-                    top: this.state.displayLanguageBar ? '4px' : '0px'
                   }
-                }>^</span>
+                }></span>
               </button>
               <div className="sosconf-header-mobile__button-group-buttons" style={{
                 maxHeight: this.state.displayLanguageBar ? '1000px' : '0px'
