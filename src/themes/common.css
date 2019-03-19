@@ -1,8 +1,10 @@
 /* Common */
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 雅黑;
+    font-family: 'Comfortaa',雅黑;
 }
 
 *:focus {

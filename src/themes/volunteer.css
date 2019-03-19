@@ -27,7 +27,7 @@
 
 .sosconf-volunteer__card {
     flex: 1;
-    margin: 50px;
+    margin: 30px;
     background: white;
     height: 700px;
     overflow: auto;
@@ -42,10 +42,10 @@
     line-height: 80px;
     color: black;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     font-size: 24px;
     border-bottom: 1px solid rgb(71, 71, 71);
-    width: 80%;
+    width: 90%;
 }
 
 .sosconf-volunteer__button-group a{
