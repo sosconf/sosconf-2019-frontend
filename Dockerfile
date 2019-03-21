@@ -21,7 +21,7 @@ COPY --from=builder /app/build/ /var/build/
 RUN mkdir -p /var/build/2019/
 RUN cp -r /var/build/* /var/build/2019/ | true
 RUN mkdir -p /etc/letsencrypt/live/sosconf.org/  /etc/letsencrypt/archive/
-COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+COPY ./nginx.conf /etc/nginx/
 EXPOSE 80
 
 ARG BUILD_DATE
