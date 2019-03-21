@@ -249,6 +249,7 @@ class Header extends Component {
               <div className="sosconf-header-mobile__button-group-buttons" style={{
                 maxHeight: this.state.displayContactBar ? '1000px' : '0px',
                 opacity: this.state.displayContactBar ? 1 : 0,
+                overflow: 'hidden'
               }}>
                 <button onClick={() => { this.props.history.push("/sponsor"); }}>
                   <FormattedMessage

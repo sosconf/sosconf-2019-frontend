@@ -12,7 +12,7 @@ class Comming extends Component {
         </div>
         <div className="sosconf-volunteer__button-group">
             <a target="_black" href="http://sosconf2019.mikecrm.com/pS483cs" className="animated bounce">APPLY</a>
-            <p className="sosconf-volunteer__button-group-span">“（近期会有专门的账号系统上线，敬请期待）”</p>
+            <p className="sosconf-volunteer__button-group-span">（近期会有专门的账号系统上线，敬请期待）</p>
         </div>
         <div className="sosconf-volunteer__card-group">
             <div className="sosconf-volunteer__card">
@@ -53,14 +53,24 @@ class Comming extends Component {
                 <div className="sosconf-volunteer__card-text">
                 
 
-                    <p>设计组是一个（可能）偏离技术路线，但对于活动的举办有锦上添花的作用的画风清奇小组。</p>
+                    <p>设计组是一个为活动的举办锦上添花的小组。</p>
                     <p>人员要求：</p>
                     <ul>
-                        <li>不鸽（分配的任务可以及时完成）</li>
+                        <li>分配的任务可以及时完成</li>
                         <li>善于交流思路，说出想法</li>
-                        <li>不介意真的是萌新还是假装自己是萌新的同学</li>
-                        <li>无人数要求</li>
+                        <li>不介意加入的同学是否有经验</li>
                     </ul>
+                    <p>
+                    技能要求（以下要求全是可选项）：
+                    </p>
+
+                    <ul>
+                        <li>会使用PS、AI或ID来制作宣传资料（当然，熟练使用GIMP那类的开源软件也可以）</li>
+                        <li>会使用Pr、AE等软件来剪辑视频</li>
+                        <li>Keynote或者PowerPoint</li>
+                        <li>电脑绘画</li>
+                    </ul>
+                    <p>如果以上技能都没有……也没有关系，只要有兴趣和毅力就可以加入</p>
 
                     <p>具体的工作有：</p>
                     <ul>
@@ -72,24 +82,13 @@ class Comming extends Component {
                         <li>其他有新奇创意的设计（emm）</li>
                     </ul>
 
-                    <p>
-                    技能要求（以下要求全是可选项）：
-                    </p>
-
-                    <ul>
-                        <li>会使用PS、AI或ID来制作宣传资料（当然，熟练使用GIMP那类的开源软件也可以）</li>
-                        <li>会使用Pr、AE等软件来剪辑视频</li>
-                        <li>Keynote或者PowerPoint</li>
-                        <li>电脑绘画</li>
-                        <li>会使用科学上网</li>
-                    </ul>
-                    <p>如果以上技能都没有……也没有关系，只要有兴趣和毅力就可以加入，我们可以带你🤣</p>
+                    
                     <p>以上配置不一定完全合理且周到，欢迎有兴趣的同学联系。</p>
                 </div>
             </div>
             <div className="sosconf-volunteer__card">
                     <div className="sosconf-volunteer__card-header">
-                        <span>市场组</span>
+                        <span>市场营销组</span>
                     </div>
                     <div className="sosconf-volunteer__card-text">
                         <p>我们希望你：</p>
@@ -153,10 +152,6 @@ class Comming extends Component {
                         <li>我们会评估各类可能影响会议顺利开展的不确定性和风险，并准备相应的应对计划。</li>
                         <li>我们会一起策划一些将随会议进行同时开展的具体项目（如学生开源项目展览），并和其他相关小组研究可行性。</li>
                     </ul>
-                    <p>收获</p>
-                    <ul>
-                        <li>本次会议将是一次最独特的学习经历，你也能免费参与会议，并得到志愿者专属的赠品。</li>
-                    </ul>
                 </div>
             </div>
             <div className="sosconf-volunteer__card">
@@ -171,7 +166,6 @@ class Comming extends Component {
                             <li>学生身份（不限于中学生、大学生、硕博生、留学生</li>
                             <li>善于交流思路，口头表达能力较好</li>
                             <li>具备一定的社交礼仪（现实 or 网络</li>
-                            <li>无人数要求</li>
                         </ul>
                         <p>技能要求（除了外语水平是硬性需求，其他均是可选项）</p>
                         <ul>
@@ -201,8 +195,7 @@ class Comming extends Component {
                         <span>机动组</span>
                     </div>
                     <div className="sosconf-volunteer__card-text">
-                        <p>我们的口号是 ：我是革命一块砖，哪里需要哪里搬！</p>
-                        <p>也许上述并没有你感兴趣的工作，要这样子错失了认识更多志同道合的小伙伴的机会了吗？NO！Whatever，你可以做什么，你想要做什么，尽管讲出来~ </p>
+                        <p>也许上述并没有你感兴趣的工作，同样有机会和志同道合的小伙伴们一起合作。你可以做什么，想要做什么，尽管讲出来！</p>
                         <p>只要你喜欢开源开发和文化或对开源感兴趣，只要你愿意加入我们，just try!</p>
                     </div>
                 </div>
@@ -221,7 +214,6 @@ class Comming extends Component {
                         </ul>
                         <p>Responsibilities</p>
                         <ul>
-                            <li>General Affairs Volunteers</li>
                             <li>You will be working with a group of people with similar interests as yours coming from all over the world. You may choose to help us set up on the day before the conference, guide attendees and speakers to where their destinations, set up the dinner party, or cleaning things up after the conference concludes.</li>
                         </ul>
                         <p>Track Hosts</p>
@@ -252,15 +244,13 @@ class Comming extends Component {
                         <p>联系方式：</p>
                         <p>QQ群：928111041</p>
                         <p>电报群：https://t.me/joinchat/LK3swBM0tPqV-nR8BwrLUA</p>
-                        <p>微信群：</p>
-                        <img src={sosconfJPG} className="sosconf-volunteer__card-image"/>
                     </div>
             </div>
         </div>
 
         <div className="sosconf-volunteer__button-group">
             <a target="_black" href="http://sosconf2019.mikecrm.com/pS483cs" className="animated bounce">APPLY</a>
-            <p  className="sosconf-volunteer__button-group-span">“（近期会有专门的账号系统上线，敬请期待）”</p>
+            <p  className="sosconf-volunteer__button-group-span">（近期会有专门的账号系统上线，敬请期待）</p>
         </div>
       </div>
     );
