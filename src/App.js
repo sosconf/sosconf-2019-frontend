@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch, withRouter } from 'react-router-dom';
+import { HashRouter, Route, Switch, withRouter } from 'react-router-dom';
 
 // Components
 import Header from './components/header';
@@ -49,7 +49,7 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Route render={({ location }) => (
           <div className="sosconf-app">
           <header className="sosconf-header sosconf-header--pop"  style={
@@ -90,7 +90,7 @@ class App extends Component {
         </div>
         )}/>
         
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
