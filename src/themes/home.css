@@ -4,15 +4,15 @@
     }
     
     .sosconf-home__title {
-        padding-top: 20vh;
+        /* padding-top: 20vh; */
         text-align: center;
-        color: white;
+        color: black;
     }
     
     .sosconf-home__title--span {
         height: 1px;
-        width: 300px;
-        background-color: rgba(255, 255, 255, 0.5);
+        width: 350px;
+        background-color: black;
         margin: 0 auto;
     }
     
@@ -34,12 +34,10 @@
     }
     
     .sosconf-home__position {
-        position: relative;
-        top: 180px;
+        
     }
     .sosconf-home__buttons {
-        position: relative;
-        top: 200px;
+        
     }
     
     .sosconf-home__button {
@@ -163,7 +161,138 @@
         padding-left: 20px;
     }
 
+    .sosconf-home__date-flag {
+        font-size: 24px;
+    }
+
+    .sosconf-home__position-flag {
+        font-size: 24px;
+    }
+
+    .sosconf-home__title--down {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .sosconf-home__position {
+        margin-top: 30px;
+        font-weight: 600;
+    }
+
+    .sosconf-home__position-flag {
+        margin-top: 30px;
+        font-weight: 600;
+    }
+
+    .sosconf-home__position h2 {
+        font-weight: 300;
+    }
+
+    .sosconf-home__buttons {
+        margin-top: 50px;
+    }
+
+    .sosconf-home__follow-us {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .sosconf-home__follow-us::before {
+        content:'';
+        display:inline-block;
+        position: relative;
+        top: -5px;
+        width: 100px;
+        margin-right: 5px;
+        height: 1px;
+        background: rgb(147, 147, 147);
+    }
+
+    .sosconf-home__follow-us::after {
+        content:' ';
+        display:inline-block;
+        margin-left: 5px;
+        position: relative;
+        top: -5px;
+        width: 100px;
+        height: 1px;
+        background: rgb(147, 147, 147);
+    }
+
+    .sosconf-home__button--know-more {
+        width: 200px;
+    }
+
+    .sosconf-home__button--know-more span{
+        font-size: 10px;
+    }
+
+    .sosconf-home__position--position {
+        margin-bottom: 10px;
+    }
+
 } @media screen and (max-width: 1050px) {
+    .sosconf-home__news--content ul {
+        padding-left: 20px;
+    }
+
+    .sosconf-home__date-flag {
+        font-size: 24px;
+    }
+
+    .sosconf-home__position-flag {
+        font-size: 24px;
+    }
+
+    .sosconf-home__title--down {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .sosconf-home__position {
+        margin-top: 30px;
+        font-weight: 600;
+    }
+
+    .sosconf-home__position-flag {
+        margin-top: 30px;
+        font-weight: 600;
+    }
+
+    .sosconf-home__position h2 {
+        font-weight: 300;
+    }
+
+    .sosconf-home__buttons {
+        margin-top: 50px;
+    }
+
+    .sosconf-home__follow-us {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: black;
+    }
+
+    .sosconf-home__button--know-more {
+        width: 200px;
+    }
+
+    .sosconf-home__button--know-more span{
+        font-size: 10px;
+    }
+
+    .sosconf-home__position--position {
+        margin-bottom: 10px;
+    }
+
+    .sosconf-home__wrap .sosconf__card {
+        background: transparent;
+        box-shadow: none; 
+        width: 80% !important; 
+        margin-top: 50px !important;
+    }
 
     .sosconf-home__wrap {
         display: flex;
@@ -216,9 +345,6 @@
     }
 
     .sosconf-home__news{
-        /* background: #040744; */
-        /* margin-top: 350px; */
-        /* margin-top: 100px; */
         padding: 50px 0;
         width: 100%;
         color: rgba(0,0,0,0.8);
@@ -295,8 +421,8 @@
     }
 
     .sosconf-home__title {
-        position: relative;
-        top: 100px;
+        /* position: relative;
+        top: 100px; */
         color: white;
     }
 

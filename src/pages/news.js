@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { changeToEnglish, changeToChinese } from '../actions/action';
+import { generatorHTML } from '../util/makedownGenerotor';
 import school from '../images/school.jpg';
 
 class Introduce extends Component {
     constructor() {
         super();
+        console.log(generatorHTML("#1231231"))
     }
 
     readAll() {

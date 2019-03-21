@@ -1,0 +1,20 @@
+.sosconf__card {
+    background: white;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(88, 88, 88, 0.5);
+}
+
+.sosconf__card-wrap {
+    text-align: center;
+    width: 100%;
+}
+
+.sosconf__card-header {
+    min-height: 50px;
+}
+
+.sosconf__card-body {
+
+}
+

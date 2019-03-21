@@ -4,7 +4,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Comfortaa',雅黑;
+    font-family: 'Comfortaa',苹方,雅黑;
 }
 
 *:focus {
@@ -78,8 +78,8 @@ body {
     }
 }
 
-/* animate */
-.appAppear-appear{
+    /* animate */
+    .appAppear-appear{
     opacity: 0;
     transform: scale(0.5);
   }

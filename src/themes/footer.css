@@ -25,35 +25,44 @@
     }
 
     .sosconf-footer__copyleft {
-        float: right;
-        position: relative;
-        top: 50%;
-        right: 50px;
-        transform: translateY(-50%);
+        /* float: right; */
+        /* position: relative; */
+        /* top: 50%; */
+        /* right: 50px; */
+        /* transform: translateY(-50%); */
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
     }
 
     .sosconf-footer__middle-buttons {
-        position: relative;
-        width: 50%;
-        float: left;
-        height: 100%;
+        /* position: relative; */
+        /* width: 50%; */
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        /* float: left; */
+        /* height: 100%; */
     }
 
     .sosconf-footer__middle-button {
         width: 50px;
         height: 50px;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        float: left;
+        display: inline-block;
         margin-right: 10px;
         border: none;
         border-radius: 50%;
         background: transparent;
     }
 
+    .sosconf-footer__links {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
     .sosconf-footer__middle-button:hover {
-        transform: translateY(-50%) scale(1.1);
+        transform: scale(1.1);
         transition: all .5s;
     }
 
@@ -102,57 +111,43 @@
         /* height: 100%; */
     }
 
-    .sosconf-footer__logo-wrap {
-        width: 300px;
-        height: 100%;
-        margin: 0 auto;
-        /* float: left; */
-    }
-
-    .sosconf-footer__left-logo {
-        background: url(../images/Logo_full.svg);
-    }
-
-    .sosconf-footer__left-logo {
-        position: relative;
-        top: 50%;
-        left: 50px;
-        transform: translateY(-50%);
-        width: 200px;
-        height: 100px;
-        background-size: 200px 100px;
-    }
-
     .sosconf-footer__copyleft {
         text-align: center;
-        /* float: right; */
-        position: relative;
-        top: 50%;
-        /* right: 50px; */
-        transform: translateY(-50%);
+        padding-bottom: 50px;
     }
 
     .sosconf-footer__middle-buttons {
-        position: relative;
         text-align: center;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .sosconf-footer__links {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .sosconf-footer {
+        padding-top: 50px;
+    }
+
+    .sosconf-footer__middle-button-wrapper {
+        width:25%;
     }
 
     .sosconf-footer__middle-button {
-        width: 35px;
-        height: 35px;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-right: 10px;
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+        margin-right: 5px;
         border: none;
         border-radius: 50%;
         background: transparent;
     }
 
     .sosconf-footer__middle-button:hover {
-        transform: translateY(-50%) scale(1.1);
         transition: all .5s;
     }
 

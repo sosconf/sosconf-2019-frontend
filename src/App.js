@@ -31,7 +31,7 @@ class App extends Component {
     const that = this;
     document.addEventListener('scroll', function (target) {
       let nowScroll = window.scrollY;
-      if (nowScroll < that.state.scrollPosition) {
+      if (nowScroll <= that.state.scrollPosition) {
         if (!that.state.popState)
           that.setState({
             popState:true
@@ -58,7 +58,7 @@ class App extends Component {
               width:'100%',
               height:this.state.popState?'5vh':'',
               opacity:this.state.popState?1:0,
-              zIndex:1,
+              zIndex:this.state.popState?1:-1,
               transition:'all .3s'
             }
           }>
@@ -66,14 +66,18 @@ class App extends Component {
             </Header>
           </header>
           <div className="sosconf-body">
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/introduce" component={Introduce} />
-              <Route exact path="/sponsor" component={Sponsor} />
-              <Route exact path="/coming" component={Coming} />
-              <Route exact path="/volunteer" component={Volunteer} />
-              <Route exact path="/news" component={News} />
-            </Switch>
+            <TransitionGroup>
+              <CSSTransition key={location.key} timeout={1000} classNames="appAppear">
+                <Switch>
+                  <Route exact path="/" component={Home} />
+                  <Route exact path="/introduce" component={Introduce} />
+                  <Route exact path="/sponsor" component={Sponsor} />
+                  <Route exact path="/coming" component={Coming} />
+                  <Route exact path="/volunteer" component={Volunteer} />
+                  <Route exact path="/news" component={News} />
+                </Switch>
+              </CSSTransition>
+            </TransitionGroup>
           </div>
           <footer className="sosconf-footer">
             <Footer>

@@ -206,7 +206,8 @@ class Header extends Component {
                 }></span>
               </button>
               <div className="sosconf-header-mobile__button-group-buttons" style={{
-                maxHeight: this.state.displayAboutBar ? '1000px' : '0px'
+                maxHeight: this.state.displayAboutBar ? '1000px' : '0px',
+                opacity: this.state.displayAboutBar ? 1 : 0,
               }}>
                 <button onClick={() => { this.props.history.push("/coming"); }}>
                   <FormattedMessage
@@ -246,7 +247,8 @@ class Header extends Component {
                 }></span>
               </button>
               <div className="sosconf-header-mobile__button-group-buttons" style={{
-                maxHeight: this.state.displayContactBar ? '1000px' : '0px'
+                maxHeight: this.state.displayContactBar ? '1000px' : '0px',
+                opacity: this.state.displayContactBar ? 1 : 0,
               }}>
                 <button onClick={() => { this.props.history.push("/sponsor"); }}>
                   <FormattedMessage
@@ -281,7 +283,7 @@ class Header extends Component {
                 }></span>
               </button>
               <div className="sosconf-header-mobile__button-group-buttons" style={{
-                maxHeight: this.state.displayLanguageBar ? '1000px' : '0px'
+                maxHeight: this.state.displayLanguageBar ? '1000px' : '0px',
               }}>
                 <button onClick={() => { this.handleChangeToEnglish() }}>
                   <FormattedMessage
