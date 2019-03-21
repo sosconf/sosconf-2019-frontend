@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { changeToEnglish, changeToChinese } from '../actions/action';
 import { generatorHTML } from '../util/makedownGenerotor';
+
+// React-transition-group
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+
 import school from '../images/school.jpg';
+import '../themes/animate.css';
 
 class Introduce extends Component {
     constructor() {
@@ -95,9 +100,23 @@ class Introduce extends Component {
                 </div>
         }
         return (
-            <div className="sosconf-home__news">
-                {news}
-            </div>
+            <CSSTransition
+                in={this.props.match !== null}
+                classNames={{
+                    enter: 'animated',
+                    enterActive: 'fadeInDown',
+                    exit: 'animated',
+                    exitActive: 'fadeOutDown'
+                }}
+                timeout={1000}
+                mountOnEnter={true}
+                unmountOnExit={true}
+            >
+                <div className="sosconf-home__news">
+                    {news}
+                </div>
+            </CSSTransition>
+            
         );
     }
 }

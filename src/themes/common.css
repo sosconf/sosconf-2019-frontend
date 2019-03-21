@@ -102,7 +102,7 @@ body {
   .fade-enter.fade-enter-active {
     opacity: 1;
     transform: scale(1);
-    transform-origin: top left;
+    /* transform-origin: top left; */
     transition: 800ms ease-out;
   }
   

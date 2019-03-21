@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, withRouter } from 'react-router-dom';
 
 // Components
 import Header from './components/header';
@@ -19,7 +19,6 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 // Themes
 import './themes/common.css';
-
 
 class App extends Component {
   constructor() {
@@ -46,12 +45,14 @@ class App extends Component {
         scrollPosition:nowScroll
       })
     }, false);
+    console.log(location)
   }
 
   render() {
     return (
-      <HashRouter>
-        <div className="sosconf-app">
+      <BrowserRouter>
+        <Route render={({ location }) => (
+          <div className="sosconf-app">
           <header className="sosconf-header sosconf-header--pop"  style={
             {
               position:'fixed',
@@ -67,8 +68,12 @@ class App extends Component {
           </header>
           <div className="sosconf-body">
             <TransitionGroup>
-              <CSSTransition key={location.key} timeout={1000} classNames="appAppear">
-                <Switch>
+              <CSSTransition
+                    key={location.key}
+                    classNames="fade"
+                    timeout={1000}
+                  >
+                <Switch location={location}>
                   <Route exact path="/" component={Home} />
                   <Route exact path="/introduce" component={Introduce} />
                   <Route exact path="/sponsor" component={Sponsor} />
@@ -81,13 +86,12 @@ class App extends Component {
           </div>
           <footer className="sosconf-footer">
             <Footer>
-              {/* Footer */}
             </Footer>
           </footer>
-
-
         </div>
-      </HashRouter>
+        )}/>
+        
+      </BrowserRouter>
     );
   }
 }
