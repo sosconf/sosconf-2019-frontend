@@ -90,32 +90,24 @@ body {
     transition: 500ms ease-out;
   }
   
-  /*设置进场前透明度为0，放缩为0*/
-  
   .fade-enter {
     opacity: 0;
-    transform: scale(0);
+    transform: translateY(-3rem);
   }
   
-  
-  /*设置进场过程中 透明度为1，放缩为1，放缩的位置为左上角，持续时间为500ms，时间曲是ease-out */
-  .fade-enter.fade-enter-active {
+  .fade-enter-active {
     opacity: 1;
-    transform: scale(1);
-    /* transform-origin: top left; */
-    transition: 800ms ease-out;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
   }
   
-  /*设置退场前透明度为1，放缩为1*/
-  .fade-exit{
+  .fade-exit {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
   }
   
-  /*设置退场过程中 透明度为0，放缩为0，放缩的位置默认是中间，所以不设置也可以，
-  持续时间为500ms，时间曲是ease-out */
-  .fade-exit.fade-exit-active{
-    opacity:0;
-    transform: scale(0);
-    transition: 800ms ease-out;
+  .fade-exit-active {
+    opacity: 0;
+    transform: translateY(3rem);
+    transition: opacity 300ms, transform 300ms;
   }

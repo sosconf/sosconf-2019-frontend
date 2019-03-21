@@ -45,7 +45,6 @@ class App extends Component {
         scrollPosition:nowScroll
       })
     }, false);
-    console.log(location)
   }
 
   render() {

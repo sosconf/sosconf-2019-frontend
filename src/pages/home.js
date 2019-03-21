@@ -23,7 +23,6 @@ class Home extends Component {
   componentDidMount() {
     let followArray = "Follow us".split('');
     let that = this;
-    console.log(followArray)
     this.state.followTimer = setInterval(() => {
       if (followArray.length)
         that.setState({
