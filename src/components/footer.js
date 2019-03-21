@@ -23,7 +23,7 @@ class Footer extends Component {
             <a target="_black" href="" className="sosconf-footer__middle-button sosconf-footer__middle-flickr"></a>
           </div>
           <div className="sosconf-footer__middle-button-wrapper">
-            <a target="_black" href="http://www.youtube.com/channel/UCpqv0HaFB0rAK-9G_V9yO" className="sosconf-footer__middle-button sosconf-footer__middle-youtube"></a>
+            <a target="_black" href="https://www.youtube.com/channel/UCpqv0HaFB0rAK-9G_V9yOOA" className="sosconf-footer__middle-button sosconf-footer__middle-youtube"></a>
           </div>
           <div className="sosconf-footer__middle-button-wrapper">
             <a target="_black" href="https://weibo.com/sosconf" className="sosconf-footer__middle-button sosconf-footer__middle-weibo"></a>
