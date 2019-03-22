@@ -12,6 +12,7 @@ import Sponsor from './pages/sponsor';
 import Coming from './pages/comingSoon';
 import Volunteer from './pages/volunteer';
 import News from './pages/news';
+import Venue from './pages/venue';
 
 
 // React-transition-group
@@ -68,7 +69,7 @@ class App extends Component {
           <div className="sosconf-body">
             <TransitionGroup>
               <CSSTransition
-                    key={location.key}
+                    key={location.pathname}
                     classNames="fade"
                     timeout={1000}
                   >
@@ -79,6 +80,7 @@ class App extends Component {
                   <Route exact path="/coming" component={Coming} />
                   <Route exact path="/volunteer" component={Volunteer} />
                   <Route exact path="/news" component={News} />
+                  <Route exact path="/venue" component={Venue} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>

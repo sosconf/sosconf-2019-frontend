@@ -4,7 +4,7 @@ const enUS = {
   aboutAnnualConvention: 'About the meeting',
   staffList: 'Staff List',
   agenda: 'Agenda',
-  navigation: 'Navigation',
+  navigation: 'Venue',
   contact: 'Contact',
   sponsorContact: 'Sponsor contact',
   talkerContact: 'Speakers contact',
