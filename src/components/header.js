@@ -91,7 +91,7 @@ class Header extends Component {
                 </button>
               </div>
             </div>
-            <button className="sosconf-header__button" onClick={() => { this.props.history.push("/sponsor"); }}>
+            <button className="sosconf-header__button" onClick={() => { this.props.history.push("/coming"); }}>
               <FormattedMessage
                 id="sponsor"
               />
@@ -226,7 +226,7 @@ class Header extends Component {
                 </button>
               </div>
             </div>
-            <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/sponsor"); }}>
+            <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/coming"); }}>
               <FormattedMessage
                 id="sponsor"
               />
