@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import '../themes/volunteer.css';
 import '../themes/animate.css';
-import sosconfJPG from '../images/sosconf.jpg';
+// DOC
+import volunteerDocument from '../docs/volunteer'; 
 
-class Comming extends Component { 
+class Volunteer extends Component { 
   render() {
     return (
       <div className="sosconf-volunteer__wrap">
@@ -257,4 +258,4 @@ class Comming extends Component {
   }
 }
 
-export default Comming;
+export default Volunteer;
