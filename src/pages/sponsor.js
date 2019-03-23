@@ -115,7 +115,7 @@ class Introduce extends Component {
                         <li>赞助金：2,000 USD</li>
                     </ul>
 
-                    <p><small style={{fontWeight:800}}>注：赞助商的闪电演讲内容和社交媒体推文内容需经过 sosconf 2019 组委会的批准。会前宣传片需由赞      助商提供，总时长可以分次累计使用，如90s时长可以分成60s和30s分时段播放。</small></p>
+                    <p><small style={{fontWeight:800}}>注：赞助商的闪电演讲内容和社交媒体推文内容需经过 sosconf 2019 组委会的批准。会前宣传片需由赞助商提供，总时长可以分次累计使用，如90s时长可以分成60s和30s分时段播放。</small></p>
 
                     <div className="sosconf-sponsor__readAll">
                         <div className="sosconf-sponsor__readAll--button" onClick={this.readAll}>READ ALL</div>
