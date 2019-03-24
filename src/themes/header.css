@@ -121,7 +121,9 @@
     .sosconf-header__group-button {
         visibility: hidden;
         height: 0;
-        width: 10%;
+        min-width: 10%;
+        padding-left: 10px;
+        padding-right: 10px;
         border: none;
         color: black;
     }

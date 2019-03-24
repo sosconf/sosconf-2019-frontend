@@ -36,13 +36,9 @@
     }
 
     .sosconf-footer__middle-buttons {
-        /* position: relative; */
-        /* width: 50%; */
         padding-top: 30px;
         display: flex;
         justify-content: center;
-        /* float: left; */
-        /* height: 100%; */
     }
 
     .sosconf-footer__middle-button {
@@ -108,7 +104,6 @@
     .sosconf-footer__wrap {
         color: white;
         background: rgb(7, 7, 22);
-        /* height: 100%; */
     }
 
     .sosconf-footer__copyleft {
@@ -134,12 +129,13 @@
     }
 
     .sosconf-footer__middle-button-wrapper {
-        width:25%;
+        width: 25%;
+        margin-bottom: 20px;
     }
 
     .sosconf-footer__middle-button {
-        width: 70px;
-        height: 70px;
+        width: 40px;
+        height: 40px;
         display: inline-block;
         margin-right: 5px;
         border: none;

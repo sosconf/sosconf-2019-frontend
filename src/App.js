@@ -13,6 +13,7 @@ import Coming from './pages/comingSoon';
 import Volunteer from './pages/volunteer';
 import News from './pages/news';
 import Venue from './pages/venue';
+import Speaker from './pages/speaker';
 
 
 // React-transition-group
@@ -81,6 +82,7 @@ class App extends Component {
                   <Route exact path="/volunteer" component={Volunteer} />
                   <Route exact path="/news" component={News} />
                   <Route exact path="/venue" component={Venue} />
+                  <Route exact path="/speaker" component={Speaker} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>
