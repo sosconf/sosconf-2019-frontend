@@ -1,5 +1,42 @@
     .sosconf-sponsor__wrapper h2{
         margin-top: 10px;
+        text-align: center;
+    }
+
+    .sosconf-sponsor__wrapper h3{
+        margin-top: 10px;
+    }
+
+    .sosconf-sponsor__wrapper h3:nth-of-type(3){
+        color: rgb(43, 190, 255)
+    }
+
+    .sosconf-sponsor__wrapper h3:nth-of-type(4){
+        color: rgb(252, 177, 38)
+    }
+
+    .sosconf-sponsor__wrapper h3:nth-of-type(5){
+        color: rgb(188, 188, 188)
+    }
+
+    .sosconf-sponsor__wrapper h3:nth-of-type(6){
+        color: rgb(87, 167, 117)
+    }
+
+    /* .sosconf-sponsor__wrapper p:nth-last-child(1){
+        text-align: center;
+    }
+
+    .sosconf-sponsor__wrapper p:nth-last-child(2){
+        text-align: center;
+    }
+
+    .sosconf-sponsor__wrapper p:nth-last-child(3){
+        text-align: center;
+    } */
+
+    .sosconf-sponsor__wrapper blockquote p {
+        text-align: left !important;
     }
 
     .sosconf-sponsor__wrapper{
