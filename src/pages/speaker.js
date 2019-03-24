@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import '../themes/coming.css';
+import { FormattedMessage } from 'react-intl';
+import '../themes/speaker.css';
 
-class Comming extends Component { 
+class Speaker extends Component { 
   render() {
     return (
       <div className="sosconf-comming__wrap">
-        <p className="sosconf-coming__text">联系邮箱speakers@sosconf.org</p>
+        <p className="sosconf-coming__text">
+        <FormattedMessage id="pleaseContact"/> speakers@sosconf.org</p>
       </div>
     );
   }
 }
 
-export default Comming;
+export default Speaker;

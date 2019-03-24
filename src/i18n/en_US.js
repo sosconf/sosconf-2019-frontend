@@ -15,7 +15,20 @@ const enUS = {
   chinese: 'Chinese',
   meetingPosition: 'University of Southern California, Los Angeles, CA, USA',
   sponsorship: 'Sponsorship',
-  news: 'News'
+  news: 'News',
+  apply: 'Apply',
+  beVolunteer: 'Welcome to be a volunteer',
+  pleaseContact: 'Please contact',
+  welcomeContact: 'Welcome to contact',
+  back: 'Back',
+  more: 'More',
+  recentNews: 'Recent news',
+  moreNews: 'More news',
+  learnMore: 'Learn more about sosconf',
+  largerMap: 'View larger map',
+  contactUs: ' Contact us',
+  aboutUs: ' About us',
+  joinUs: ' Join us'
 };
 
 export default enUS;

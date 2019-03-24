@@ -86,7 +86,7 @@
         height: auto;
         border: none;
         transition: height .5s;
-        top: 5vh;
+        top: 50px;
     }
 
     .sosconf-header__button-group:hover .sosconf-header__group-button {
@@ -112,7 +112,7 @@
 
     .sosconf-header__gourp-drop-down {
         position: fixed;
-        top: -5vh;
+        top: -50px;
         height: 0;
         width: 0;
         box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
@@ -142,7 +142,7 @@
         position: absolute;
         top: 1px;
         right: 50px;
-        height: 5vh;
+        height: 50px;
         width: 100px;
     }
 
@@ -157,7 +157,7 @@
 
     .sosconf-header-mobile {
         display: flex;
-        height: 5vh;
+        height: 50px;
         justify-content: center;
         align-items:center;
     }

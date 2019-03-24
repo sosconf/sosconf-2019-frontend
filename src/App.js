@@ -58,7 +58,7 @@ class App extends Component {
             {
               position:'fixed',
               width:'100%',
-              height:this.state.popState?'5vh':'',
+              height:this.state.popState?'50px':'',
               opacity:this.state.popState?1:0,
               zIndex:this.state.popState?1:-1,
               transition:'all .3s'

@@ -1,4 +1,4 @@
-    .sosconf-sponsor__wrapper h3{
+    .sosconf-sponsor__wrapper h2{
         margin-top: 10px;
     }
 
@@ -61,10 +61,14 @@
     }
 
     .sosconf-sponsor__content p,ul{
-        margin-top: 30px;
+        margin-top: 10px;
         color: rgba(0,0,0,0.8);
         font-size: 14px;
         line-height: 25px;
+    }
+
+    blockquote p {
+        margin-top: 3px !important;
     }
 
     .sosconf-sponsor__content li{

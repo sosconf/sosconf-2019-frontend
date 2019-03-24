@@ -6,6 +6,8 @@ import { generatorHTML } from '../util/makedownGenerotor';
 // React-transition-group
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
+import { FormattedMessage } from 'react-intl';
+
 import school from '../images/school.jpg';
 import '../themes/animate.css';
 
@@ -24,8 +26,8 @@ class Introduce extends Component {
         let news;
         if (this.props.language == 'en') {
             news = <div className="sosconf-home__news--container">
-                    <div className="sosconf-home__news--head">Recent news</div>
-                    <div className="sosconf-home__news--more">More news-></div>
+                    <div className="sosconf-home__news--head"><FormattedMessage id="recentNews"/></div>
+                    <div className="sosconf-home__news--more"><FormattedMessage id="moreNews"/>-></div>
                     <div className="sosconf-home__news--block"></div>
                     <h1 className="sosconf-home__news--title">sosconf 2019</h1>
                     <div className="sosconf-home__news--span"></div>
@@ -62,8 +64,8 @@ class Introduce extends Component {
                 </div>
         } else {
             news = <div className="sosconf-home__news--container">
-                    <div className="sosconf-home__news--head">Recent news</div>
-                    <div className="sosconf-home__news--more">More news-></div>
+                    <div className="sosconf-home__news--head"><FormattedMessage id="recentNews"/></div>
+                    <div className="sosconf-home__news--more"><FormattedMessage id="moreNews"/>-></div>
                     <div className="sosconf-home__news--block"></div>
                     <h1 className="sosconf-home__news--title">sosconf 2019</h1>
                     <div className="sosconf-home__news--span"></div>

@@ -1,18 +1,38 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl';
 import '../themes/sponsor.css';
 
 // DOC
 import sponsorDocument from '../docs/sponsor.js'; 
 import { generatorHTML } from '../util/makedownGenerotor';
+import { connect } from 'react-redux';
 
 class Sponsor extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            sponsorDoc: generatorHTML(sponsorDocument.zh)
+        if (this.props.language == 'en') {
+            this.state = {
+                sponsorDoc: generatorHTML(sponsorDocument.en)
+            }
+        } else {
+            this.state = {
+                sponsorDoc: generatorHTML(sponsorDocument.zh)
+            }
+        }
+    }
+
+    componentWillReceiveProps(nextState) {
+        if (nextState.language == 'en') {
+            this.setState({
+                sponsorDoc:generatorHTML(sponsorDocument.en)
+            })
+        } else {
+            this.setState({
+                sponsorDoc:generatorHTML(sponsorDocument.zh)
+            })
         }
     }
 
@@ -24,11 +44,11 @@ class Sponsor extends Component {
     render() {
         return (
             <div className="sosconf-sponsor__wrapper">
-                <a className="sosconf-sponsor__back" onClick={() => {this.props.history.push("/");}}>Back</a>
-                <a className="sosconf-sponsor__more">More</a>
+                <a className="sosconf-sponsor__back" onClick={() => {this.props.history.push("/");}}><FormattedMessage id="back"/></a>
+                <a className="sosconf-sponsor__more"><FormattedMessage id="more"/></a>
                 <h1 className="sosconf-sponsor__title">Sponsorship contact</h1>
                 <div className="sosconf-sponsor__span"></div>
-                <h3 className="sosconf-sponsor__sub">Welcome to contact sponsors@sosconf.org</h3>
+                <h3 className="sosconf-sponsor__sub"><FormattedMessage id="welcomeContact"/> sponsors@sosconf.org</h3>
                 <div className="sosconf-sponsor__content">
                     <div  dangerouslySetInnerHTML={{__html: this.state.sponsorDoc}}>
                     </div>
@@ -41,4 +61,10 @@ class Sponsor extends Component {
     }
 }
 
-export default Sponsor;
+export default connect(
+    state => {
+        return {
+            language: state.language
+        }
+    }
+)(Sponsor);

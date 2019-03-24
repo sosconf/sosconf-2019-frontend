@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { FormattedMessage } from 'react-intl';
+
 import '../themes/volunteer.css';
 import '../themes/animate.css';
-import { connect } from 'react-redux';
 // DOC
 import volunteerDocument from '../docs/volunteer.js'; 
 import { generatorHTML } from '../util/makedownGenerotor';
@@ -25,11 +27,15 @@ class Volunteer extends Component {
     return (
       <div className="sosconf-volunteer__wrap">
         <div className="sosconf-volunteer__text">
-            Welcome to be a volunteer
+                <FormattedMessage
+                 id="beVolunteer"/>
         </div>
         <div className="sosconf-volunteer__button-group">
-            <a target="_black" href="http://sosconf2019.mikecrm.com/pS483cs" className="animated bounce">APPLY</a>
-            <p className="sosconf-volunteer__button-group-span">（近期会有专门的账号系统上线，敬请期待）</p>
+            <a target="_black" href="http://sosconf2019.mikecrm.com/pS483cs" className="animated bounce">
+                <FormattedMessage
+                 id="apply"/>
+            </a>
+            <p className="sosconf-volunteer__button-group-span">（近期会有志愿者专用账号系统上线，敬请期待）</p>
         </div>
         <div className="sosconf-volunteer__card-group">
             <div className="sosconf-volunteer__card">
@@ -124,8 +130,11 @@ class Volunteer extends Component {
         </div>
 
         <div className="sosconf-volunteer__button-group">
-            <a target="_black" href="http://sosconf2019.mikecrm.com/pS483cs" className="animated bounce">APPLY</a>
-            <p  className="sosconf-volunteer__button-group-span">（近期会有专门的账号系统上线，敬请期待）</p>
+            <a target="_black" href="http://sosconf2019.mikecrm.com/pS483cs" className="animated bounce">
+                <FormattedMessage
+                    id="apply"/>
+            </a>
+            <p  className="sosconf-volunteer__button-group-span">（近期会有志愿者专用账号系统上线，敬请期待）</p>
         </div>
       </div>
     );

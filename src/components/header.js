@@ -195,6 +195,16 @@ class Header extends Component {
                 id="navigation"
               />
             </button>
+            <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/coming"); }}>
+              <FormattedMessage
+                id="agenda"
+              />
+            </button>
+            <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/coming"); }}>
+              <FormattedMessage
+                id="sponsor"
+              />
+            </button>
             <div className="sosconf-header-mobile__button-group">
               <button className="sosconf-header-mobile__button" onClick={() => {
                 this.setState({
@@ -213,6 +223,7 @@ class Header extends Component {
               <div className="sosconf-header-mobile__button-group-buttons" style={{
                 maxHeight: this.state.displayAboutBar ? '1000px' : '0px',
                 opacity: this.state.displayAboutBar ? 1 : 0,
+                overflow: 'hidden'
               }}>
                 <button onClick={() => { this.props.history.push("/coming"); }}>
                   <FormattedMessage
@@ -226,16 +237,6 @@ class Header extends Component {
                 </button>
               </div>
             </div>
-            <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/coming"); }}>
-              <FormattedMessage
-                id="sponsor"
-              />
-            </button>
-            <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/coming"); }}>
-              <FormattedMessage
-                id="agenda"
-              />
-            </button>
             <div className="sosconf-header-mobile__button-group">
               <button className="sosconf-header-mobile__button" onClick={() => {
                 this.setState({
