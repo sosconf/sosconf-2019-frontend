@@ -4,7 +4,7 @@
         height: 100%;
     }
 
-    .sosconf-footer__logo-wrap {
+    .sosconf-footer__logo_wrap {
         width: 300px;
         height: 100%;
         float: left;
@@ -25,24 +25,15 @@
     }
 
     .sosconf-footer__copyleft {
-        /* float: right; */
-        /* position: relative; */
-        /* top: 50%; */
-        /* right: 50px; */
-        /* transform: translateY(-50%); */
         display: flex;
         margin-top: 20px;
         justify-content: center;
     }
 
     .sosconf-footer__middle-buttons {
-        /* position: relative; */
-        /* width: 50%; */
         padding-top: 30px;
         display: flex;
         justify-content: center;
-        /* float: left; */
-        /* height: 100%; */
     }
 
     .sosconf-footer__middle-button {
@@ -68,12 +59,12 @@
 
     .sosconf-footer__middle-button--openingsource {
         background: url("../images/logo_openingsource.svg");
-        background-size: contain;
+        background-size: 50px 50px;
     }
 
     .sosconf-footer__middle-mail {
         background: url("../images/logo_mail.svg");
-        background-size: contain;
+        background-size: 50px 50px;
     }
 
     .sosconf-footer__middle-facebook {
@@ -108,7 +99,6 @@
     .sosconf-footer__wrap {
         color: white;
         background: rgb(7, 7, 22);
-        /* height: 100%; */
     }
 
     .sosconf-footer__copyleft {
@@ -134,12 +124,13 @@
     }
 
     .sosconf-footer__middle-button-wrapper {
-        width:25%;
+        width: 25%;
+        margin-bottom: 20px;
     }
 
     .sosconf-footer__middle-button {
-        width: 70px;
-        height: 70px;
+        width: 40px;
+        height: 40px;
         display: inline-block;
         margin-right: 5px;
         border: none;

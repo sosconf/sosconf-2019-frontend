@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FormattedMessage } from 'react-intl';
 import '../themes/footer.css';
 
 class Footer extends Component { 
@@ -30,10 +31,9 @@ class Footer extends Component {
           </div>
         </div>
         <div className="sosconf-footer__links">
-          <a>Contact us</a> / 
-          <a> About us</a> / 
-          <a> Join us</a> / 
-          <a> Change Language</a>
+          <a><FormattedMessage id="contactUs"/></a> / 
+          <a><FormattedMessage id="aboutUs"/></a> / 
+          <a><FormattedMessage id="joinUs"/></a> / 
         </div>
         <div className="sosconf-footer__copyleft">
           <p>Copyleft @ openingsource.org</p>

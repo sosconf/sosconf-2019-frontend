@@ -15,7 +15,20 @@ const zhCN = {
   chinese: '简体中文',
   meetingPosition: '美国南加州大学，洛杉矶',
   sponsorship: '提供赞助',
-  news: '新闻'
+  news: '新闻',
+  apply: '申请',
+  beVolunteer: '欢迎成为志愿者',
+  pleaseContact: '联系邮箱',
+  welcomeContact: '欢迎联系',
+  back: '返回',
+  more: '查看更多',
+  recentNews: '近期新闻',
+  moreNews: '更多新闻',
+  learnMore: '了解更多',
+  largerMap: '查看更大的地图',
+  contactUs: ' 联系我们',
+  aboutUs: ' 关于我们',
+  joinUs: ' 加入我们'
 };
 
 export default zhCN;

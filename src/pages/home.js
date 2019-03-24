@@ -81,7 +81,7 @@ class Home extends Component {
               </h2>
               <a className="sosconf-home__button--black sosconf-home__button--know-more" href="https://fb.com/sosconf">
                 <FormattedMessage
-                  id="Know more about sosconf"
+                  id="learnMore"
                 />
               </a>
               <div className="sosconf-home__follow-us">

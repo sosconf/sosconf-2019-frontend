@@ -1,49 +1,48 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { FormattedMessage } from 'react-intl';
+
 import '../themes/volunteer.css';
 import '../themes/animate.css';
 // DOC
-import volunteerDocument from '../docs/volunteer'; 
+import volunteerDocument from '../docs/volunteer.js'; 
+import { generatorHTML } from '../util/makedownGenerotor';
 
 class Volunteer extends Component { 
+  constructor (props) {
+    super(props);
+    this.state = {
+        "设计组":generatorHTML(volunteerDocument['en']['设计组']),
+        "技术组":generatorHTML(volunteerDocument['en']['技术组']),
+        "Conference Affairs Team":generatorHTML(volunteerDocument['en']['Conference Affairs Team']),
+        "赞助组":generatorHTML(volunteerDocument['en']['赞助组']),
+        "市场营销组":generatorHTML(volunteerDocument['en']['市场营销组']),
+        "媒体组":generatorHTML(volunteerDocument['en']['媒体组']),
+        "机动组":generatorHTML(volunteerDocument['en']['机动组']),
+        "议程组":generatorHTML(volunteerDocument['en']['议程组'])
+    }
+  }
+
   render() {
     return (
       <div className="sosconf-volunteer__wrap">
         <div className="sosconf-volunteer__text">
-            Welcome to be a volunteer
+                <FormattedMessage
+                 id="beVolunteer"/>
         </div>
         <div className="sosconf-volunteer__button-group">
-            <a target="_black" href="http://sosconf2019.mikecrm.com/pS483cs" className="animated bounce">APPLY</a>
-            <p className="sosconf-volunteer__button-group-span">（近期会有专门的账号系统上线，敬请期待）</p>
+            <a target="_black" href="http://sosconf2019.mikecrm.com/pS483cs" className="animated bounce">
+                <FormattedMessage
+                 id="apply"/>
+            </a>
+            <p className="sosconf-volunteer__button-group-span">（近期会有志愿者专用账号系统上线，敬请期待）</p>
         </div>
         <div className="sosconf-volunteer__card-group">
             <div className="sosconf-volunteer__card">
                 <div className="sosconf-volunteer__card-header">
                     <span>技术组</span>
                 </div>
-                <div className="sosconf-volunteer__card-text">
-                    <p>技术组志愿者需求</p>
-                    <p>按照当前的进度考虑和技术复杂度, 以及考虑在开发中培养更多同学的技术能力, 技术组目前计划人员需求如下:</p>
-                    <ul>
-                        <li>前端组</li>
-                        <li>后端组</li>
-                        <li>前端设计小组(包含UI)</li>
-                        <li>运维(包含各种注册/查询系统维护)</li>
-                        <li>萌新若干</li>
-                    </ul>
-                    <p>技术组同学主要负责开发：</p>
-                    <ul>
-                        <li>sosconf网站</li>
-                        <li>sosconf志愿者管理系统</li>
-                        <li>sosconf票务系统</li>
-                        <li>sosconf系统维护</li>
-                        <li>会议现场紧急技术支持</li>
-                        <li>LDAP统一认证系统接入支持</li>
-                        <li>DevOps及sosconf集群维护</li>
-                    </ul>
-
-                    <p>注: 其中DevOps部分由后端组配合运维组共同维护</p>
-                    <p>以上为考虑中较为合理的配置, 并且包含想要通过技术组工作锻炼的萌新</p>
-                    <p>上述人数需求并非硬性限制, 如果有更多同学也欢迎加入我们技术组的开发工作(欢迎萌新)</p>
+                <div className="sosconf-volunteer__card-text" dangerouslySetInnerHTML={{__html: this.state.技术组}}>
                 </div>
             </div>
 
@@ -51,61 +50,14 @@ class Volunteer extends Component {
                 <div className="sosconf-volunteer__card-header">
                     <span>设计组</span>
                 </div>
-                <div className="sosconf-volunteer__card-text">
-                
-
-                    <p>设计组是一个为活动的举办锦上添花的小组。</p>
-                    <p>人员要求：</p>
-                    <ul>
-                        <li>分配的任务可以及时完成</li>
-                        <li>善于交流思路，说出想法</li>
-                        <li>不介意加入的同学是否有经验</li>
-                    </ul>
-                    <p>
-                    技能要求（以下要求全是可选项）：
-                    </p>
-
-                    <ul>
-                        <li>会使用PS、AI或ID来制作宣传资料（当然，熟练使用GIMP那类的开源软件也可以）</li>
-                        <li>会使用Pr、AE等软件来剪辑视频</li>
-                        <li>Keynote或者PowerPoint</li>
-                        <li>电脑绘画</li>
-                    </ul>
-                    <p>如果以上技能都没有……也没有关系，只要有兴趣和毅力就可以加入</p>
-
-                    <p>具体的工作有：</p>
-                    <ul>
-                        <li>视频剪辑</li>
-                        <li>宣传资料设计，如海报、宣传单、展板……</li>
-                        <li>网页设计和手机应用界面设计</li>
-                        <li>纪念品设计</li>
-                        <li>会场主视觉设计</li>
-                        <li>其他有新奇创意的设计（emm）</li>
-                    </ul>
-
-                    
-                    <p>以上配置不一定完全合理且周到，欢迎有兴趣的同学联系。</p>
+                <div className="sosconf-volunteer__card-text" dangerouslySetInnerHTML={{__html: this.state.设计组}}>
                 </div>
             </div>
             <div className="sosconf-volunteer__card">
                     <div className="sosconf-volunteer__card-header">
                         <span>市场营销组</span>
                     </div>
-                    <div className="sosconf-volunteer__card-text">
-                        <p>我们希望你：</p>
-                        <ul>
-                            <li>有良好的沟通表达能力及人际交往能力</li>
-                            <li>善于合作以及协调</li>
-                            <li>有较强的责任感，执行力强</li>
-                            <li>有创造力及较强思维逻辑能力，能够提出想法</li>
-                        </ul>
-                        <p>具体的工作：</p>
-                        <ul>
-                            <li>协助构建大会品牌，并将其推广出去</li>
-                            <li>吸引更多喜欢开源开发和文化或对开源感兴趣的人们参与到大会中</li>
-                            <li>后期进行调查，为下一届大会提供改进意见</li>
-                        </ul>
-                        <p>欢迎有兴趣的同学加入，我们一起努力！</p>
+                    <div className="sosconf-volunteer__card-text" dangerouslySetInnerHTML={{__html: this.state.市场营销组}}>
                     </div>
                 </div>
         </div>
@@ -115,21 +67,7 @@ class Volunteer extends Component {
                     <div className="sosconf-volunteer__card-header">
                         <span>媒体组</span>
                     </div>
-                    <div className="sosconf-volunteer__card-text">
-                        <p>我们希望你：</p>
-                        <ul>
-                            <li>有良好的沟通表达能力及人际交往能力</li>
-                            <li>善于合作以及协调</li>
-                            <li>熟悉国内外常用社交媒体平台</li>
-                            <li>热情积极，活泼机智</li>
-                        </ul>
-                        <p>具体的工作：</p>
-                        <ul>
-                            <li>了解大会实时动向</li>
-                            <li>能够发挥自己的聪明才智做好大会的宣传工作</li>
-                            <li>做大会的小喇叭和代言人o(*￣︶￣*)o</li>
-                        </ul>
-                        <p>欢迎各位同学加入！</p>
+                    <div className="sosconf-volunteer__card-text" dangerouslySetInnerHTML={{__html: this.state.媒体组}}>
                     </div>
                 </div>
 
@@ -137,54 +75,14 @@ class Volunteer extends Component {
                 <div className="sosconf-volunteer__card-header">
                     <span>议程组</span>
                 </div>
-                <div className="sosconf-volunteer__card-text">
-                    <p>和我们一起创作第一次学生开源年会，见证历史。</p>
-                    <p>需求</p>
-                    <ul>
-                        <li>喜欢开源开发和文化或对开源感兴趣。</li>
-                        <li>喜欢团队合作。</li>
-                        <li>有相关经验者优先。</li>
-                        <li>认同我们的目标并有意长期和我们合作者优先！</li>
-                    </ul>
-
-                    <p>工作</p>
-                    <ul>
-                        <li>在前期准备中，我们将一起根据赞助商和讲者招募情况创建多个版本的议程时间表。</li>
-                        <li>我们会评估各类可能影响会议顺利开展的不确定性和风险，并准备相应的应对计划。</li>
-                        <li>我们会一起策划一些将随会议进行同时开展的具体项目（如学生开源项目展览），并和其他相关小组研究可行性。</li>
-                    </ul>
+                <div className="sosconf-volunteer__card-text" dangerouslySetInnerHTML={{__html: this.state.议程组}}>
                 </div>
             </div>
             <div className="sosconf-volunteer__card">
                     <div className="sosconf-volunteer__card-header">
                         <span>赞助组</span>
                     </div>
-                    <div className="sosconf-volunteer__card-text">
-                        <p>赞助组主要负责对外联系潜在的赞助商，赞助交涉和招募启动资金，也会行使一部分联系媒体或社区的职能。（是 sosconf 联系社会的纽带）</p>
-                        <p>人员要求</p>
-                        <ul>
-                            <li>不限国籍</li>
-                            <li>学生身份（不限于中学生、大学生、硕博生、留学生</li>
-                            <li>善于交流思路，口头表达能力较好</li>
-                            <li>具备一定的社交礼仪（现实 or 网络</li>
-                        </ul>
-                        <p>技能要求（除了外语水平是硬性需求，其他均是可选项）</p>
-                        <ul>
-                            <li>英语六级 & 雅思5分及以上 & 托福60分及以上（满足任一条件即可</li>
-                            <li>口语流利和不怯场，能够同外国人进行一般及以上程度的的交流</li>
-                            <li>外语&法律/金融/计算机相关背景的同学（优先级从左到右依次排列，前两者是并列关系，起草赞助合同需要法学背景的同学帮忙</li>
-                            <li>会科学上网（约定使用统一的沟通模式，邮件+Skype</li>
-                            <li>撰写文案能力较强，思维活跃</li>
-                        </ul>
-                        <p>具体的工作</p>
-                        <ul>
-                            <li>制定年度 Call for Sponsors</li>
-                            <li>牵头起草赞助合同</li>
-                            <li>联系赞助商，与赞助商进行谈判，尽力促成赞助（每个人负责哪几家公司，跟进哪几条线索</li>
-                            <li>作为赞助商、媒体、社区三者之间的纽带，协助其他组共同推进事务进度</li>
-                            <li>运营和维护赞助商及合作伙伴的良好关系</li>
-                        </ul>
-                        <p>以上配置不一定完全合理且周到，欢迎有兴趣的同学加入并提出建议！</p>
+                    <div className="sosconf-volunteer__card-text" dangerouslySetInnerHTML={{__html: this.state.赞助组}}>
                     </div>
                 </div>
 
@@ -195,32 +93,14 @@ class Volunteer extends Component {
                     <div className="sosconf-volunteer__card-header">
                         <span>机动组</span>
                     </div>
-                    <div className="sosconf-volunteer__card-text">
-                        <p>也许上述并没有你感兴趣的工作，同样有机会和志同道合的小伙伴们一起合作。你可以做什么，想要做什么，尽管讲出来！</p>
-                        <p>只要你喜欢开源开发和文化或对开源感兴趣，只要你愿意加入我们，just try!</p>
+                    <div className="sosconf-volunteer__card-text" dangerouslySetInnerHTML={{__html: this.state.机动组}}>
                     </div>
                 </div>
                 <div className="sosconf-volunteer__card">
                     <div className="sosconf-volunteer__card-header">
                         <span>Conference Affairs Team</span>
                     </div>
-                    <div className="sosconf-volunteer__card-text">
-                        <p>Requirements</p>
-                        <ul>
-                            <li>Interested in or passionate about the practice or idea of open-source.</li>
-                            <li>Language fluency: as the conference will be held in English, you are required to be fluent in English.</li>
-                            <li>Team player.</li>
-                            <li>Similar experience is a plus (see below for specific responsibilities).</li>
-                            <li>Please ensure you can be on site during the meeting. We want you here in Los Angeles</li>
-                        </ul>
-                        <p>Responsibilities</p>
-                        <ul>
-                            <li>You will be working with a group of people with similar interests as yours coming from all over the world. You may choose to help us set up on the day before the conference, guide attendees and speakers to where their destinations, set up the dinner party, or cleaning things up after the conference concludes.</li>
-                        </ul>
-                        <p>Track Hosts</p>
-                        <p>You can apply to be a track hosts that will be hosting talks of some track. You will be responsible for checking status of devices and communicating with speakers before talks, mediating Q&A sessions, wrapping things up when the talk ends and also handling other possible situations. Note that there will be a female-only track where the host should be female as well.</p>
-                        <p>Technical Volunteers</p>
-                        <p>You will be specifically helping us and track hosts with electronic devices at each room/hall/location of the conference, including audio/video systems.</p>
+                    <div className="sosconf-volunteer__card-text" dangerouslySetInnerHTML={{__html: this.state['Conference Affairs Team']}}>
                     </div>
                 </div>
                 <div className="sosconf-volunteer__card--none sosconf-volunteer__card">
@@ -250,12 +130,21 @@ class Volunteer extends Component {
         </div>
 
         <div className="sosconf-volunteer__button-group">
-            <a target="_black" href="http://sosconf2019.mikecrm.com/pS483cs" className="animated bounce">APPLY</a>
-            <p  className="sosconf-volunteer__button-group-span">（近期会有专门的账号系统上线，敬请期待）</p>
+            <a target="_black" href="http://sosconf2019.mikecrm.com/pS483cs" className="animated bounce">
+                <FormattedMessage
+                    id="apply"/>
+            </a>
+            <p  className="sosconf-volunteer__button-group-span">（近期会有志愿者专用账号系统上线，敬请期待）</p>
         </div>
       </div>
     );
   }
 }
 
-export default Volunteer;
+export default connect(
+    state => {
+        return {
+            language: state.language
+        }
+    }
+)(Volunteer);
