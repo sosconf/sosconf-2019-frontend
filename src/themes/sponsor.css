@@ -23,18 +23,6 @@
         color: rgb(87, 167, 117)
     }
 
-    /* .sosconf-sponsor__wrapper p:nth-last-child(1){
-        text-align: center;
-    }
-
-    .sosconf-sponsor__wrapper p:nth-last-child(2){
-        text-align: center;
-    }
-
-    .sosconf-sponsor__wrapper p:nth-last-child(3){
-        text-align: center;
-    } */
-
     .sosconf-sponsor__wrapper blockquote p {
         text-align: left !important;
     }
