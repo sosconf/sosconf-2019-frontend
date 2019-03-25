@@ -16,7 +16,7 @@ const zhCN = {
   meetingPosition: '美国南加州大学，洛杉矶',
   sponsorship: '提供赞助',
   news: '新闻',
-  apply: '申请',
+  apply: '申请加入',
   beVolunteer: '欢迎成为志愿者',
   pleaseContact: '联系邮箱',
   welcomeContact: '欢迎联系',
@@ -28,7 +28,8 @@ const zhCN = {
   largerMap: '查看更大的地图',
   contactUs: ' 联系我们',
   aboutUs: ' 关于我们',
-  joinUs: ' 加入我们'
+  joinUs: ' 加入我们',
+  sponsorshipContact: "赞助联系"
 };
 
 export default zhCN;

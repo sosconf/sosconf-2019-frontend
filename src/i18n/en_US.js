@@ -28,7 +28,8 @@ const enUS = {
   largerMap: 'View larger map',
   contactUs: ' Contact us',
   aboutUs: ' About us',
-  joinUs: ' Join us'
+  joinUs: ' Join us',
+  sponsorshipContact: 'Sponsorship Contact'
 };
 
 export default enUS;
