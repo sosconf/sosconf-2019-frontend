@@ -14,6 +14,7 @@ import Volunteer from './pages/volunteer';
 import News from './pages/news';
 import Venue from './pages/venue';
 import Speaker from './pages/speaker';
+import BackToTop from './components/backToTop';
 
 
 // React-transition-group
@@ -91,6 +92,8 @@ class App extends Component {
             <Footer>
             </Footer>
           </footer>
+          <BackToTop>
+          </BackToTop>
         </div>
         )}/>
         
