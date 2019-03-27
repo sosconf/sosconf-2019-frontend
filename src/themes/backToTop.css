@@ -1,0 +1,17 @@
+.sosconf__back-to-top-wrap {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 5px 5px 5px 5px;
+    border-radius: 50%;
+    background-color: rgba(68, 65, 65, 0.8);
+    cursor: pointer;
+}
+
+.sosconf__back-to-top-wrap img {
+    height: 40px;
+    width: 40px;
+}
