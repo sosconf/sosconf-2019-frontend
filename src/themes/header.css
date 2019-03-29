@@ -3,6 +3,18 @@
 }
 
 @media screen and (min-width: 1050px) {
+    .sosconf-header__group-button-title span:nth-child(2) {
+        display: inline-block;
+        transition: all .2s;
+        width: 0;
+        height: 0;
+        margin-left: 5px;
+        border-width: 0 5px 5px;
+        border-style: solid;
+        border-color:transparent transparent rgb(0, 193, 145);
+        position: relative;
+    }
+
     .sosconf-header-mobile__active {
         display: none;
     }
@@ -61,7 +73,7 @@
         background: transparent;
         height: 100%;
         font-size: 14px;
-        width: calc(100% / 7);
+        width: calc(100% / 8);
     }
 
     .sosconf-header__button:hover {
@@ -80,19 +92,26 @@
     .sosconf-header__button-group:hover > .sosconf-header__gourp-drop-down {
         background: white;
         z-index: 1;
-        left: 0;
+        /* left: 0; */
         text-align: center;
-        width: 100%;
+        /* width: 100%; */
         height: auto;
         border: none;
         transition: height .5s;
-        top: 50px;
+        top: 40px;
     }
 
     .sosconf-header__button-group:hover .sosconf-header__group-button {
-        height: 40px;
+        height: 30px;
         transition: all .5s;
         visibility: unset;
+    }
+
+    .sosconf-header__group-button-title--language {
+        background: white !important;
+        height: 30px !important;
+        margin-top: 10px;
+        border-radius: 5px;
     }
 
     .sosconf-header__group-button-title:hover {
@@ -112,20 +131,33 @@
 
     .sosconf-header__gourp-drop-down {
         position: fixed;
-        top: -50px;
+        top: -40px;
         height: 0;
         width: 0;
-        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        /* overflow: hidden; */
+        /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3); */
     }
 
     .sosconf-header__group-button {
         visibility: hidden;
         height: 0;
         min-width: 10%;
+        width: 100px;
         padding-left: 10px;
         padding-right: 10px;
         border: none;
         color: black;
+    }
+
+    .sosconf-header__group-button:nth-of-type(1) {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .sosconf-header__group-button:last-of-type {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
 
     .sosconf-header__group-button:hover {
@@ -144,6 +176,10 @@
         right: 50px;
         height: 50px;
         width: 100px;
+    }
+
+    .sosconf-header__group-button-title--language {
+        color: black;
     }
 
 } @media screen and (max-width: 1050px) {

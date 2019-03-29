@@ -17,9 +17,11 @@
     }
     
     .sosconf-home__title--up {
-        font-size: 56px;
+        font-size: 65px;
         position: relative;
         bottom: 5px;
+        line-height: 107px;
+        margin-top: 40px;
     }
 
     .sosconf-home__news--content p {
@@ -28,13 +30,13 @@
     }
     
     .sosconf-home__title--down {
-        font-size: 24px;
-        position: relative;
-        top: 3px;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 400;
     }
     
     .sosconf-home__position {
-        
+        margin-top: 60px;
     }
     .sosconf-home__buttons {
         
@@ -164,6 +166,7 @@
 
     .sosconf-home__date-flag {
         font-size: 24px;
+        line-height: 44px;
     }
 
     .sosconf-home__position-flag {
@@ -176,17 +179,19 @@
     }
 
     .sosconf-home__position {
-        margin-top: 30px;
+        margin-top: 60px;
         font-weight: 600;
     }
 
     .sosconf-home__position-flag {
-        margin-top: 30px;
+        margin-top: 18px;
         font-weight: 600;
+        line-height: 44px;
     }
 
     .sosconf-home__position h2 {
         font-weight: 300;
+        line-height: 50px;
     }
 
     .sosconf-home__buttons {
@@ -194,8 +199,8 @@
     }
 
     .sosconf-home__follow-us {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 30px;
+        margin-bottom: 39px;
         font-size: 20px;
     }
 
@@ -223,6 +228,7 @@
 
     .sosconf-home__button--know-more {
         width: 200px;
+        margin-top: 90px;
     }
 
     .sosconf-home__button--know-more span{
@@ -251,6 +257,15 @@
         font-weight: 400;
     }
 
+    .sosconf-home__title--span {
+        height: 1px;
+        width: 70%;
+        background-color: rgba(255, 255, 255, 0.5);
+        margin: 0 auto;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
     .sosconf-home__position {
         margin-top: 30px;
         font-weight: 600;
@@ -263,6 +278,7 @@
 
     .sosconf-home__position h2 {
         font-weight: 300;
+        font-size: 12px;
     }
 
     .sosconf-home__buttons {
@@ -270,7 +286,7 @@
     }
 
     .sosconf-home__follow-us {
-        margin-top: 20px;
+        margin-top: 30px;
         margin-bottom: 20px;
         font-size: 20px;
         color: black;

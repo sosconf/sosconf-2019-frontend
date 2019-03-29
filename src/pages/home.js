@@ -52,12 +52,16 @@ class Home extends Component {
     return (
       <div className="sosconf-home__wrap">
         <Card customerStyle={{
-          width: "50%",
+          width: "700px",
+          height: '800px',
           margin: '0 auto',
           marginTop: '140px',
+          marginBottom: '140px',
           textAlign: 'center',
           paddingTop: '30px',
-          paddingBottom: '30px'
+          paddingBottom: '30px',
+          paddingLeft: '20px',
+          paddingRight: '20px'
         }} customerHeaderStyle = {{
           height:0,
           display:'none'
@@ -106,7 +110,7 @@ class Home extends Component {
               </a>
               <a className="sosconf-home__button--black" href="https://github.com/sosconf">
               <FormattedMessage
-                id="GitHub"
+                id="Telegram"
               />
               </a>
             </div>
