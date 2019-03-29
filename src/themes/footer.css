@@ -37,10 +37,11 @@
     }
 
     .sosconf-footer__middle-button {
-        width: 50px;
-        height: 50px;
+        width: 32px;
+        height: 32px;
+        margin-top: 24px;
         display: inline-block;
-        margin-right: 10px;
+        /* margin-right: 10px; */
         border: none;
         border-radius: 50%;
         background: transparent;
@@ -52,43 +53,63 @@
         padding-top: 20px;
     }
 
+    .sosconf-footer__middle-button-wrapper {
+        width: 80px;
+        text-align: center;
+        height: 80px;
+    }
+
     .sosconf-footer__middle-button:hover {
-        transform: scale(1.1);
+        transform: scale(1.4);
         transition: all .5s;
+        /* background-color: black; */
+    }
+
+    .sosconf-footer__middle-telegram {
+        background: url("../images/Logo_Telegram_v2.svg");
+        background-size: contain;
     }
 
     .sosconf-footer__middle-button--openingsource {
-        background: url("../images/logo_openingsource.svg");
-        background-size: 50px 50px;
+        background: url("../images/Logo_openingsource-nano_v2.svg");
     }
 
     .sosconf-footer__middle-mail {
-        background: url("../images/logo_mail.svg");
-        background-size: 50px 50px;
+        background: url("../images/Logo_Email_v2.svg");
     }
 
     .sosconf-footer__middle-facebook {
-        background: url("../images/logo_facebook.svg");
+        background: url("../images/Logo_facebook\ _v2.svg");
         background-size: contain;
     }
 
     .sosconf-footer__middle-twitter {
-        background: url("../images/logo_twitter.svg");
+        background: url("../images/Logo_Twitter_v2.svg");
         background-size: contain;
     }
 
     .sosconf-footer__middle-flickr {
-        background: url("../images/logo_flickr.svg");
+        background: url("../images/Logo_Flickr_v2.svg");
         background-size: contain;
     }
 
     .sosconf-footer__middle-youtube {
-        background: url("../images/logo_youtube.svg");
+        background: url("../images/Logo_Youtube_v2.svg");
         background-size: contain;
     }
 
     .sosconf-footer__middle-weibo {
-        background: url("../images/logo_weibo.svg");
+        background: url("../images/Logo_weibo_v2.svg");
+        background-size: contain;
+    }
+
+    .sosconf-footer__middle-hexang {
+        background: url("../images/Logo_Hexang_v2.svg");
+        background-size: contain;
+    }
+
+    .sosconf-footer__middle-wechat {
+        background: url("../images/Logo_WeChat_v2.svg");
         background-size: contain;
     }
 } @media screen and (max-width: 1050px) {
@@ -124,8 +145,9 @@
     }
 
     .sosconf-footer__middle-button-wrapper {
-        width: 25%;
+        width: 20%;
         margin-bottom: 20px;
+        text-align: center;
     }
 
     .sosconf-footer__middle-button {
@@ -143,37 +165,50 @@
     }
 
     .sosconf-footer__middle-button--openingsource {
-        background: url("../images/logo_openingsource.svg");
-        background-size: contain;
+        background: url("../images/Logo_openingsource-nano_v2.svg");
     }
 
     .sosconf-footer__middle-mail {
-        background: url("../images/logo_mail.svg");
-        background-size: contain;
+        background: url("../images/Logo_Email_v2.svg");
     }
 
     .sosconf-footer__middle-facebook {
-        background: url("../images/logo_facebook.svg");
+        background: url("../images/Logo_facebook\ _v2.svg");
         background-size: contain;
     }
 
     .sosconf-footer__middle-twitter {
-        background: url("../images/logo_twitter.svg");
+        background: url("../images/Logo_Twitter_v2.svg");
         background-size: contain;
     }
 
     .sosconf-footer__middle-flickr {
-        background: url("../images/logo_flickr.svg");
+        background: url("../images/Logo_Flickr_v2.svg");
         background-size: contain;
     }
 
     .sosconf-footer__middle-youtube {
-        background: url("../images/logo_youtube.svg");
+        background: url("../images/Logo_Youtube_v2.svg");
         background-size: contain;
     }
 
     .sosconf-footer__middle-weibo {
-        background: url("../images/logo_weibo.svg");
+        background: url("../images/Logo_weibo_v2.svg");
+        background-size: contain;
+    }
+
+    .sosconf-footer__middle-hexang {
+        background: url("../images/Logo_Hexang_v2.svg");
+        background-size: contain;
+    }
+
+    .sosconf-footer__middle-wechat {
+        background: url("../images/Logo_WeChat_v2.svg");
+        background-size: contain;
+    }
+
+    .sosconf-footer__middle-telegram {
+        background: url("../images/Logo_Telegram_v2.svg");
         background-size: contain;
     }
 }
