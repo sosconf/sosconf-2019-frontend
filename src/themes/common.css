@@ -14,6 +14,11 @@
 }
 
 a {
+    color: black;
+    font-size: 12px;
+}
+
+.sosconf-footer a {
     color: white;
 }
 
