@@ -20,7 +20,9 @@ class SponsorCard extends Component {
                     color: this.props.color,
                     backgroundColor: this.props.bgColor
                 }}  onClick={() => {
-                    this.props.callback(this.state.tag);
+                    if (this.props.callback) {
+                        this.props.callback(this.state.tag);
+                    }
                 }}>
                     <div className="sosconf__volunteer-card-text" style={{
                         marginLeft: '32px',
