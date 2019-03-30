@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
+import { Row } from 'antd';
+import SponsorGroup from '../components/sponsorCardGroup';
 
 import '../themes/volunteer.css';
 import '../themes/animate.css';
@@ -26,7 +28,10 @@ class Volunteer extends Component {
   render() {
     return (
       <div className="sosconf-volunteer__wrap">
-        <div className="sosconf-volunteer__text">
+        <SponsorGroup style={{
+            margin: "70px auto",
+        }}></SponsorGroup>
+        {/* <div className="sosconf-volunteer__text">
                 <FormattedMessage
                  id="beVolunteer"/>
         </div>
@@ -135,7 +140,7 @@ class Volunteer extends Component {
                     id="apply"/>
             </a>
             <p  className="sosconf-volunteer__button-group-span">（近期会有志愿者专用账号系统上线，敬请期待）</p>
-        </div>
+        </div> */}
       </div>
     );
   }

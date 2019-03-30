@@ -145,6 +145,18 @@ class Header extends Component {
                 </button>
               </div>
             </div> */}
+            <div className="sosconf-header__button-group sosconf-header__button-group--login">
+              <button className="sosconf-header__group-button-title sosconf-header__button-group-title--login">
+                <FormattedMessage id="signup"/>
+              </button>
+            </div>
+
+            <div className="sosconf-header__button-group sosconf-header__button-group--signin">
+              <button className="sosconf-header__group-button-title sosconf-header__button-group-title--signin">
+                <FormattedMessage id="signin"/>
+              </button>
+            </div>
+
             <div className="sosconf-header__button-group sosconf-header__button-group--language">
               <button className="sosconf-header__group-button-title sosconf-header__group-button-title--language" id="sosconf-header__button--language" >
                 <FormattedMessage
@@ -233,6 +245,16 @@ class Header extends Component {
             <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/coming"); }}>
               <FormattedMessage
                 id="about"
+              />
+            </button>
+            <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/coming"); }}>
+              <FormattedMessage
+                id="signin"
+              />
+            </button>
+            <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/coming"); }}>
+              <FormattedMessage
+                id="signup"
               />
             </button>
             {/* <div className="sosconf-header-mobile__button-group">

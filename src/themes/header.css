@@ -143,7 +143,7 @@
         visibility: hidden;
         height: 0;
         min-width: 10%;
-        width: 100px;
+        width: 120px;
         padding-left: 10px;
         padding-right: 10px;
         border: none;
@@ -173,12 +173,42 @@
     .sosconf-header__button-group--language{
         position: absolute;
         top: 1px;
-        right: 50px;
+        right: 15px;
         height: 50px;
-        width: 100px;
+        width: 120px;
     }
 
     .sosconf-header__group-button-title--language {
+        color: black;
+    }
+
+    .sosconf-header__button-group--login {
+        margin-top: 10px;
+        position: absolute;
+        top: 1px;
+        float: right;
+        width: 60px;
+        height: 30px;
+        right: 145px;
+        background: transparent;
+        border: 2px solid white;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    .sosconf-header__button-group--signin {
+        margin-top: 10px;
+        position: absolute;
+        top: 1px;
+        float: right;
+        width: 60px;
+        right: 215px;
+        height: 30px;
+        background: white;
+        border-radius: 4px;
+    }
+
+    .sosconf-header__button-group--signin span {
         color: black;
     }
 
@@ -245,6 +275,7 @@
         transition: all .2s ease-in-out;
         position: relative;
         left: -20%;
+        box-sizing: content-box;
         width: 20px;
         height: 4px;
         border-top: 4px solid rgb(1, 191, 144);
@@ -266,6 +297,7 @@
         background: rgb(1, 191, 144);
         padding: 4px 0;
         background-clip:content-box;
+        box-sizing: content-box;
     }
 
     .sosconf-header-mobile__button-group-buttons {
