@@ -108,7 +108,7 @@ class Home extends Component {
                 id="Twitter"
               />
               </a>
-              <a className="sosconf-home__button--black" href="https://github.com/sosconf">
+              <a className="sosconf-home__button--black" href="https://t.me/sosconf">
               <FormattedMessage
                 id="Telegram"
               />

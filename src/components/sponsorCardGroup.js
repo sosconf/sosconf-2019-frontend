@@ -20,7 +20,7 @@ class SponsorGroup extends Component {
             "技术组":generatorHTML(volunteerDocument['en']['技术组']),
             "Conference Affairs Team":generatorHTML(volunteerDocument['en']['Conference Affairs Team']),
             "赞助组":generatorHTML(volunteerDocument['en']['赞助组']),
-            "市场营销组":generatorHTML(volunteerDocument['en']['市场营销组']),
+            "市场组":generatorHTML(volunteerDocument['en']['市场组']),
             "媒体组":generatorHTML(volunteerDocument['en']['媒体组']),
             "机动组":generatorHTML(volunteerDocument['en']['机动组']),
             "议程组":generatorHTML(volunteerDocument['en']['议程组']),
@@ -59,7 +59,7 @@ class SponsorGroup extends Component {
                 ...this.props.style
             }}>
                 <Row>
-                    <SponsorCard span={12} bgColor="#FFE666" height={240} callback={this.showMenu.bind(this)} noDisplay={true}>
+                    <SponsorCard span={12} bgColor="#FFE666" height={240} noDisplay={true}>
                         <h2 style={{
                             color:'black'
                         }}>欢迎加入学生开源年会<br/>成为我们的伙伴 ></h2>
