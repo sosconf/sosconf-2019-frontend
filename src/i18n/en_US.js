@@ -29,7 +29,9 @@ const enUS = {
   contactUs: ' Contact us',
   aboutUs: ' About us',
   joinUs: ' Join us',
-  sponsorshipContact: 'Sponsorship Contact'
+  sponsorshipContact: 'Sponsorship Contact',
+  signin: 'Sign in',
+  signup: 'Sign up'
 };
 
 export default enUS;

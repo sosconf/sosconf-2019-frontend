@@ -29,7 +29,9 @@ const zhCN = {
   contactUs: ' 联系我们',
   aboutUs: ' 关于我们',
   joinUs: ' 加入我们',
-  sponsorshipContact: "赞助联系"
+  sponsorshipContact: "赞助联系",
+  signin: '登录',
+  signup: '注册'
 };
 
 export default zhCN;

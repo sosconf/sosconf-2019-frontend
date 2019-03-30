@@ -1,0 +1,96 @@
+.sosconf__volunteer-card-text h2{
+    color: white;
+    font-size: 28px;
+}
+
+.sosconf__sponsor-group {
+    width: 70%;
+}
+
+.sosconf__volunteer-menu-group {
+    width: 70%;
+    min-height: 720px;
+    background: white;
+    margin: 0 auto;
+    box-shadow: 3px 3px 3px #656565;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-bottom: 20px;
+}
+
+.sosconf__volunteer-card-wrap:hover {
+    transform: scale(1.2);
+    transition: all .2s;
+    z-index: 1;
+}
+
+ul ol{
+    margin-left: 30px;
+}
+
+.sosconf__volunteer-menu-group button{
+    border: none;
+    height: 40px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background: white;
+}
+
+.sosconf__volunteer-menu-group-text {
+    padding-left: 40px;
+    padding-right: 40px;
+    word-break: break-all;
+}
+
+.sosconf__volunteer-menu-group-text p, ul, li, ol{
+    font-size: 20px;
+}
+
+.sosconf__volunteer-menu-group-text ul, ol {
+    margin-left: 40px;
+}
+
+.sosconf__volunteer-menu-group-text h3 {
+    font-size: 22px;
+}
+
+.sosconf__volunteer-menu-group-title {
+    text-align: center;
+}
+
+.sosconf__volunteer-menu-group-split {
+    height: 5px;
+    background: black;
+    width: 30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1050px) {
+    .sosconf__volunteer-card-wrap {
+        height: 200px !important;
+    }
+
+    .sosconf__volunteer-card-text h2{
+        color: white;
+        font-size: 16px;
+        word-break: break-all;
+    }
+
+    .sosconf__sponsor-group {
+        width: 98%;
+        margin-top: 120px !important;
+    }
+
+    .sosconf__sponsor-group {
+
+    }
+
+    .sosconf__volunteer-card-text {
+        margin-top: 10px !important;
+        margin-left: 10px !important;
+    }
+}

@@ -5,11 +5,16 @@
     margin: 0;
     padding: 0;
     font-family: 'Comfortaa',苹方,雅黑;
+    line-height: 1;
 }
 
 *:focus {
     border: none;
     outline: none;
+}
+
+a {
+    color: white;
 }
 
 html {
