@@ -315,4 +315,8 @@
         border-color:transparent transparent white;
         position: relative;
     }
+
+    .sosconf-header-mobile__button-group-buttons span {
+        color: black;
+    }
 }
