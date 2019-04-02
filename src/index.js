@@ -22,6 +22,7 @@ import store from './stores/store';
 // React-transition-group
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
+import 'antd/dist/antd.css';
 import './themes/common.css'
 
 // init react-intl

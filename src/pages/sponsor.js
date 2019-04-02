@@ -44,8 +44,8 @@ class Sponsor extends Component {
     render() {
         return (
             <div className="sosconf-sponsor__wrapper">
-                <a className="sosconf-sponsor__back" onClick={() => {this.props.history.push("/");}}><FormattedMessage id="back"/></a>
-                <a className="sosconf-sponsor__more"><FormattedMessage id="more"/></a>
+                {/* <a className="sosconf-sponsor__back" onClick={() => {this.props.history.push("/");}}><FormattedMessage id="back"/></a> */}
+                {/* <a className="sosconf-sponsor__more"><FormattedMessage id="more"/></a> */}
                 <h1 className="sosconf-sponsor__title"><FormattedMessage id="sponsorshipContact"/></h1>
                 <div className="sosconf-sponsor__span"></div>
                 <h3 className="sosconf-sponsor__sub"><FormattedMessage id="welcomeContact"/> sponsors@sosconf.org</h3>
