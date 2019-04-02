@@ -104,6 +104,12 @@ class SponsorGroup extends Component {
                         }}>Conference Affairs Team</h2>
                     </SponsorCard>
                 </Row>
+
+                <Row>
+                    <SponsorCard span={24} bgColor="rgb(162, 128, 74)" height={240}  noDisplay={true}>
+                        <h2>volunteers@sosconf.org</h2>
+                    </SponsorCard>
+                </Row>
             </div>
         )
     }

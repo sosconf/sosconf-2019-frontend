@@ -99,8 +99,14 @@
     .sosconf-sponsor__content li{
         list-style-position: inside;
     }
+
     .sosconf-sponsor__readAll {
         display: none;
+    }
+
+    .sosconf-sponsor__content li{
+        font-size: 14px;
+        font-weight: 400;
     }
 
 @media screen and (max-width: 1050px) {
