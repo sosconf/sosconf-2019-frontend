@@ -14,14 +14,15 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 class SponsorGroup extends Component {
     constructor(props) {
         super(props)
+        console.log(volunteerDocument)
         this.state = {
             menu: false,
             "设计组":generatorHTML(volunteerDocument['en']['设计组']),
             "技术组":generatorHTML(volunteerDocument['en']['技术组']),
             "Conference Affairs Team":generatorHTML(volunteerDocument['en']['Conference Affairs Team']),
             "赞助组":generatorHTML(volunteerDocument['en']['赞助组']),
-            "市场组":generatorHTML(volunteerDocument['en']['市场组']),
-            "媒体组":generatorHTML(volunteerDocument['en']['媒体组']),
+            "市场组":generatorHTML(volunteerDocument['en']['市场营销组']),
+            "志愿者需知":generatorHTML(volunteerDocument['en']['志愿者需知']),
             "机动组":generatorHTML(volunteerDocument['en']['机动组']),
             "议程组":generatorHTML(volunteerDocument['en']['议程组']),
             "各类答疑":generatorHTML(volunteerDocument['en']['各类答疑']),
@@ -88,14 +89,14 @@ class SponsorGroup extends Component {
                 </Row>
 
                 <Row>
-                    <SponsorCard span={6} bgColor="#F86880" height={240}  callback={this.showMenu.bind(this)} tag="媒体组">
-                        <h2>媒体组</h2>
-                    </SponsorCard>
                     <SponsorCard span={6} bgColor="#FAA726" height={240}  callback={this.showMenu.bind(this)} tag="议程组">
                         <h2>议程组</h2>
                     </SponsorCard>
                     <SponsorCard span={6} bgColor="#F85043" height={240}  callback={this.showMenu.bind(this)} tag="机动组">
                         <h2>机动组</h2>
+                    </SponsorCard>
+                    <SponsorCard span={6} bgColor="#F86880" height={240}  callback={this.showMenu.bind(this)} tag="志愿者需知">
+                        <h2>志愿者需知</h2>
                     </SponsorCard>
                     <SponsorCard span={6} bgColor="#33B569" height={240}  callback={this.showMenu.bind(this)} tag="Conference Affairs Team">
                         <h2 style={{
