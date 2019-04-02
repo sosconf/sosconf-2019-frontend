@@ -14,14 +14,14 @@ class Volunteer extends Component {
   constructor (props) {
     super(props);
     this.state = {
-        "设计组":generatorHTML(volunteerDocument['en']['设计组']),
-        "技术组":generatorHTML(volunteerDocument['en']['技术组']),
-        "Conference Affairs Team":generatorHTML(volunteerDocument['en']['Conference Affairs Team']),
-        "赞助组":generatorHTML(volunteerDocument['en']['赞助组']),
+        // "设计组":generatorHTML(volunteerDocument['en']['设计组']),
+        // "技术组":generatorHTML(volunteerDocument['en']['技术组']),
+        // "Conference Affairs Team":generatorHTML(volunteerDocument['en']['Conference Affairs Team']),
+        // "赞助组":generatorHTML(volunteerDocument['en']['赞助组']),
         // "市场营销组":generatorHTML(volunteerDocument['en']['市场营销组']),
-        "媒体组":generatorHTML(volunteerDocument['en']['媒体组']),
-        "机动组":generatorHTML(volunteerDocument['en']['机动组']),
-        "议程组":generatorHTML(volunteerDocument['en']['议程组'])
+        // "媒体组":generatorHTML(volunteerDocument['en']['媒体组']),
+        // "机动组":generatorHTML(volunteerDocument['en']['机动组']),
+        // "议程组":generatorHTML(volunteerDocument['en']['议程组'])
     }
   }
 
