@@ -1,4 +1,3 @@
-<p align="right">En | <a href="./docs/CONTRIBUTING-zh_cn.md">简</a> | <a href="./docs/CONTRIBUTING-zh_tw.md">繁</a></p>
 
 # Contributing
 
@@ -60,15 +59,3 @@
 * Explain scope and reason for the change
 
 * All pull requests are required to be reviewed
-
-
-### Join instantbox
-
-Want to instantbox team? We'd love to have you.
-
-Please send your request to team@instantbox.org with your information and areas of intended contribution.
-
-
-### Other questions?
-
-Feel free to join us on [telegram](https://t.me/joinchat/HtYtxRSerOwrMLg_2_wZTQ) or submit an issue.
