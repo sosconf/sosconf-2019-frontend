@@ -161,7 +161,7 @@ Division of work will be more detailed as we get closer to the conference.
 -  Coordinate with other teams to implement business plans.
 -  Maintain connections between sosconf and sponsors.
 `,
-"市场营销组": `###我们希望你：
+"市场组": `###我们希望你：
 -  有良好的沟通表达能力及人际交往能力
 -  善于合作以及协调
 -  有较强的责任感，执行力强
