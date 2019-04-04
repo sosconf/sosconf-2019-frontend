@@ -103,13 +103,13 @@ class Header extends Component {
               />
             </button>
             <div className="sosconf-header__button-group sosconf-header__button-group--login">
-              <button className="sosconf-header__group-button-title sosconf-header__button-group-title--login">
+              <button className="sosconf-header__group-button-title sosconf-header__button-group-title--login" onClick={() => {window.location.href = "https://api.sosconf.org/register"}}>
                 <FormattedMessage id="signup"/>
               </button>
             </div>
 
             <div className="sosconf-header__button-group sosconf-header__button-group--signin">
-              <button className="sosconf-header__group-button-title sosconf-header__button-group-title--signin">
+              <button className="sosconf-header__group-button-title sosconf-header__button-group-title--signin" onClick={() => {window.location.href = "https://api.sosconf.org/login"}}>
                 <FormattedMessage id="signin"/>
               </button>
             </div>
@@ -204,12 +204,12 @@ class Header extends Component {
                 id="about"
               />
             </button>
-            <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/coming"); }}>
+            <button className="sosconf-header-mobile__button"  onClick={() => {window.location.href = "https://api.sosconf.org/login"}}>
               <FormattedMessage
                 id="signin"
               />
             </button>
-            <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/coming"); }}>
+            <button className="sosconf-header-mobile__button"  onClick={() => {window.location.href = "https://api.sosconf.org/register"}}>
               <FormattedMessage
                 id="signup"
               />

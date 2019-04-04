@@ -94,38 +94,35 @@ You will be specifically helping us and track hosts with electronic devices at e
 
 Division of work will be more detailed as we get closer to the conference.
 `,
-"议程组": `和我们一起创作第一次学生开源年会，见证历史。
-###需求
+"Agenda Team": `Compose the history with us as we create the first Student Open Source Conference together!
+### Requirements
 
--  喜欢开源开发和文化或对开源感兴趣。
--  喜欢团队合作。
--  有相关经验者优先。
--  认同我们的目标并有意长期和我们合作者优先！
+-  Interested in or passionate about the practice or idea of open-source.
+-  Team player.
+-  Similar experience and related knowledge is a plus (see below for specific responsibilities).
+-  Interest in our mission and willingness to work with us in the future is also a plus!
 
-###工作
 
--  在前期准备中，我们将一起根据赞助商和讲者招募情况创建多个版本的议程时间表。
--  我们会评估各类可能影响会议顺利开展的不确定性和风险，并准备相应的应对计划。
--  我们会一起策划一些将随会议进行同时开展的具体项目（如学生开源项目展览），并和其他相关小组研究可行性。
+###Responsibilities
+
+-  At the early stage of planning, we will together create multiple variations of conference schedules based on known sponsors and speakers.
+-  We will evaluate uncertainties and risks that may influence the commencement of each event session and prepare backup plans to ensure the conference's success.
+-  We will be creating specific events that will happen at the conference (for example, open-source projects showcasing). We will mediate with other teams to evaluate feasibility and carry out the best solutions.
+
 `,
-"技术组": `按照当前的进度考虑和技术复杂度, 以及考虑在开发中培养更多同学的技术能力, 技术组目前计划人员需求：
+"Media Team": `
+### Requirements
+-   Interested in or passionate about the practice or idea of open-source.
+-   Team player.
 
--   前端组
--   后端组
--   前端设计小组(包含UI) 
--   运维(包含各种注册/查询系统维护)
--   萌新若干
-### 技术组同学主要负责开发：
--   sosconf网站
--   sosconf志愿者管理系统
--   sosconf票务系统
--   sosconf系统维护
--   会议现场紧急技术支持
--   LDAP统一认证系统接入支持
--   DevOps及sosconf集群维护
-注: 其中DevOps部分由后端组配合运维组共同维护
-以上为考虑中较为合理的配置, 并且包含想要通过技术组工作锻炼的萌新
-上述人数需求并非硬性限制, 如果有更多同学也欢迎加入我们技术组的开发工作(欢迎萌新)
+### Optional Requirements
+-   Familiar with one or more foreign languages.
+-   Enjoy maintaining social media accounts.
+
+### Responsibilities
+-   Produce contents in multiple languages before and during the conference.
+-   Help us spread the word for sosconf through our media pipelines and social media accounts.
+-   Communicate with communities, organizations and the public as representatives of the committee.
 `,"设计组": `###设计组是一个为活动的举办锦上添花的小组。
 ### 人员要求：
 
@@ -143,32 +140,26 @@ Division of work will be more detailed as we get closer to the conference.
 
 以上配置不一定完全合理且周到，欢迎有兴趣的同学加入并提出建议。
 `,
-"赞助组": `赞助组主要负责对外联系潜在的赞助商，商务谈判和招募启动资金，也会行使一部分联系媒体或社区的职能，是 sosconf 联系社会的纽带。
+"Sponsorship Team": `The team is mainly responsible for contacting potential sponsors, negotiating with them and collecting funding.
 
-###人员要求：
+###Requirements
 
--  不限国籍
--  学生身份（不限于中学生、大学生、硕博生、留学生）
--  交流思路，口头表达能力较好
--  具备一定的社交礼仪（现实 or 网络）
+-  Applicants must be students.
+-  Interested in communicating and negotiating with organizations and corporations.
+-  Fluent in English.
 
-###技能要求（除了外语水平是硬性需求，其他均是可选项）：
+###Optional Requirements
 
--  英语六级 & 雅思5分及以上 & 托福60分及以上（满足任一条件即可）
--  口语流利和不怯场，能够同外国人进行一般及以上程度的的交流
--  外语&法律/金融/计算机相关背景的同学
--  会科学上网（约定使用统一的沟通模式，邮件+Skype）
--  撰写文案能力较强，思维活跃
+-  Studying or familiar with foreign languages, law, finance or computer science.
+-  Good at writing.
 
-###具体的工作：
+###Responsibilities
 
--  制定年度 Call for Sponsors
--  牵头起草赞助合同
--  联系赞助商，与赞助商进行谈判，尽力促成赞助
--  作为赞助商、媒体、社区三者之间的纽带，协助其他组共同推进事务进度
-运营和维护赞助商及合作伙伴的良好关系
-
-以上配置不一定完全合理且周到，欢迎有兴趣的同学加入并提出建议！
+-  Help us refurbish and modify Call for Sponsors notice.
+-  Draft contracts with sponsors.
+-  Contact and negotiate with potential sponsors.
+-  Coordinate with other teams to implement business plans.
+-  Maintain connections between sosconf and sponsors.
 `,
 "市场营销组": `###我们希望你：
 -  有良好的沟通表达能力及人际交往能力
