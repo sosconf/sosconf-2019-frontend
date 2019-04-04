@@ -52,6 +52,8 @@ class Sponsor extends Component {
                 <div className="sosconf-sponsor__content">
                     <div  dangerouslySetInnerHTML={{__html: this.state.sponsorDoc}}>
                     </div>
+                    <div>
+                    </div>
                     <div className="sosconf-sponsor__readAll">
                         <div className="sosconf-sponsor__readAll--button" onClick={this.readAll}>READ ALL</div>
                     </div>

@@ -2,8 +2,8 @@ import { Row } from 'antd';
 import React, { Component } from 'react';
 import SponsorCard from '../components/sponsorCard';
 import { FormattedMessage } from 'react-intl';
+import { connect } from 'react-redux';
 import iconArrow from '../images/icon_down.png';
-import 'antd/dist/antd.css';
 
 // DOC
 import volunteerDocument from '../docs/volunteer.js'; 
@@ -14,23 +14,55 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 class SponsorGroup extends Component {
     constructor(props) {
         super(props)
-        console.log(volunteerDocument)
-        this.state = {
-            menu: false,
-            "设计组":generatorHTML(volunteerDocument['en']['设计组']),
-            "技术组":generatorHTML(volunteerDocument['en']['技术组']),
-            "Conference Affairs Team":generatorHTML(volunteerDocument['en']['Conference Affairs Team']),
-            "赞助组":generatorHTML(volunteerDocument['en']['赞助组']),
-            "市场组":generatorHTML(volunteerDocument['en']['市场营销组']),
-            "志愿者需知":generatorHTML(volunteerDocument['en']['志愿者需知']),
-            "机动组":generatorHTML(volunteerDocument['en']['机动组']),
-            "议程组":generatorHTML(volunteerDocument['en']['议程组']),
-            "各类答疑":generatorHTML(volunteerDocument['en']['各类答疑']),
+        if (this.props.language == 'zh') {
+            this.state = {
+                menu: false,
+                "设计组":generatorHTML(volunteerDocument['zh']['设计组']),
+                "技术组":generatorHTML(volunteerDocument['zh']['技术组']),
+                "Conference Affairs Team":generatorHTML(volunteerDocument['zh']['Conference Affairs Team']),
+                "赞助组":generatorHTML(volunteerDocument['zh']['赞助组']),
+                "市场组":generatorHTML(volunteerDocument['zh']['市场营销组']),
+                "志愿者需知":generatorHTML(volunteerDocument['zh']['志愿者需知']),
+                "机动组":generatorHTML(volunteerDocument['zh']['机动组']),
+                "议程组":generatorHTML(volunteerDocument['zh']['议程组']),
+                "各类答疑":generatorHTML(volunteerDocument['zh']['各类答疑']),
+            }
+        } else {
+            this.state = {
+                menu: false,
+                "Agenda Team":generatorHTML(volunteerDocument['en']['Agenda Team']),
+                "Media Team":generatorHTML(volunteerDocument['en']['Media Team']),
+                "Conference Affairs Team":generatorHTML(volunteerDocument['en']['Conference Affairs Team']),
+                "Sponsorship Team":generatorHTML(volunteerDocument['en']['Sponsorship Team']),
+            }
         }
         this.showMenu.bind(this);
         this.renderCardGroup.bind(this);
         this.renderMenuGroup.bind(this);
         this.goBack.bind(this);
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.language == 'en') {
+            this.setState({
+                "设计组":generatorHTML(volunteerDocument['zh']['设计组']),
+                "技术组":generatorHTML(volunteerDocument['zh']['技术组']),
+                "Conference Affairs Team":generatorHTML(volunteerDocument['zh']['Conference Affairs Team']),
+                "赞助组":generatorHTML(volunteerDocument['zh']['赞助组']),
+                "市场组":generatorHTML(volunteerDocument['zh']['市场营销组']),
+                "志愿者需知":generatorHTML(volunteerDocument['zh']['志愿者需知']),
+                "机动组":generatorHTML(volunteerDocument['zh']['机动组']),
+                "议程组":generatorHTML(volunteerDocument['zh']['议程组']),
+                "各类答疑":generatorHTML(volunteerDocument['zh']['各类答疑']),
+            })
+        } else {
+            this.setState({
+                "Agenda Team":generatorHTML(volunteerDocument['en']['Agenda Team']),
+                "Media Team":generatorHTML(volunteerDocument['en']['Media Team']),
+                "Conference Affairs Team":generatorHTML(volunteerDocument['en']['Conference Affairs Team']),
+                "Sponsorship Team":generatorHTML(volunteerDocument['en']['Sponsorship Team']),
+            })
+        }
     }
 
     /**
@@ -51,7 +83,7 @@ class SponsorGroup extends Component {
         })
     }
 
-    renderCardGroup() {
+    renderChineseCardGroup() {
         return (
             <div className="sosconf__sponsor-group" style={{
                 boxShadow: "3px 3px 3px #656565",
@@ -114,6 +146,57 @@ class SponsorGroup extends Component {
         )
     }
 
+    renderEnglishCardGroup() {
+        return (
+            <div className="sosconf__sponsor-group" style={{
+                boxShadow: "3px 3px 3px #656565",
+                width: this.props.width,
+                height: this.props.height,
+                ...this.props.style
+            }}>
+                <Row>
+                    <SponsorCard span={12} bgColor="#FFE666" height={240} noDisplay={true}>
+                        <h2 style={{
+                            color:'black'
+                        }}>Welcome to Join Volunteers Team ></h2>
+                    </SponsorCard>
+                    <SponsorCard span={12} bgColor="#FF6680" height={240}  callback={() => {window.location.href="http://sosconf2019.mikecrm.com/pS483cs"}}>
+                        <h2>Go to fill out the application form</h2>
+                    </SponsorCard>
+                </Row>
+
+                <Row>
+                    <SponsorCard span={6} bgColor="#4285F4" height={240}  callback={this.showMenu.bind(this)} tag="Agenda Team">
+                        <h2>Agenda Team</h2>
+                    </SponsorCard>
+                    <SponsorCard span={6} bgColor="#37C28B" height={240}  callback={this.showMenu.bind(this)} tag="Media Team">
+                        <h2>Media Team</h2>
+                    </SponsorCard>
+                    <SponsorCard span={6} bgColor="#7E57C2" height={240}  callback={this.showMenu.bind(this)} tag="Sponsorship Team">
+                        <h2>Sponsorship Team</h2>
+                    </SponsorCard>
+                    <SponsorCard span={6} bgColor="#33B569" height={240}  callback={this.showMenu.bind(this)} tag="Conference Affairs Team">
+                        <h2 style={{
+                            wordBreak: 'breakAll'
+                        }}>Conference Affairs Team</h2>
+                    </SponsorCard>
+                </Row>
+
+                <Row>
+                    <SponsorCard span={24} bgColor="rgb(162, 128, 74)" height={240}  noDisplay={true}>
+                        <h2>volunteers@sosconf.org</h2>
+                    </SponsorCard>
+                </Row>
+            </div>
+        )
+    }
+
+    renderCardGroup() {
+        return this.props.language=='en'?
+        this.renderEnglishCardGroup():
+        this.renderChineseCardGroup();
+    }
+
     renderMenuGroup() {
         return (
             <div className="sosconf__volunteer-menu-group">
@@ -156,4 +239,10 @@ class SponsorGroup extends Component {
     }
 }
 
-export default SponsorGroup;
+export default connect(
+    state => {
+        return {
+            language: state.language
+        }
+    }
+)(SponsorGroup);
