@@ -14,27 +14,13 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 class SponsorGroup extends Component {
     constructor(props) {
         super(props)
-        if (this.props.language == 'zh') {
-            this.state = {
-                menu: false,
-                "设计组":generatorHTML(volunteerDocument['zh']['设计组']),
-                "技术组":generatorHTML(volunteerDocument['zh']['技术组']),
-                "Conference Affairs Team":generatorHTML(volunteerDocument['zh']['Conference Affairs Team']),
-                "赞助组":generatorHTML(volunteerDocument['zh']['赞助组']),
-                "市场组":generatorHTML(volunteerDocument['zh']['市场营销组']),
-                "志愿者需知":generatorHTML(volunteerDocument['zh']['志愿者需知']),
-                "机动组":generatorHTML(volunteerDocument['zh']['机动组']),
-                "议程组":generatorHTML(volunteerDocument['zh']['议程组']),
-                "各类答疑":generatorHTML(volunteerDocument['zh']['各类答疑']),
-            }
-        } else {
-            this.state = {
-                menu: false,
-                "Agenda Team":generatorHTML(volunteerDocument['en']['Agenda Team']),
-                "Media Team":generatorHTML(volunteerDocument['en']['Media Team']),
-                "Conference Affairs Team":generatorHTML(volunteerDocument['en']['Conference Affairs Team']),
-                "Sponsorship Team":generatorHTML(volunteerDocument['en']['Sponsorship Team']),
-            }
+        let document = {};
+        Object.keys(volunteerDocument[this.props.language]).forEach(key => {
+            document[key] = generatorHTML(volunteerDocument[this.props.language][key]);
+        })
+        this.state = {
+            menu: false,
+            ...document
         }
         this.showMenu.bind(this);
         this.renderCardGroup.bind(this);
@@ -43,26 +29,13 @@ class SponsorGroup extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        if (nextProps.language == 'en') {
-            this.setState({
-                "设计组":generatorHTML(volunteerDocument['zh']['设计组']),
-                "技术组":generatorHTML(volunteerDocument['zh']['技术组']),
-                "Conference Affairs Team":generatorHTML(volunteerDocument['zh']['Conference Affairs Team']),
-                "赞助组":generatorHTML(volunteerDocument['zh']['赞助组']),
-                "市场组":generatorHTML(volunteerDocument['zh']['市场营销组']),
-                "志愿者需知":generatorHTML(volunteerDocument['zh']['志愿者需知']),
-                "机动组":generatorHTML(volunteerDocument['zh']['机动组']),
-                "议程组":generatorHTML(volunteerDocument['zh']['议程组']),
-                "各类答疑":generatorHTML(volunteerDocument['zh']['各类答疑']),
-            })
-        } else {
-            this.setState({
-                "Agenda Team":generatorHTML(volunteerDocument['en']['Agenda Team']),
-                "Media Team":generatorHTML(volunteerDocument['en']['Media Team']),
-                "Conference Affairs Team":generatorHTML(volunteerDocument['en']['Conference Affairs Team']),
-                "Sponsorship Team":generatorHTML(volunteerDocument['en']['Sponsorship Team']),
-            })
-        }
+        let document = {};
+        Object.keys(volunteerDocument[nextProps.language]).forEach(key => {
+            document[key] = generatorHTML(volunteerDocument[nextProps.language][key]);
+        })
+        this.setState({
+            ...document
+        })
     }
 
     /**
