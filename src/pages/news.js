@@ -24,7 +24,7 @@ class Introduce extends Component {
 
     render() {
         let news;
-        if (this.props.language == 'ch') {
+        if (this.props.language == 'zh') {
             news = <div className="sosconf-home__news--container">
                     <div className="sosconf-home__news--head"><FormattedMessage id="recentNews"/></div>
                     <div className="sosconf-home__news--more"><FormattedMessage id="moreNews"/>-></div>

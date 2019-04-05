@@ -35,11 +35,6 @@ class Header extends Component {
     this.props.changeToChinese();
   }
 
-  // 悬浮
-  pop() {
-
-  }
-
   // 关闭所有bar
   closeAllBar() {
     this.setState({

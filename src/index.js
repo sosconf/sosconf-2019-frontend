@@ -58,7 +58,7 @@ store.subscribe(() => {
         locate = 'en';
         msg = en_US;
         render();
-    } else if (language === 'ch') {
+    } else if (language === 'zh') {
         locate = 'zh'
         msg = zh_CN
         render();

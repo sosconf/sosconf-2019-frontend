@@ -6,7 +6,7 @@ export default (state, action) => {
             out.language = 'en';
             break;
         case LANGUAGE_CHINESE:
-            out.language = 'ch';
+            out.language = 'zh';
             break;
         default:
             return state;

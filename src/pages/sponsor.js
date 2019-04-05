@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
+import SponsorCard from '../components/sponsorCard';
+import { Row, Modal } from 'antd';
 import '../themes/sponsor.css';
 
 // DOC
@@ -44,16 +46,33 @@ class Sponsor extends Component {
     render() {
         return (
             <div className="sosconf-sponsor__wrapper">
-                {/* <a className="sosconf-sponsor__back" onClick={() => {this.props.history.push("/");}}><FormattedMessage id="back"/></a> */}
-                {/* <a className="sosconf-sponsor__more"><FormattedMessage id="more"/></a> */}
                 <h1 className="sosconf-sponsor__title"><FormattedMessage id="sponsorshipContact"/></h1>
                 <div className="sosconf-sponsor__span"></div>
                 <h3 className="sosconf-sponsor__sub"><FormattedMessage id="welcomeContact"/> sponsors@sosconf.org</h3>
                 <div className="sosconf-sponsor__content">
                     <div  dangerouslySetInnerHTML={{__html: this.state.sponsorDoc}}>
                     </div>
-                    <div>
-                    </div>
+                    {/* <div className="sosconf-sponsor__button-group">
+                        <div className="sosconf-sponsor__button--diamond">
+                            钻石级
+                        </div>
+
+                        <div className="sosconf-sponsor__button--platinum">
+                            铂金级
+                        </div>
+
+                        <div className="sosconf-sponsor__button--gold">
+                            黄金级
+                        </div>
+
+                        <div className="sosconf-sponsor__button--sliver">
+                            白银级
+                        </div>
+
+                        <div className="sosconf-sponsor__button--bronze">
+                            青铜级
+                        </div>
+                    </div> */}
                     <div className="sosconf-sponsor__readAll">
                         <div className="sosconf-sponsor__readAll--button" onClick={this.readAll}>READ ALL</div>
                     </div>
