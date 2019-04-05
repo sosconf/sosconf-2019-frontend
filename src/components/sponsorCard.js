@@ -14,7 +14,7 @@ class SponsorCard extends Component {
 
     render () {
         return (
-                <Col className="sosconf__volunteer-card-wrap" span={this.props.span} style={{
+                <Col className="sosconf__volunteer-card-wrap" span={this.props.span} offset={this.props.offset} style={{
                     width: this.props.width,
                     height: this.props.height,
                     color: this.props.color,

@@ -109,6 +109,40 @@
         font-weight: 400;
     }
 
+    .sosconf-sponsor__button-group div{
+        display: inline-block;
+        min-width: 20%;
+        height: 162px;
+        text-align: center;
+        line-height: 162px;
+        color: white;
+    }
+
+    .sosconf-sponsor__button-group div:hover {
+        transform: scale(1.2);
+        transition: all .2s;
+    }
+
+    .sosconf-sponsor__button--diamond {
+        background: #34CEFF;
+    }
+
+    .sosconf-sponsor__button--platinum {
+        background: #63FDED;
+    }
+
+    .sosconf-sponsor__button--gold {
+        background: #FFE647;
+    }
+
+    .sosconf-sponsor__button--sliver {
+        background: #D8E7F4;
+    }
+
+    .sosconf-sponsor__button--bronze {
+        background: #9BCF85;
+    }
+
 @media screen and (max-width: 1050px) {
 
     .sosconf-sponsor__wrapper{
