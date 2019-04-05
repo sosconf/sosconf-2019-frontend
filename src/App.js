@@ -28,24 +28,34 @@ class App extends Component {
     super();
     this.state = {
       popState:true,
-      scrollPosition:0
+      scrollPosition:0,
+      timer: ""
     }
     const that = this;
     document.addEventListener('scroll', function (target) {
-      let nowScroll = window.scrollY;
-      if (nowScroll <= that.state.scrollPosition) {
-        if (!that.state.popState)
-          that.setState({
-            popState:true
-          })
-      } else {
-        if (that.state.popState)
-          that.setState({
-            popState:false
-          })
+      let timer;
+      if (that.state.timer) {
+        clearTimeout(that.state.timer)
       }
+      timer = setTimeout(function () {
+        let nowScroll = window.scrollY;
+        if (nowScroll <= that.state.scrollPosition) {
+          if (!that.state.popState)
+            that.setState({
+              popState:true
+            })
+        } else {
+          if (that.state.popState)
+            that.setState({
+              popState:false
+            })
+        }
+        that.setState({
+          scrollPosition:nowScroll
+        })
+      }, 300);
       that.setState({
-        scrollPosition:nowScroll
+        timer
       })
     }, false);
   }
