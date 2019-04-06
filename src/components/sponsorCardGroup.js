@@ -34,7 +34,7 @@ class SponsorGroup extends Component {
             document[key] = generatorHTML(volunteerDocument[nextProps.language][key]);
         })
         this.setState({
-            ...document
+            ...document,
         })
     }
 
@@ -45,20 +45,22 @@ class SponsorGroup extends Component {
     showMenu(tag) {
         this.setState({
             menu: true,
-            tag: tag
+            tag: tag,
+            innerHtml: this.state[tag]
         })
     }
 
     goBack() {
         this.setState({
             menu: false,
-            tag: ''
+            tag: '',
+            innerHtml: ''
         })
     }
 
     renderChineseCardGroup() {
         return (
-            <div className="sosconf__sponsor-group" style={{
+            <div key="sosconf__sponsor-group--chinese" className="sosconf__sponsor-group sosconf__sponsor-group--chinese" style={{
                 boxShadow: "3px 3px 3px #656565",
                 width: this.props.width,
                 height: this.props.height,
@@ -105,14 +107,23 @@ class SponsorGroup extends Component {
                     </SponsorCard>
                     <SponsorCard span={6} bgColor="#33B569" height={240}  callback={this.showMenu.bind(this)} tag="Conference Affairs Team">
                         <h2 style={{
-                            wordBreak: 'breakAll'
+                            wordBreak: 'break-all'
                         }}>Conference Affairs Team</h2>
                     </SponsorCard>
                 </Row>
 
                 <Row>
-                    <SponsorCard span={24} bgColor="rgb(162, 128, 74)" height={240}  noDisplay={true}>
-                        <h2>volunteers@sosconf.org</h2>
+                    <SponsorCard span={8} bgColor="rgb(162, 128, 74)" height={240}  noDisplay={true}>
+                        <h2>QQ群：928111041</h2>
+                    </SponsorCard>
+                    <SponsorCard span={8} bgColor="rgb(234, 195, 131)" height={240} callback={() => {window.location.href = "https://t.me/joinchat/LK3swBM0tPqV-nR8BwrLUA"}}>
+                        <h2 href="https://t.me/joinchat/LK3swBM0tPqV-nR8BwrLUA">电报群</h2>
+                    </SponsorCard>
+                    <SponsorCard span={8} bgColor="rgb(142, 128, 107)" height={240}  noDisplay={true}>
+                        <h3 style={{
+                            wordBreak: 'break-all',
+                            color: 'white'
+                        }}>volunteers@sosconf.org</h3>
                     </SponsorCard>
                 </Row>
             </div>
@@ -121,7 +132,7 @@ class SponsorGroup extends Component {
 
     renderEnglishCardGroup() {
         return (
-            <div className="sosconf__sponsor-group" style={{
+            <div key="sosconf__sponsor-group--english" className="sosconf__sponsor-group sosconf__sponsor-group--english" style={{
                 boxShadow: "3px 3px 3px #656565",
                 width: this.props.width,
                 height: this.props.height,
@@ -150,14 +161,17 @@ class SponsorGroup extends Component {
                     </SponsorCard>
                     <SponsorCard span={6} bgColor="#33B569" height={240}  callback={this.showMenu.bind(this)} tag="Conference Affairs Team">
                         <h2 style={{
-                            wordBreak: 'breakAll'
+                            wordBreak: 'break-all'
                         }}>Conference Affairs Team</h2>
                     </SponsorCard>
                 </Row>
 
                 <Row>
-                    <SponsorCard span={24} bgColor="rgb(162, 128, 74)" height={240}  noDisplay={true}>
+                    <SponsorCard span={12} bgColor="rgb(162, 128, 74)" height={240}  noDisplay={true}>
                         <h2>volunteers@sosconf.org</h2>
+                    </SponsorCard>
+                    <SponsorCard span={12} bgColor="rgb(234, 195, 131)" height={240} callback={() => {window.location.href = "https://t.me/joinchat/LK3swBM0tPqV-nR8BwrLUA"}}>
+                        <h2 href="https://t.me/joinchat/LK3swBM0tPqV-nR8BwrLUA">Telegran Group</h2>
                     </SponsorCard>
                 </Row>
             </div>
@@ -172,7 +186,7 @@ class SponsorGroup extends Component {
 
     renderMenuGroup() {
         return (
-            <div className="sosconf__volunteer-menu-group">
+            <div className="sosconf__volunteer-menu-group" tag={this.state.tag}>
                 <button onClick={() => {this.goBack()}}>
                     <img src={iconArrow} style={{
                         background: "#00C79B",
@@ -187,7 +201,7 @@ class SponsorGroup extends Component {
                 </button>
                 <h1 className="sosconf__volunteer-menu-group-title">{this.state.tag}</h1>
                 <div className="sosconf__volunteer-menu-group-split"></div>
-                <div className="sosconf__volunteer-menu-group-text" dangerouslySetInnerHTML={{__html: this.state[this.state.tag]}}>
+                <div className="sosconf__volunteer-menu-group-text" dangerouslySetInnerHTML={{__html: this.state.innerHtml}}>
 
                 </div>
             </div>
