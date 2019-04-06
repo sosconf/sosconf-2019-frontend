@@ -311,8 +311,11 @@ Division of work will be more detailed as we get closer to the conference.
 -   会议现场紧急技术支持
 -   LDAP统一认证系统接入支持
 -   DevOps及sosconf集群维护
+
 注: 其中DevOps部分由后端组配合运维组共同维护
+
 以上为考虑中较为合理的配置, 并且包含想要通过技术组工作锻炼的萌新
+
 上述人数需求并非硬性限制, 如果有更多同学也欢迎加入我们技术组的开发工作(欢迎萌新)
 `,
 "设计组": `###设计组是一个为活动的举办锦上添花的小组。
@@ -356,7 +359,8 @@ Division of work will be more detailed as we get closer to the conference.
 -  牵头起草赞助合同
 -  联系赞助商，与赞助商进行谈判，尽力促成赞助
 -  作为赞助商、媒体、社区三者之间的纽带，协助其他组共同推进事务进度
-运营和维护赞助商及合作伙伴的良好关系
+
+运营和维护赞助商及合作伙伴的良好关系！
 
 以上配置不一定完全合理且周到，欢迎有兴趣的同学加入并提出建议！
 `,
