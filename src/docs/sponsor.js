@@ -16,31 +16,31 @@ We seek to provide financial assistance for student speakers who need it. In add
 - Helping enterprises expand business opportunities.
 - Helping to promote brand influence.
 
-### Titanium Sponsorship
+### Diamond Sponsorship
 - sosconf 2019 admission tickets × 8
 - Conference banquet VIP invitation tickets × 4
-- Titanium level booth and customized name tags
+- Diamond level booth and customized name tags
 - Promotional bag advertising items × 3
 - Company name & logo exposure in the front cover and a single page of the agenda
 - Exclusive tweets posted by our official social media accounts × 2
 - Mass email sending × 2 
 - A 120s video advertisement before the conference 
-- A Titanium tier double-page advertisement in the conference brochure
+- A Diamond tier double-page advertisement in the conference brochure
 - A reserved lightning talk chance
 - Joint exposure of company logo and profile on sosconf official website
 - Company logo exposure in the sign-in area and presentation backdrop
 - Amount of sponsorship: 20,000 USD
 
-### Diamond Sponsorship
+### Platinum Sponsorship
 - sosconf 2019 admission tickets × 6
 - Conference banquet VIP invitation tickets × 2
-- Diamond level booth and customized name tags
+- Platinum level booth and customized name tags
 - Promotional bag advertising items ×2
 - Company name & logo exposure in the back cover and half of a page of the agenda
 - An exclusive tweet posted by our official social media accounts
 - Mass email sending ×2
 - A 90s video advertisement before the conference
-- A Diamond level single-page advertisement in the conference brochure
+- A Platinum level single-page advertisement in the conference brochure
 - Joint exposure of company logo and profile on sosconf official website
 - Company logo exposure in the sign-in area welcome backdrop and presentation backdrop
 - Amount of sponsorship: 10,000 USD
@@ -117,51 +117,37 @@ For detailed information, please contact us at sponsors@sosconf.org
 
 
 
-### 赞助方案——钛金级
+### 赞助方案——钻石级
 - sosconf 2019 年会入场票 ×8
 - 年会晚宴VIP邀请票 ×4
-- 钛金级展位及定制胸牌
+- 钻石级展位及定制胸牌
 - 赞助商宣传资料入袋 ×3
 - 活动手册跨页广告
 - 议程表显示公司名称及 Logo ：整页及单页
-- 官方社群媒体网站发表钛金级赞助商专属推文两篇
+- 官方社群媒体网站发表钻石级赞助商专属推文两篇
 - 会议前后的群发电子邮件 ×2
 - 会前宣传视频时长 120s
-- 钛金级手册跨页广告
+- 钻石级手册跨页广告
 - 闪电演讲保留1个名额
 - 宣传资料入袋 ×3
 - 赞助商 Logo 于官网露出及公司介绍
 - 活动会场签到区及主会场背板 Logo 联名露出 
 - 赞助金：20,000 USD
 
-### 赞助方案——钻石级
+### 赞助方案——铂金级
 - sosconf 2019 年会入场票 ×6
 - 年会晚宴VIP邀请票 ×2
-- 钻石级展位及定制胸牌
+- 铂金级展位及定制胸牌
 - 赞助商宣传资料入袋 ×2
 - 活动手册整页广告
 - 议程表显示公司名称及 Logo ：封底及半页
-- 官方社群媒体网站发表钻石级赞助商专属推文一篇
+- 官方社群媒体网站发表铂金级赞助商专属推文一篇
 - 会议前后的群发电子邮件 ×2
 - 会前宣传视频时长 90s
-- 钻石级手册整页广告
+- 铂金级手册整页广告
 - 赞助商 Logo 于官网露出及公司介绍
 - 活动会场签到区及主会场背板上 Logo 联名露出
 - 赞助金：10,000 USD 
-- 赞助方案——黄金级
-- sosconf 2019 年会入场票 ×4
-- 年会晚宴VIP邀请票 ×1
-- 黄金级展位及定制胸牌
-- 赞助商宣传资料入袋 ×1
-- 活动手册侧栏广告
-- 议程表显示公司名称及 Logo ：1/4页
-- 官方社群媒体网站发表黄金级赞助商专属推文一篇
-- 会议后的群发电子邮件 ×1
-- 会前宣传视频时长 60s
-- 黄金级手册侧栏广告
-- 赞助商 Logo 于官网露出及公司介绍
-- 活动会场签到区及分会场背板上 Logo 联名露出
-- 赞助金：7,000 USD
 
 ### 赞助方案——黄金级
 - sosconf 2019 年会入场票 ×4
