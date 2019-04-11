@@ -15,8 +15,7 @@ import News from './pages/news';
 import Venue from './pages/venue';
 import Speaker from './pages/speaker';
 import BackToTop from './components/backToTop';
-import axios from 'axios';
-import qs from 'qs';
+import { getProfile } from './api/index';
 
 // React-transition-group
 import { TransitionGroup, CSSTransition } from "react-transition-group";
@@ -35,16 +34,13 @@ class App extends Component {
 
     const url = new URL(window.location);
     const ticket = url.searchParams.get('ticket');
-    sessionStorage.setItem('ticket', ticket);
-
-    axios.post('https://api.sosconf.org/graphql/?', {
-      query:`query{userProfile(ticket:"${ticket}"){
-        userId,
-        nickname
-      }}`
-    })
+    if (ticket) {
+      sessionStorage.setItem('ticket', ticket);
+      getProfile().then(res => {
+        console.log(res)
+      });
+    }
     
-
     const that = this;
     document.addEventListener('scroll', function (target) {
       let timer;
