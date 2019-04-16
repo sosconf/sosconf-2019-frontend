@@ -95,6 +95,13 @@ You will be specifically helping us and track hosts with electronic devices at e
 Division of work will be more detailed as we get closer to the conference.
 `,
 "Agenda Team": `Compose the history with us as we create the first Student Open Source Conference together!
+
+###Responsibilities
+
+-  At the early stage of planning, we will together create multiple variations of conference schedules based on known sponsors and speakers.
+-  We will evaluate uncertainties and risks that may influence the commencement of each event session and prepare backup plans to ensure the conference's success.
+-  We will be creating specific events that will happen at the conference (for example, open-source projects showcasing). We will mediate with other teams to evaluate feasibility and carry out the best solutions.
+
 ### Requirements
 
 -  Interested in or passionate about the practice or idea of open-source.
@@ -103,11 +110,6 @@ Division of work will be more detailed as we get closer to the conference.
 -  Interest in our mission and willingness to work with us in the future is also a plus!
 
 
-###Responsibilities
-
--  At the early stage of planning, we will together create multiple variations of conference schedules based on known sponsors and speakers.
--  We will evaluate uncertainties and risks that may influence the commencement of each event session and prepare backup plans to ensure the conference's success.
--  We will be creating specific events that will happen at the conference (for example, open-source projects showcasing). We will mediate with other teams to evaluate feasibility and carry out the best solutions.
 
 `,
 "Media Team": `
