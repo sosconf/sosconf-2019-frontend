@@ -31,7 +31,8 @@ const enUS = {
   joinUs: ' Join us',
   sponsorshipContact: 'Sponsorship Contact',
   signin: 'Sign in',
-  signup: 'Sign up'
+  signup: 'Sign up',
+  time: 'September 1, 2019'
 };
 
 export default enUS;

@@ -74,7 +74,10 @@ class Home extends Component {
               <div className="sosconf-home__date-flag">
                 DATE
               </div>
-              <h2 className="sosconf-home__position--time">August 24 & 25, 2019</h2>
+              <h2 className="sosconf-home__position--time">
+              <FormattedMessage
+                id="time"
+              /></h2>
               <div className="sosconf-home__position-flag">
                SITE
               </div>
