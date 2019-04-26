@@ -1,9 +1,12 @@
 .sosconf-speaker__button {
     width: 200px;
     height: 70px;
+    line-height: 70px;
+    font-size: 20px;
     background: white;
     color: black;
     border-radius: 30px;
     border: none;
     margin-bottom: 20px;
+    display: inline-block;
 }

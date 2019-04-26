@@ -32,7 +32,8 @@ const zhCN = {
   sponsorshipContact: "赞助联系",
   signin: '登录',
   signup: '注册',
-  time: '2019年9月1日'
+  time: '2019年9月1日',
+  commitApply: '提交申请'
 };
 
 export default zhCN;
