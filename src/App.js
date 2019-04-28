@@ -15,6 +15,7 @@ import News from './pages/news';
 import Venue from './pages/venue';
 import Speaker from './pages/speaker';
 import BackToTop from './components/backToTop';
+import Personal from './pages/personal';
 import { getProfile } from './api/index';
 
 // React-transition-group
@@ -105,6 +106,7 @@ class App extends Component {
                   <Route exact path="/news" component={News} />
                   <Route exact path="/venue" component={Venue} />
                   <Route exact path="/speaker" component={Speaker} />
+                  <Route exact path="/personal" component={Personal} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>
