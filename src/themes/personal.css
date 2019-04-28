@@ -1,0 +1,27 @@
+.sosconf-personal {
+    
+}
+
+.sosconf-personal h2 {
+    font-size: 32px;
+}
+
+.sosconf-personal .sosconf__card-wrap {
+    text-align: left;
+}
+
+.sosconf-personal__info img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.sosconf-personal__div-line{
+    width: 100%;
+    background: rgba(40, 40, 40, 0.5);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+}
