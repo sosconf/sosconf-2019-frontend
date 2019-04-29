@@ -2,7 +2,7 @@
     background: white;
     display: flex;
     border-radius: 5px;
-    box-shadow: 3px 3px 3px rgba(88, 88, 88, 0.5);
+    box-shadow:0px 5px 20px -4px rgba(0,0,0,0.5);
 }
 
 .sosconf__card-wrap {

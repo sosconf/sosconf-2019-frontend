@@ -12,8 +12,17 @@ class PersonalHeader extends Component {
             <div>
                 <h2>Welcome</h2>
                 <div className="sosconf-personal__info">
-                    <img src="./"></img>
+                    <div className="sosconf-personal__img">
+                        <img src={this.props.info.imgSrc || ''}></img>
+                    </div>
                     <div>
+                        <div className="sosconf-personal__info-name">Name</div>
+                        <div className="sosconf-personal__info-identity">
+                            <span className="sosconf-personal__identity sosconf-personal__identity--volunteer">Volunteer</span>
+                            <span className="sosconf-personal__identity sosconf-personal__identity--speaker">Speaker</span>
+                            <span className="sosconf-personal__identity sosconf-personal__identity--follower">Follower</span>
+                            <span className="sosconf-personal__identity sosconf-personal__identity--attendee">Attendee</span>
+                        </div>
                     </div>
                 </div>
                 <div className="sosconf-personal__div-line">
@@ -24,10 +33,54 @@ class PersonalHeader extends Component {
 }
 
 class PersonalFormBody extends Component {
+    constructor (props) {
+        super(props);
+        
+    }
+
     render () {
         return (
             <div>
+                <div className="sosconf-personal__form-body-wrap">
+                    <div className="sosconf-personal__form-item">
+                        <div className="sosconf-personal__form-label">
+                            <span>
+                                Email
+                            </span>
+                        </div>
+                        <div className="sosconf-personal__form-input">
+                            <div>
 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="sosconf-personal__form-item">
+                        <div className="sosconf-personal__form-label">
+                            <span>
+                                Team
+                            </span>
+                        </div>
+                        <div className="sosconf-personal__form-input">
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="sosconf-personal__form-item">
+                        <div className="sosconf-personal__form-label">
+                            <span>
+                                P.S.
+                            </span>
+                        </div>
+                        <div className="sosconf-personal__form-input">
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="sosconf-personal__div-line">
                 </div>
             </div>
@@ -39,7 +92,10 @@ class PersonalFormBottom extends Component {
     render () {
         return (
             <div>
-                <button className="sosconf-home__button--black">UPDATE</button>
+                <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--update">UPDATE</button>
+                <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--attendee"><span>To be a</span><br/><span>Attendee</span></button>
+                <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--volunteer"><span>To be a</span><br/><span>Volunteer</span></button>
+                <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--speaker"><span>To be a</span><br/><span>Speaker</span></button>
             </div>
         )
     }
@@ -49,12 +105,13 @@ class Personal extends Component {
     constructor (props) {
         super(props)
     }
+
     render() {
         return (
             <div className="sosconf-personal">
                 <Card  customerStyle={{
-                    width: "600px",
-                    height: '700px',
+                    width: "700px",
+                    height: '600px',
                     margin: '0 auto',
                     marginTop: '140px',
                     marginBottom: '140px',
@@ -71,13 +128,13 @@ class Personal extends Component {
                 body={(
                     <div>
                         <div className="sosconf-personal__header">
-                            <PersonalHeader />
+                            <PersonalHeader info={{}}/>
                         </div>
                         <div className="sosconf-personal__form-body">
-                            <PersonalFormBody />
+                            <PersonalFormBody info={{}}/>
                         </div>
                         <div className="sosconf-personal__form-bottom">
-                            <PersonalFormBottom />
+                            <PersonalFormBottom info={{}}/>
                         </div>
                     </div>
                 )}>
