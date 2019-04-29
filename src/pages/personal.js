@@ -41,7 +41,46 @@ class PersonalFormBody extends Component {
     render () {
         return (
             <div>
+                <div className="sosconf-personal__form-body-wrap">
+                    <div className="sosconf-personal__form-item">
+                        <div className="sosconf-personal__form-label">
+                            <span>
+                                Email
+                            </span>
+                        </div>
+                        <div className="sosconf-personal__form-input">
+                            <div>
 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="sosconf-personal__form-item">
+                        <div className="sosconf-personal__form-label">
+                            <span>
+                                Team
+                            </span>
+                        </div>
+                        <div className="sosconf-personal__form-input">
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="sosconf-personal__form-item">
+                        <div className="sosconf-personal__form-label">
+                            <span>
+                                P.S.
+                            </span>
+                        </div>
+                        <div className="sosconf-personal__form-input">
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="sosconf-personal__div-line">
                 </div>
             </div>
@@ -71,8 +110,8 @@ class Personal extends Component {
         return (
             <div className="sosconf-personal">
                 <Card  customerStyle={{
-                    width: "600px",
-                    height: '700px',
+                    width: "700px",
+                    height: '600px',
                     margin: '0 auto',
                     marginTop: '140px',
                     marginBottom: '140px',

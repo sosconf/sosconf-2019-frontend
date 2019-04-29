@@ -8,6 +8,7 @@
 
 .sosconf-personal__info {
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
 .sosconf-personal .sosconf__card-wrap {
@@ -95,6 +96,37 @@
 
 .sosconf-personal__button--speaker {
     background:rgba(0,175,251,1);
+}
+
+.sosconf-personal__form-body-wrap {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sosconf-personal__form-label {
+    width: 20%;
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+}
+
+.sosconf-personal__form-input {
+    width: 80%;
+    margin-left: 20%;
+    height:40px;
+    background:rgba(242,243,245,1);
+    box-shadow:0px 1px 4px 0px rgba(0,0,0,0.16);
+    border-radius:50px;
+}
+
+.sosconf-personal__form-item {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sosconf-personal__form-bottom {
+    margin-top: 30px;
 }
 
 
