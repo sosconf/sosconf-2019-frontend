@@ -6,6 +6,10 @@
     font-size: 32px;
 }
 
+.sosconf-personal__info {
+    overflow: hidden;
+}
+
 .sosconf-personal .sosconf__card-wrap {
     text-align: left;
 }
@@ -25,3 +29,73 @@
     margin-right: auto;
     height: 1px;
 }
+
+.sosconf-personal__img {
+    float: left;
+    margin-right: 20px;
+}
+
+.sosconf-personal__info-name {
+
+}
+
+.sosconf-personal__info-identity {
+    margin-top: 15px;
+}
+
+.sosconf-personal__identity {
+    border-radius: 50px;
+    display: inline-block;
+    height: 20px;
+    width: 70px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 20px;
+    margin-right: 10px;
+    color: white;
+}
+
+.sosconf-personal__identity--volunteer {
+    background:rgba(13, 216, 223, 1)
+}
+
+.sosconf-personal__identity--speaker {
+    background:rgba(0,175,251,1);
+}
+
+.sosconf-personal__identity--follower {
+    background:rgba(47,84,98,1);
+}
+
+.sosconf-personal__identity--attendee {
+    background:rgba(249,200,0,1);
+}
+
+.sosconf-personal__button {
+    font-size: 10px;
+    line-height: 15px;
+    width: 80px;
+    height: 35px;
+}
+
+.sosconf-personal__button--update {
+    line-height: 30px;
+    overflow: hidden;
+    position: relative;
+    top: 8px;
+}
+
+.sosconf-personal__button--attendee {
+    background:rgba(249,200,0,1);
+}
+
+.sosconf-personal__button--volunteer {
+    background:rgba(13, 216, 223, 1)
+}
+
+.sosconf-personal__button--speaker {
+    background:rgba(0,175,251,1);
+}
+
+
+
