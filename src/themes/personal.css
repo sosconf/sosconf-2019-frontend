@@ -48,11 +48,11 @@
     border-radius: 50px;
     display: inline-block;
     height: 20px;
-    width: 70px;
+    width: 65px;
+    transform: scale(0.8);
     text-align: center;
     font-size: 10px;
     line-height: 20px;
-    margin-right: 10px;
     color: white;
 }
 
@@ -82,8 +82,6 @@
 .sosconf-personal__button--update {
     line-height: 30px;
     overflow: hidden;
-    position: relative;
-    top: 8px;
 }
 
 .sosconf-personal__button--attendee {
@@ -127,6 +125,10 @@
 
 .sosconf-personal__form-bottom {
     margin-top: 30px;
+}
+
+.sosconf-personal__button-group-right {
+    float: right;
 }
 
 

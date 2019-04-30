@@ -93,9 +93,11 @@ class PersonalFormBottom extends Component {
         return (
             <div>
                 <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--update">UPDATE</button>
-                <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--attendee"><span>To be a</span><br/><span>Attendee</span></button>
-                <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--volunteer"><span>To be a</span><br/><span>Volunteer</span></button>
-                <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--speaker"><span>To be a</span><br/><span>Speaker</span></button>
+                <div className="sosconf-personal__button-group-right">
+                    <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--attendee"><span>To be a</span><br/><span>Attendee</span></button>
+                    <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--volunteer"><span>To be a</span><br/><span>Volunteer</span></button>
+                    <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--speaker"><span>To be a</span><br/><span>Speaker</span></button>
+                </div>
             </div>
         )
     }
