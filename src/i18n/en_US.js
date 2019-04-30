@@ -8,7 +8,7 @@ const enUS = {
   contact: 'Contact',
   sponsorContact: 'Sponsor contact',
   talkerContact: 'Speakers',
-  volunteerContact: 'Volunteer',
+  volunteerContact: 'Volunteers',
   language: 'Language',
   about: 'About',
   english: 'English',
@@ -33,7 +33,7 @@ const enUS = {
   signin: 'Sign in',
   signup: 'Sign up',
   time: 'September 1, 2019',
-  commitApply: 'submit'
+  commitApply: 'Apply'
 };
 
 export default enUS;
