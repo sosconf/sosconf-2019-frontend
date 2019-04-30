@@ -12,17 +12,16 @@ FROM nginx:stable-alpine
 
 LABEL \
   org.label-schema.schema-version="1.0" \
-  org.label-schema.name="instantbox-frontend" \
-  org.label-schema.vcs-url="https://github.com/instantbox/instantbox-frontend" \
-  maintainer="Instantbox Team <team@instantbox.org>"
+  org.label-schema.name="sosconf-frontend" \
+  org.label-schema.vcs-url="https://github.com/sosconf/sosconf-2019-frontend" \
+  maintainer="sosconf Team <team@sosconf.org>"
 
 COPY --from=builder /app/build/ /var/build/
 
 RUN mkdir -p /var/build/2019/
 RUN cp -r /var/build/* /var/build/2019/ | true
-RUN mkdir -p /etc/letsencrypt/live/sosconf.org/  /etc/letsencrypt/archive/
 COPY ./nginx.conf /etc/nginx/
-EXPOSE 80
+EXPOSE 8080
 
 ARG BUILD_DATE
 ARG VCS_REF
