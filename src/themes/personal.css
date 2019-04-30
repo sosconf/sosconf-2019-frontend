@@ -135,6 +135,19 @@
     float: right;
 }
 
+@media screen and (max-width: 1050px) { 
+    .sosconf__card {
+        width: 90% !important;
+        padding: 40px !important;
+    }
 
+    .sosconf-personal__button-group-right {
+        float: none;
+    }
+    
+    .sosconf-personal__button {
+        width: 140px;
+    }
+}
 
 

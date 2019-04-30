@@ -1,7 +1,7 @@
 .sosconf__card {
     background: white;
     display: flex;
-    border-radius: 5px;
+    border-radius: 16px;
     box-shadow:0px 5px 20px -4px rgba(0,0,0,0.5);
 }
 

@@ -109,7 +109,7 @@ class Personal extends Component {
             <div className="sosconf-personal">
                 <Card  customerStyle={{
                     width: "700px",
-                    height: '600px',
+                    minHeight: '600px',
                     margin: '0 auto',
                     marginTop: '140px',
                     marginBottom: '140px',
