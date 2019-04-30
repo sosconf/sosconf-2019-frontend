@@ -29,7 +29,6 @@ after_success:
       docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD_SECURE";
       docker tag "build/$IMAGE_NAME" "$IMAGE_NAME";
       docker push "$IMAGE_NAME";
-      ##sshpass -p ${DEPLOY_PASSWD} ssh -o "StrictHostKeyChecking no" root@${DEPLOY_IP} "cd sosconf-2019/ && ./deploy.sh";
     fi
 
 
