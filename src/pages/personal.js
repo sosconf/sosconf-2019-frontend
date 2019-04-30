@@ -49,9 +49,7 @@ class PersonalFormBody extends Component {
                             </span>
                         </div>
                         <div className="sosconf-personal__form-input">
-                            <div>
-
-                            </div>
+                            123
                         </div>
                     </div>
 
@@ -62,9 +60,7 @@ class PersonalFormBody extends Component {
                             </span>
                         </div>
                         <div className="sosconf-personal__form-input">
-                            <div>
-
-                            </div>
+                            2132
                         </div>
                     </div>
 
@@ -93,9 +89,11 @@ class PersonalFormBottom extends Component {
         return (
             <div>
                 <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--update">UPDATE</button>
-                <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--attendee"><span>To be a</span><br/><span>Attendee</span></button>
-                <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--volunteer"><span>To be a</span><br/><span>Volunteer</span></button>
-                <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--speaker"><span>To be a</span><br/><span>Speaker</span></button>
+                <div className="sosconf-personal__button-group-right">
+                    <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--attendee"><span>To be a</span><br/><span>Attendee</span></button>
+                    <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--volunteer"><span>To be a</span><br/><span>Volunteer</span></button>
+                    <button className="sosconf-home__button--black sosconf-personal__button sosconf-personal__button--speaker"><span>To be a</span><br/><span>Speaker</span></button>
+                </div>
             </div>
         )
     }
@@ -111,7 +109,7 @@ class Personal extends Component {
             <div className="sosconf-personal">
                 <Card  customerStyle={{
                     width: "700px",
-                    height: '600px',
+                    minHeight: '600px',
                     margin: '0 auto',
                     marginTop: '140px',
                     marginBottom: '140px',
