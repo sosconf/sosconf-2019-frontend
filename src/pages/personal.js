@@ -49,9 +49,7 @@ class PersonalFormBody extends Component {
                             </span>
                         </div>
                         <div className="sosconf-personal__form-input">
-                            <div>
-
-                            </div>
+                            123
                         </div>
                     </div>
 
@@ -62,9 +60,7 @@ class PersonalFormBody extends Component {
                             </span>
                         </div>
                         <div className="sosconf-personal__form-input">
-                            <div>
-
-                            </div>
+                            2132
                         </div>
                     </div>
 
