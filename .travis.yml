@@ -11,6 +11,7 @@ addons:
     packages:
     - sshpass
 
+
 env:
   - IMAGE_NAME=sosconf/frontend:2019
 
