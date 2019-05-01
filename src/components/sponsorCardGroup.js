@@ -87,8 +87,8 @@ class SponsorGroup extends Component {
                     <SponsorCard span={6} bgColor="#37C28B" height={240}  callback={this.showMenu.bind(this)} tag="设计组">
                         <h2>设计组</h2>
                     </SponsorCard>
-                    <SponsorCard span={6} bgColor="#7E57C2" height={240}  callback={this.showMenu.bind(this)} tag="市场组">
-                        <h2>市场组</h2>
+                    <SponsorCard span={6} bgColor="#7E57C2" height={240}  callback={this.showMenu.bind(this)} tag="市场营销组">
+                        <h2>市场营销组</h2>
                     </SponsorCard>
                     <SponsorCard span={6} bgColor="#F980AB" height={240}  callback={this.showMenu.bind(this)} tag="赞助组">
                         <h2>赞助组</h2>
@@ -109,6 +109,23 @@ class SponsorGroup extends Component {
                         <h2 style={{
                             wordBreak: 'break-all'
                         }}>Conference Affairs Team</h2>
+                    </SponsorCard>
+                </Row>
+
+                <Row>
+                    <SponsorCard span={6} bgColor="rgb(243, 185, 96)" height={240}  callback={this.showMenu.bind(this)} tag="摄影/媒体团队">
+                        <h2>摄影/媒体团队</h2>
+                    </SponsorCard>
+                    <SponsorCard span={6} bgColor="rgb(247, 189, 184)" height={240}  callback={this.showMenu.bind(this)} tag="翻译组">
+                        <h2>翻译组</h2>
+                    </SponsorCard>
+                    <SponsorCard span={6} bgColor="rgb(154, 48, 66)" height={240}  callback={this.showMenu.bind(this)} tag="志愿者组">
+                        <h2>志愿者组</h2>
+                    </SponsorCard>
+                    <SponsorCard span={6} bgColor="rgb(95, 204, 140)" height={240}  callback={this.showMenu.bind(this)} tag="志愿者福利">
+                        <h2 style={{
+                            wordBreak: 'break-all'
+                        }}>志愿者福利</h2>
                     </SponsorCard>
                 </Row>
 
@@ -153,16 +170,35 @@ class SponsorGroup extends Component {
                     <SponsorCard span={6} bgColor="#4285F4" height={240}  callback={this.showMenu.bind(this)} tag="Agenda Team">
                         <h2>Agenda Team</h2>
                     </SponsorCard>
-                    <SponsorCard span={6} bgColor="#37C28B" height={240}  callback={this.showMenu.bind(this)} tag="Media Team">
-                        <h2>Media Team</h2>
+                    <SponsorCard span={6} bgColor="#37C28B" height={240}  callback={this.showMenu.bind(this)} tag="Photography/Media Team">
+                        <h2 style={{
+                            wordBreak: 'break-all'
+                        }}>Photography/Media Team</h2>
                     </SponsorCard>
-                    <SponsorCard span={6} bgColor="#7E57C2" height={240}  callback={this.showMenu.bind(this)} tag="Sponsorship Team">
-                        <h2>Sponsorship Team</h2>
+                    <SponsorCard span={6} bgColor="#7E57C2" height={240}  callback={this.showMenu.bind(this)} tag="Marketing Team">
+                        <h2>Marketing Team</h2>
                     </SponsorCard>
                     <SponsorCard span={6} bgColor="#33B569" height={240}  callback={this.showMenu.bind(this)} tag="Conference Affairs Team">
                         <h2 style={{
                             wordBreak: 'break-all'
                         }}>Conference Affairs Team</h2>
+                    </SponsorCard>
+                </Row>
+
+                <Row>
+                    <SponsorCard span={6} bgColor="#FAA726" height={240}  callback={this.showMenu.bind(this)} tag="Language Team">
+                        <h2>Language Team</h2>
+                    </SponsorCard>
+                    <SponsorCard span={6} bgColor="#F85043" height={240}  callback={this.showMenu.bind(this)} tag="Volunteers Administration Team">
+                        <h2>Volunteers Administration Team</h2>
+                    </SponsorCard>
+                    <SponsorCard span={6} bgColor="#F86880" height={240}  callback={this.showMenu.bind(this)} tag="Undecided">
+                        <h2>Undecided</h2>
+                    </SponsorCard>
+                    <SponsorCard span={6} bgColor="rgb(95, 204, 140)" height={240}  callback={this.showMenu.bind(this)} tag="Benefits">
+                        <h2 style={{
+                            wordBreak: 'break-all'
+                        }}>Benefits</h2>
                     </SponsorCard>
                 </Row>
 
