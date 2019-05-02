@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import { changeToEnglish, changeToChinese } from '../actions/action';
 import { connect } from 'react-redux';
+import { Modal } from 'antd';
 import '../themes/header.css';
 
 class Header extends Component {
@@ -20,9 +21,36 @@ class Header extends Component {
       displayContactBar: false,
       displayLanguageBar: false
     };
-    this.handleChangeToChinese.bind(this);
-    this.handleChangeToEnglish.bind(this);
-    this.closeAllBar.bind(this);
+    this.handleChangeToChinese = this.handleChangeToChinese.bind(this);
+    this.handleChangeToEnglish = this.handleChangeToEnglish.bind(this);
+    this.closeAllBar = this.closeAllBar.bind(this);
+    this.showModal = this.showModal.bind(this);
+    this.signin = this.signin.bind(this);
+    this.signup = this.signup.bind(this);
+  }
+
+  showModal() {
+    if (this.props.language == 'zh')
+      Modal.info({
+        title: '非常抱歉',
+        content: '我们的账户系统正在维护中，稍后将开放'
+      })
+    else if (this.props.language == 'en') {
+      Modal.info({
+        title: 'We are very sorry',
+        content: 'Our account system is under maintenance and will be open later.'
+      })
+    }
+  }
+
+  signin() {
+    this.showModal();
+    // window.location.href = "https://api.sosconf.org/login"
+  }
+
+  signup() {
+    this.showModal();
+    // window.location.href = "https://api.sosconf.org/register"
   }
 
   // 切换英文
@@ -46,7 +74,7 @@ class Header extends Component {
     })
   }
 
-  render() {
+  render() {  
     return (
       <div className="sosconf-header__wrap">
         <div className="sosconf-header-pc">
@@ -98,13 +126,13 @@ class Header extends Component {
               />
             </button>
             <div className="sosconf-header__button-group sosconf-header__button-group--login">
-              <button className="sosconf-header__group-button-title sosconf-header__button-group-title--login" onClick={() => {window.location.href = "https://api.sosconf.org/register"}}>
+              <button className="sosconf-header__group-button-title sosconf-header__button-group-title--login" onClick={this.signin}>
                 <FormattedMessage id="signup"/>
               </button>
             </div>
 
             <div className="sosconf-header__button-group sosconf-header__button-group--signin">
-              <button className="sosconf-header__group-button-title sosconf-header__button-group-title--signin" onClick={() => {window.location.href = "https://api.sosconf.org/login"}}>
+              <button className="sosconf-header__group-button-title sosconf-header__button-group-title--signin" onClick={this.signup}>
                 <FormattedMessage id="signin"/>
               </button>
             </div>
@@ -199,12 +227,12 @@ class Header extends Component {
                 id="about"
               />
             </button>
-            <button className="sosconf-header-mobile__button"  onClick={() => {window.location.href = "https://api.sosconf.org/login"}}>
+            <button className="sosconf-header-mobile__button"  onClick={this.signin}>
               <FormattedMessage
                 id="signin"
               />
             </button>
-            <button className="sosconf-header-mobile__button"  onClick={() => {window.location.href = "https://api.sosconf.org/register"}}>
+            <button className="sosconf-header-mobile__button"  onClick={this.signup}>
               <FormattedMessage
                 id="signup"
               />

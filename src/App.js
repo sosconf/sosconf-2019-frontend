@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { HashRouter, Route, Switch, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { changeUser } from './actions/action';
 
 // Components
 import Header from './components/header';
@@ -38,7 +40,8 @@ class App extends Component {
     if (ticket) {
       sessionStorage.setItem('ticket', ticket);
       getProfile().then(res => {
-        console.log(res)
+        if (res.data.data.userProfile.status) 
+          this.props.changeUser(res.data.data.userProfile)
       });
     }
     
@@ -125,4 +128,11 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(
+  state => {
+    return {
+      userProfile: state.userProfile
+    }
+  },
+  { changeUser }
+)(App);
