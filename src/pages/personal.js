@@ -13,10 +13,12 @@ class PersonalHeader extends Component {
                 <h2>Welcome</h2>
                 <div className="sosconf-personal__info">
                     <div className="sosconf-personal__img">
-                        <img src={this.props.info.imgSrc || ''}></img>
+                        <img src={this.props.infos.userPhoto || ''}></img>
                     </div>
                     <div>
-                        <div className="sosconf-personal__info-name">Name</div>
+                        <div className="sosconf-personal__info-name">
+                            {this.props.infos.nickname}
+                        </div>
                         <div className="sosconf-personal__info-identity">
                             <span className="sosconf-personal__identity sosconf-personal__identity--volunteer">Volunteer</span>
                             <span className="sosconf-personal__identity sosconf-personal__identity--speaker">Speaker</span>
@@ -49,31 +51,62 @@ class PersonalFormBody extends Component {
                             </span>
                         </div>
                         <div className="sosconf-personal__form-input">
-                            123
+                            {this.props.infos.email}
                         </div>
                     </div>
 
                     <div className="sosconf-personal__form-item">
                         <div className="sosconf-personal__form-label">
                             <span>
-                                Team
+                                Description
                             </span>
                         </div>
                         <div className="sosconf-personal__form-input">
-                            2132
+                            {this.props.infos.description}
                         </div>
                     </div>
 
                     <div className="sosconf-personal__form-item">
                         <div className="sosconf-personal__form-label">
                             <span>
-                                P.S.
+                                Group kind
                             </span>
                         </div>
                         <div className="sosconf-personal__form-input">
-                            <div>
+                                {this.props.infos.groupKind}
+                        </div>
+                    </div>
 
-                            </div>
+                    <div className="sosconf-personal__form-item">
+                        <div className="sosconf-personal__form-label">
+                            <span>
+                                Language
+                            </span>
+                        </div>
+                        <div className="sosconf-personal__form-input">
+                                {this.props.infos.lang}
+                        </div>
+                    </div>
+
+                    <div className="sosconf-personal__form-item">
+                        <div className="sosconf-personal__form-label">
+                            <span>
+                                Sex
+                            </span>
+                        </div>
+                        <div className="sosconf-personal__form-input">
+                                {this.props.infos.userSex}
+                        </div>
+                    </div>
+
+                    <div className="sosconf-personal__form-item">
+                        <div className="sosconf-personal__form-label">
+                            <span>
+                                Skill
+                            </span>
+                        </div>
+                        <div className="sosconf-personal__form-input">
+                                {this.props.infos.skill}
                         </div>
                     </div>
                 </div>
@@ -126,13 +159,13 @@ class Personal extends Component {
                 body={(
                     <div>
                         <div className="sosconf-personal__header">
-                            <PersonalHeader info={{}}/>
+                            <PersonalHeader infos={this.props.userProfile}/>
                         </div>
                         <div className="sosconf-personal__form-body">
-                            <PersonalFormBody info={{}}/>
+                            <PersonalFormBody infos={this.props.userProfile}/>
                         </div>
                         <div className="sosconf-personal__form-bottom">
-                            <PersonalFormBottom info={{}}/>
+                            <PersonalFormBottom infos={this.props.userProfile}/>
                         </div>
                     </div>
                 )}>
@@ -142,4 +175,10 @@ class Personal extends Component {
     }
 }
 
-export default Personal;
+export default connect(
+    state => {
+        return {
+            userProfile: state.userProfile
+        }
+    }
+)(Personal);

@@ -33,7 +33,9 @@ const enUS = {
   signin: 'Sign in',
   signup: 'Sign up',
   time: 'September 1, 2019',
-  commitApply: 'Apply'
+  commitApply: 'Apply',
+  profile: 'Profile',
+  logout: 'Log out'
 };
 
 export default enUS;
