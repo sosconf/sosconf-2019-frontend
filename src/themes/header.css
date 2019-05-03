@@ -3,7 +3,7 @@
 }
 
 @media screen and (min-width: 1050px) {
-    .sosconf-header__group-button-title span:nth-child(2) {
+    .sosconf-header__group-button-title--language span:nth-child(2) {
         display: inline-block;
         transition: all .2s;
         width: 0;
@@ -107,11 +107,31 @@
         visibility: unset;
     }
 
-    .sosconf-header__group-button-title--language {
+    .sosconf-header__group-button-title--language,
+    .sosconf-header__group-button-title--user {
         background: white !important;
         height: 30px !important;
         margin-top: 10px;
         border-radius: 5px;
+    }
+
+    .sosconf-header__group-button-title--user img {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        border-radius: 50%;
+    }
+
+    .sosconf-header__group-button-title--user span:nth-child(3) {
+        display: inline-block;
+        transition: all .2s;
+        width: 0;
+        height: 0;
+        margin-left: 5px;
+        border-width: 0 5px 5px;
+        border-style: solid;
+        border-color: transparent transparent rgb(0, 193, 145);
+        position: relative;
     }
 
     .sosconf-header__group-button-title:hover {
@@ -178,7 +198,19 @@
         width: 120px;
     }
 
+    .sosconf-header__button-group--user{
+        position: absolute;
+        top: 1px;
+        right: 150px;
+        height: 50px;
+        width: 120px;
+    }
+
     .sosconf-header__group-button-title--language {
+        color: black;
+    }
+
+    .sosconf-header__group-button-title--user {
         color: black;
     }
 

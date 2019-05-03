@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
-import { changeToEnglish, changeToChinese } from '../actions/action';
+import { changeToEnglish, changeToChinese, changeUser } from '../actions/action';
 import { connect } from 'react-redux';
 import { Modal } from 'antd';
 import '../themes/header.css';
+
 
 class Header extends Component {
   static contextTypes = {
@@ -27,6 +28,9 @@ class Header extends Component {
     this.showModal = this.showModal.bind(this);
     this.signin = this.signin.bind(this);
     this.signup = this.signup.bind(this);
+    this.showProfile = this.showProfile.bind(this);
+    this.logout = this.logout.bind(this);
+    this.renderMobileLogin = this.renderMobileLogin.bind(this);
   }
 
   showModal() {
@@ -44,13 +48,13 @@ class Header extends Component {
   }
 
   signin() {
-    this.showModal();
-    // window.location.href = "https://api.sosconf.org/login"
+    // this.showModal();
+    window.location.href = "https://api.sosconf.org/login"
   }
 
   signup() {
-    this.showModal();
-    // window.location.href = "https://api.sosconf.org/register"
+    // this.showModal();
+    window.location.href = "https://api.sosconf.org/register"
   }
 
   // 切换英文
@@ -63,6 +67,16 @@ class Header extends Component {
     this.props.changeToChinese();
   }
 
+  // 查看个人信息
+  showProfile() {
+    this.props.history.push("/personal");
+  }
+
+  // 登出
+  logout() {
+    this.props.changeUser({});
+  }
+
   // 关闭所有bar
   closeAllBar() {
     this.setState({
@@ -70,11 +84,140 @@ class Header extends Component {
       displayAboutBar: false,
       displayContactBar: false,
       displayLanguageBar: false,
-      popState: true
+      popState: true,
+      displayUserBar: false
     })
   }
 
-  render() {  
+  renderPCHeaderRight() {
+    if (!this.props.userProfile.status)
+      return (
+        <span>
+          <div className="sosconf-header__button-group sosconf-header__button-group--login">
+            <button className="sosconf-header__group-button-title sosconf-header__button-group-title--login" onClick={this.signup}>
+              <FormattedMessage id="signup" />
+            </button>
+          </div>
+
+          <div className="sosconf-header__button-group sosconf-header__button-group--signin">
+            <button className="sosconf-header__group-button-title sosconf-header__button-group-title--signin" onClick={this.signin}>
+              <FormattedMessage id="signin" />
+            </button>
+          </div>
+
+          <div className="sosconf-header__button-group sosconf-header__button-group--language">
+            <button className="sosconf-header__group-button-title sosconf-header__group-button-title--language" id="sosconf-header__button--language" >
+              <FormattedMessage
+                id="language"
+              />
+              <span style={
+                {
+                  transform: this.state.displayLanguageBar ? 'rotateZ(0deg)' : 'rotateZ(180deg)',
+                }
+              }></span>
+            </button>
+            <div className="sosconf-header__gourp-drop-down">
+              <button className="sosconf-header__group-button" onClick={() => { this.handleChangeToEnglish() }}>
+                <FormattedMessage
+                  id="english"
+                />
+              </button>
+              <button className="sosconf-header__group-button" onClick={() => { this.handleChangeToChinese() }}>
+                <FormattedMessage
+                  id="chinese"
+                />
+              </button>
+            </div>
+          </div>
+        </span>)
+    else
+      return (
+        <span>
+          <div className="sosconf-header__button-group sosconf-header__button-group--user">
+            <button className="sosconf-header__group-button-title sosconf-header__group-button-title--user" id="sosconf-header__button--user" >
+              <img src={this.props.userProfile.userPhoto}></img>
+              <span>{this.props.userProfile.nickname}</span>
+              <span style={
+                {
+                  transform: this.state.displayUserBar ? 'rotateZ(0deg)' : 'rotateZ(180deg)',
+                }
+              }></span>
+            </button>
+            <div className="sosconf-header__gourp-drop-down">
+              <button className="sosconf-header__group-button" onClick={() => { this.showProfile() }}>
+                <FormattedMessage
+                  id="profile"
+                />
+              </button>
+              <button className="sosconf-header__group-button" onClick={() => { this.logout() }}>
+                <FormattedMessage
+                  id="logout"
+                />
+              </button>
+            </div>
+          </div>
+          <div className="sosconf-header__button-group sosconf-header__button-group--language">
+            <button className="sosconf-header__group-button-title sosconf-header__group-button-title--language" id="sosconf-header__button--language" >
+              <FormattedMessage
+                id="language"
+              />
+              <span style={
+                {
+                  transform: this.state.displayLanguageBar ? 'rotateZ(0deg)' : 'rotateZ(180deg)',
+                }
+              }></span>
+            </button>
+            <div className="sosconf-header__gourp-drop-down">
+              <button className="sosconf-header__group-button" onClick={() => { this.handleChangeToEnglish() }}>
+                <FormattedMessage
+                  id="english"
+                />
+              </button>
+              <button className="sosconf-header__group-button" onClick={() => { this.handleChangeToChinese() }}>
+                <FormattedMessage
+                  id="chinese"
+                />
+              </button>
+            </div>
+          </div>
+        </span>
+      )
+  }
+
+  renderMobileLogin() {
+    if (!this.props.userProfile.status)
+      return (
+        <div>
+          <button className="sosconf-header-mobile__button" onClick={this.signin}>
+            <FormattedMessage
+              id="signin"
+            />
+          </button>
+          <button className="sosconf-header-mobile__button" onClick={this.signup}>
+            <FormattedMessage
+              id="signup"
+            />
+          </button>
+        </div>
+      )
+    else 
+      return (
+        <div>
+          <button className="sosconf-header-mobile__button" onClick={this.showProfile}>
+            <FormattedMessage
+              id="profile"
+            />
+          </button>
+          <button className="sosconf-header-mobile__button" onClick={this.logout}>
+            <FormattedMessage
+              id="logout"
+            />
+          </button>
+        </div>
+      )
+  }
+
+  render() {
     return (
       <div className="sosconf-header__wrap">
         <div className="sosconf-header-pc">
@@ -95,7 +238,7 @@ class Header extends Component {
                 id="news"
               />
             </button>
-            <button className="sosconf-header__button"onClick={() => { this.props.history.push("/sponsor"); }}>
+            <button className="sosconf-header__button" onClick={() => { this.props.history.push("/sponsor"); }}>
               <FormattedMessage
                 id="sponsor"
               />
@@ -106,9 +249,9 @@ class Header extends Component {
               />
             </button>
             <button className="sosconf-header__button" onClick={() => { this.props.history.push("/volunteer"); }}>
-                  <FormattedMessage
-                    id="volunteerContact"
-                  />
+              <FormattedMessage
+                id="volunteerContact"
+              />
             </button>
             <button className="sosconf-header__button" onClick={() => { this.props.history.push("/venue"); }}>
               <FormattedMessage
@@ -125,42 +268,7 @@ class Header extends Component {
                 id="about"
               />
             </button>
-            <div className="sosconf-header__button-group sosconf-header__button-group--login">
-              <button className="sosconf-header__group-button-title sosconf-header__button-group-title--login" onClick={this.signin}>
-                <FormattedMessage id="signup"/>
-              </button>
-            </div>
-
-            <div className="sosconf-header__button-group sosconf-header__button-group--signin">
-              <button className="sosconf-header__group-button-title sosconf-header__button-group-title--signin" onClick={this.signup}>
-                <FormattedMessage id="signin"/>
-              </button>
-            </div>
-
-            <div className="sosconf-header__button-group sosconf-header__button-group--language">
-              <button className="sosconf-header__group-button-title sosconf-header__group-button-title--language" id="sosconf-header__button--language" >
-                <FormattedMessage
-                  id="language"
-                />
-                <span style={
-                  {
-                    transform: this.state.displayLanguageBar ? 'rotateZ(0deg)' : 'rotateZ(180deg)',
-                  }
-                }></span>
-              </button>
-              <div className="sosconf-header__gourp-drop-down">
-                <button className="sosconf-header__group-button" onClick={() => { this.handleChangeToEnglish() }}>
-                  <FormattedMessage
-                    id="english"
-                  />
-                </button>
-                <button className="sosconf-header__group-button" onClick={() => { this.handleChangeToChinese() }}>
-                  <FormattedMessage
-                    id="chinese"
-                  />
-                </button>
-              </div>
-            </div>
+            {this.renderPCHeaderRight()}
           </div>
           <div className="sosconf-header__choose">
 
@@ -217,26 +325,27 @@ class Header extends Component {
                 id="sponsor"
               />
             </button>
-            <button className="sosconf-header-mobile__button"  onClick={() => { this.props.history.push("/volunteer"); }}>
-                  <FormattedMessage
-                    id="volunteerContact"
-                  />
+            <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/volunteer"); }}>
+              <FormattedMessage
+                id="volunteerContact"
+              />
             </button>
-            <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/coming"); }}>
+            {this.renderMobileLogin()}
+            {/* <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/coming"); }}>
               <FormattedMessage
                 id="about"
               />
             </button>
-            <button className="sosconf-header-mobile__button"  onClick={this.signin}>
+            <button className="sosconf-header-mobile__button" onClick={this.signin}>
               <FormattedMessage
                 id="signin"
               />
             </button>
-            <button className="sosconf-header-mobile__button"  onClick={this.signup}>
+            <button className="sosconf-header-mobile__button" onClick={this.signup}>
               <FormattedMessage
                 id="signup"
               />
-            </button>
+            </button> */}
             <div className="sosconf-header-mobile__button-group">
               <button className="sosconf-header-mobile__button" onClick={() => {
                 this.setState({
@@ -277,7 +386,12 @@ class Header extends Component {
 export default connect(
   state => {
     return {
-      language: state.language
+      language: state.language,
+      userProfile: state.userProfile
     }
   },
-  { changeToChinese, changeToEnglish })(withRouter(Header));
+  {
+    changeToChinese,
+    changeToEnglish,
+    changeUser
+  })(withRouter(Header));

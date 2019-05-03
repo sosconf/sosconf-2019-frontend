@@ -33,7 +33,9 @@ const zhCN = {
   signin: '登录',
   signup: '注册',
   time: '2019年9月1日',
-  commitApply: '提交申请'
+  commitApply: '提交申请',
+  profile: '个人信息',
+  logout: '登出'
 };
 
 export default zhCN;
