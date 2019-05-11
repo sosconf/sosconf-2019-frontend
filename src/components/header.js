@@ -90,6 +90,7 @@ class Header extends Component {
   }
 
   renderPCHeaderRight() {
+
     if (!this.props.userProfile.status)
       return (
         <span>
@@ -263,7 +264,7 @@ class Header extends Component {
                 id="contact"
               />
             </button>
-            <button className="sosconf-header__button" onClick={() => { this.props.history.push("/coming"); }}>
+            <button className="sosconf-header__button" onClick={() => { this.props.history.push("/about"); }}>
               <FormattedMessage
                 id="about"
               />
@@ -328,6 +329,11 @@ class Header extends Component {
             <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/volunteer"); }}>
               <FormattedMessage
                 id="volunteerContact"
+              />
+            </button>
+            <button className="sosconf-header-mobile__button" onClick={() => { this.props.history.push("/about"); }}>
+              <FormattedMessage
+                id="about"
               />
             </button>
             {this.renderMobileLogin()}

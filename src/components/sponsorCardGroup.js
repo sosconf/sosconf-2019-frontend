@@ -161,7 +161,7 @@ class SponsorGroup extends Component {
                             color:'black'
                         }}>Become a Volunteer ></h2>
                     </SponsorCard>
-                    <SponsorCard span={12} bgColor="#FF6680" height={240}  callback={() => {window.location.href="http://sosconf2019.mikecrm.com/pS483cs"}}>
+                    <SponsorCard span={12} bgColor="#FF6680" height={240}  callback={() => {window.location.href="https://forms.gle/qbQCKPu8ZAWbbfwf7"}}>
                         <h2>Fill Out Application Form</h2>
                     </SponsorCard>
                 </Row>
