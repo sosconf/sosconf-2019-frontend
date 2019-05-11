@@ -18,7 +18,8 @@ import Venue from './pages/venue';
 import Speaker from './pages/speaker';
 import BackToTop from './components/backToTop';
 import Personal from './pages/personal';
-import { getProfile } from './api/index';
+import About from './pages/about';
+import { getProfile, signin } from './api/index';
 
 // React-transition-group
 import { TransitionGroup, CSSTransition } from "react-transition-group";
@@ -37,6 +38,7 @@ class App extends Component {
 
     const url = new URL(window.location);
     const ticket = url.searchParams.get('ticket');
+    signin();
     if (ticket) {
       sessionStorage.setItem('ticket', ticket);
       getProfile().then(res => {
@@ -110,6 +112,7 @@ class App extends Component {
                   <Route exact path="/venue" component={Venue} />
                   <Route exact path="/speaker" component={Speaker} />
                   <Route exact path="/personal" component={Personal} />
+                  <Route exact path="/about" component={About} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>
