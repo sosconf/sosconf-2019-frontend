@@ -13,7 +13,7 @@ addons:
 
 
 env:
-  - IMAGE_NAME=sosconf/frontend:2019
+  - IMAGE_NAME=sosconf/frontend:latest
 
 script:
   - docker pull "$IMAGE_NAME" || true
