@@ -1,0 +1,35 @@
+.sosconf__about-header-break {
+    width: 100px;
+    height: 4px;
+    margin: 0 auto;
+    margin-top: 57px;
+    margin-bottom: 53px;
+    background-color: black;
+}
+
+.sosconf__about-header h1 {
+    font-size: 42px;
+    font-weight: 800;
+    font-family: 黑体;
+}
+
+.sosconf__about-card-content {
+    font-size: 16px;
+}
+.sosconf__about-card-content p {
+    line-height: 32px;
+    text-align: left;
+}
+
+.sosconf-card__button--green {
+    background: rgba(0, 199, 155, 1);
+    border-radius: 16px;
+    width: 240px;
+    height: 64px;
+    line-height: 64px;
+    margin-top: 50px;
+}
+
+.sosconf-card__button--green:hover {
+    color: white;
+}

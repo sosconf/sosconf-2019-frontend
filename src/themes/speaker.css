@@ -1,12 +1,22 @@
 .sosconf-speaker__button {
-    width: 200px;
-    height: 70px;
+    width: 240px;
+    height: 64px;
     line-height: 70px;
     font-size: 20px;
-    background: white;
-    color: black;
-    border-radius: 30px;
+    background: rgba(0, 175, 251, 1);
+    color: white;
+    border-radius:16px;
     border: none;
     margin-bottom: 20px;
     display: inline-block;
+}
+
+.sosconf-speaker__button:hover {
+    color: white;
+}
+
+.sosconf__speaker-card-content img{
+    width: 820px;
+    height: 820px;
+    margin-bottom: 50px;
 }

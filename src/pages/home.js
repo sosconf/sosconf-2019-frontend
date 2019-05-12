@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Card from '../components/card';
 import { withRouter } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
@@ -13,6 +14,8 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      followStringEn: 'Follow us',
+      followStringZh: '关注我们',
       follow: '',
       followTimer: '',
       splitTimer: '',
@@ -21,7 +24,13 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    let followArray = "Follow us".split('');
+    let followString = '';
+    if (this.props.language == 'en') {
+      followString = this.state.followStringEn;
+    } else {
+      followString = this.state.followStringZh;
+    }
+    let followArray = followString.split('');
     let that = this;
     this.state.followTimer = setInterval(() => {
       if (followArray.length)
@@ -29,7 +38,7 @@ class Home extends Component {
           follow:that.state.follow += followArray.shift()
         })
       else {
-        followArray = "Follow us".split('');
+        followArray = followString.split('');
         that.setState({
           follow:""
         })
@@ -53,7 +62,7 @@ class Home extends Component {
       <div className="sosconf-home__wrap">
         <Card customerStyle={{
           width: "700px",
-          height: '800px',
+          height: '840px',
           margin: '0 auto',
           marginTop: '140px',
           marginBottom: '140px',
@@ -124,4 +133,8 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default connect(state => {
+  return {
+    language: state.language
+  }
+})(Home);
