@@ -207,7 +207,7 @@ class SponsorGroup extends Component {
                         <h2>volunteers@sosconf.org</h2>
                     </SponsorCard>
                     <SponsorCard span={12} bgColor="rgb(234, 195, 131)" height={240} callback={() => {window.location.href = "https://t.me/joinchat/LK3swBM0tPqV-nR8BwrLUA"}}>
-                        <h2 href="https://t.me/joinchat/LK3swBM0tPqV-nR8BwrLUA">Telegran Group</h2>
+                        <h2 href="https://t.me/joinchat/LK3swBM0tPqV-nR8BwrLUA">Telegram Group</h2>
                     </SponsorCard>
                 </Row>
             </div>
