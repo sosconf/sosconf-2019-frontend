@@ -20,3 +20,10 @@
     height: 820px;
     margin-bottom: 50px;
 }
+@media screen and (max-width: 1050px) {
+    .sosconf__speaker-card-content img{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+}

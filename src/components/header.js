@@ -48,13 +48,13 @@ class Header extends Component {
   }
 
   signin() {
-    // this.showModal();
-    window.location.href = "https://api.sosconf.org/login"
+    this.showModal();
+    // window.location.href = "https://api.sosconf.org/login"
   }
 
   signup() {
-    // this.showModal();
-    window.location.href = "https://api.sosconf.org/register"
+    this.showModal();
+    // window.location.href = "https://api.sosconf.org/register"
   }
 
   // 切换英文

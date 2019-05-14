@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import Card from '../components/card';
+import ProgressHOC from '../components/progressHOC';
 import '../themes/personal.css';
 
 class PersonalHeader extends Component {
@@ -175,10 +176,10 @@ class Personal extends Component {
     }
 }
 
-export default connect(
+export default ProgressHOC(connect(
     state => {
         return {
             userProfile: state.userProfile
         }
     }
-)(Personal);
+)(Personal));

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ProgressHOC from '../components/progressHOC';
 import '../themes/coming.css';
 
 class Comming extends Component { 
@@ -11,4 +12,4 @@ class Comming extends Component {
   }
 }
 
-export default Comming;
+export default ProgressHOC(Comming);
