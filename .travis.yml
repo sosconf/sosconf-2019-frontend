@@ -11,8 +11,9 @@ addons:
     packages:
     - sshpass
 
+
 env:
-  - IMAGE_NAME=sosconf/frontend:2019
+  - IMAGE_NAME=sosconf/frontend:latest
 
 script:
   - docker pull "$IMAGE_NAME" || true
@@ -28,13 +29,11 @@ after_success:
       docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD_SECURE";
       docker tag "build/$IMAGE_NAME" "$IMAGE_NAME";
       docker push "$IMAGE_NAME";
-      sshpass -p ${DEPLOY_PASSWD} ssh -o "StrictHostKeyChecking no" root@${DEPLOY_IP} "cd sosconf-2019/ && ./deploy.sh";
     fi
 
 
-  - if [[ -n "$TRAVIS_TAG" ]]; then
+  - if [[ "$TRAVIS_BRANCH" == "dev" ]]; then
       docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD_SECURE";
-      docker tag "build/$IMAGENAME" "$IMAGENAME:$TRAVIS_TAG";
-      docker push "$IMAGE_NAME:$TRAVIS_TAG";
+      docker tag "build/$IMAGENAME" "$IMAGE_NAME:dev";
+      docker push "$IMAGE_NAME:dev";
     fi
-
