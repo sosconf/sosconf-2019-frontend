@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { HashRouter, Route, Switch, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { changeUser } from './actions/action';
+import ProgressHOC from './components/progressHOC';
 
 // Components
 import Header from './components/header';
@@ -27,7 +28,9 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 // Themes
 import './themes/common.css';
 
+
 class App extends Component {
+
   constructor() {
     super();
     this.state = {
@@ -75,7 +78,6 @@ class App extends Component {
       })
     }, false);
   }
-
 
   render() {
     return (
@@ -131,11 +133,11 @@ class App extends Component {
   }
 }
 
-export default connect(
+export default ProgressHOC(connect(
   state => {
     return {
       userProfile: state.userProfile
     }
   },
   { changeUser }
-)(App);
+)(App));

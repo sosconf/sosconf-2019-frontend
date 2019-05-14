@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 import { Row } from 'antd';
 import SponsorGroup from '../components/sponsorCardGroup';
+import ProgressHOC from '../components/progressHOC';
 
 import '../themes/volunteer.css';
 import '../themes/animate.css';
@@ -146,10 +147,10 @@ class Volunteer extends Component {
   }
 }
 
-export default connect(
+export default ProgressHOC(connect(
     state => {
         return {
             language: state.language
         }
     }
-)(Volunteer);
+)(Volunteer));

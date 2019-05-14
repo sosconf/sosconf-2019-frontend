@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 import '../themes/footer.css';
 
@@ -40,9 +41,9 @@ class Footer extends Component {
           </div>
         </div>
         <div className="sosconf-footer__links">
-          <a><FormattedMessage id="contactUs"/></a> / 
-          <a><FormattedMessage id="aboutUs"/></a> / 
-          <a><FormattedMessage id="joinUs"/></a> 
+          <a onClick={() => {this.props.history.push("sponsor")}}><FormattedMessage id="contactUs"/></a> / 
+          <a onClick={() => {this.props.history.push("about")}}><FormattedMessage id="aboutUs"/></a> / 
+          <a onClick={() => {this.props.history.push("volunteer")}}><FormattedMessage id="joinUs"/></a> 
         </div>
         <div className="sosconf-footer__copyleft">
           <p>Copyleft @ openingsource.org</p>
@@ -52,4 +53,4 @@ class Footer extends Component {
   }
 }
 
-export default Footer;
+export default withRouter(Footer);
