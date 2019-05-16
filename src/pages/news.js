@@ -7,6 +7,7 @@ import { generatorHTML } from '../util/makedownGenerotor';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import { FormattedMessage } from 'react-intl';
+import ProgressHOC from '../components/progressHOC';
 
 import school from '../images/school.jpg';
 import '../themes/animate.css';
@@ -119,11 +120,11 @@ class Introduce extends Component {
     }
 }
 
-export default connect(
+export default ProgressHOC(connect(
     state => {
         return {
             language: state.language
         }
     },
     null
-)(Introduce);
+)(Introduce));

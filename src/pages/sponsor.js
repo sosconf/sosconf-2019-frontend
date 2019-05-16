@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import SponsorCard from '../components/sponsorCard';
+import ProgressHOC from '../components/progressHOC';
 import { Row, Modal } from 'antd';
 import '../themes/sponsor.css';
 
@@ -82,10 +83,10 @@ class Sponsor extends Component {
     }
 }
 
-export default connect(
+export default ProgressHOC(connect(
     state => {
         return {
             language: state.language
         }
     }
-)(Sponsor);
+)(Sponsor));

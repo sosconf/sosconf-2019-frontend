@@ -11,7 +11,7 @@ import { generatorHTML } from '../util/makedownGenerotor';
 
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
-class SponsorGroup extends Component {
+class VolunteerGroup extends Component {
     constructor(props) {
         super(props)
         let document = {};
@@ -61,7 +61,7 @@ class SponsorGroup extends Component {
     renderChineseCardGroup() {
         return (
             <div key="sosconf__sponsor-group--chinese" className="sosconf__sponsor-group sosconf__sponsor-group--chinese" style={{
-                boxShadow: "3px 3px 3px #656565",
+                boxShadow: "0px 3px 10px 1px rgba(0,0,0,0.32)",
                 width: this.props.width,
                 height: this.props.height,
                 ...this.props.style
@@ -71,6 +71,25 @@ class SponsorGroup extends Component {
                         <h2 style={{
                             color:'black'
                         }}>欢迎加入学生开源年会<br/>成为我们的伙伴 ></h2>
+                        <p style={{
+                            marginTop: '40px'
+                        }}>
+                            <div style={{
+                                display:'inline-block',
+                                fontSize: '18px',
+                                marginRight: '20px',
+                                position: 'relative',
+                                top: '-5px'
+                            }}>联系方式</div>
+                            <div style={{
+                                display:'inline-block',
+                                marginTop: '10px'
+                            }}>
+                            QQ:928111041，Telegram:<a href="https://t.me/joinchat/LK3swBM0tPqV-nR8BwrLUA">电报链接</a>
+                            <br/>
+                                Mail:volunteers@sosconf.org
+                            </div>
+                        </p>
                     </SponsorCard>
                     <SponsorCard span={6} bgColor="#66CCFF" height={240}  callback={this.showMenu.bind(this)} tag="各类答疑">
                         <h2>各类答疑</h2>
@@ -81,13 +100,13 @@ class SponsorGroup extends Component {
                 </Row>
 
                 <Row>
-                    <SponsorCard span={6} bgColor="#4285F4" height={240}  callback={this.showMenu.bind(this)} tag="技术组">
+                    <SponsorCard span={6} bgColor="#3CC0EC" height={240}  callback={this.showMenu.bind(this)} tag="技术组">
                         <h2>技术组</h2>
                     </SponsorCard>
                     <SponsorCard span={6} bgColor="#37C28B" height={240}  callback={this.showMenu.bind(this)} tag="设计组">
                         <h2>设计组</h2>
                     </SponsorCard>
-                    <SponsorCard span={6} bgColor="#7E57C2" height={240}  callback={this.showMenu.bind(this)} tag="市场营销组">
+                    <SponsorCard span={6} bgColor="#6666FF" height={240}  callback={this.showMenu.bind(this)} tag="市场营销组">
                         <h2>市场营销组</h2>
                     </SponsorCard>
                     <SponsorCard span={6} bgColor="#F980AB" height={240}  callback={this.showMenu.bind(this)} tag="赞助组">
@@ -96,51 +115,36 @@ class SponsorGroup extends Component {
                 </Row>
 
                 <Row>
-                    <SponsorCard span={6} bgColor="#FAA726" height={240}  callback={this.showMenu.bind(this)} tag="议程组">
-                        <h2>议程组</h2>
-                    </SponsorCard>
-                    <SponsorCard span={6} bgColor="#F85043" height={240}  callback={this.showMenu.bind(this)} tag="机动组">
-                        <h2>机动组</h2>
-                    </SponsorCard>
-                    <SponsorCard span={6} bgColor="#F86880" height={240}  callback={this.showMenu.bind(this)} tag="志愿者需知">
-                        <h2>志愿者需知</h2>
-                    </SponsorCard>
-                    <SponsorCard span={6} bgColor="#33B569" height={240}  callback={this.showMenu.bind(this)} tag="Conference Affairs Team">
+                    <SponsorCard span={6} bgColor="#0066CC" height={240}  callback={this.showMenu.bind(this)} tag="Conference Affairs Team">
                         <h2 style={{
                             wordBreak: 'break-all'
                         }}>Conference Affairs Team</h2>
                     </SponsorCard>
+                    <SponsorCard span={6} bgColor="#F86880" height={240}  callback={this.showMenu.bind(this)} tag="议程组">
+                        <h2>议程组</h2>
+                    </SponsorCard>
+                    <SponsorCard span={6} bgColor="#FACF5A" height={240}  callback={this.showMenu.bind(this)} tag="机动组">
+                        <h2>机动组</h2>
+                    </SponsorCard>
+                    <SponsorCard span={6} bgColor="#32DBC6" height={240}  callback={this.showMenu.bind(this)} tag="志愿者需知">
+                        <h2>志愿者需知</h2>
+                    </SponsorCard>
                 </Row>
 
                 <Row>
-                    <SponsorCard span={6} bgColor="rgb(243, 185, 96)" height={240}  callback={this.showMenu.bind(this)} tag="摄影/媒体团队">
-                        <h2>摄影/媒体团队</h2>
+                    <SponsorCard span={6} bgColor="#FF6666" height={240}  callback={this.showMenu.bind(this)} tag="摄影/媒体团队">
+                        <h2>摄影&<br/>媒体团队</h2>
                     </SponsorCard>
-                    <SponsorCard span={6} bgColor="rgb(247, 189, 184)" height={240}  callback={this.showMenu.bind(this)} tag="翻译组">
+                    <SponsorCard span={6} bgColor="#FF9900" height={240}  callback={this.showMenu.bind(this)} tag="翻译组">
                         <h2>翻译组</h2>
                     </SponsorCard>
-                    <SponsorCard span={6} bgColor="rgb(154, 48, 66)" height={240}  callback={this.showMenu.bind(this)} tag="志愿者组">
+                    <SponsorCard span={6} bgColor="#545454" height={240}  callback={this.showMenu.bind(this)} tag="志愿者组">
                         <h2>志愿者组</h2>
                     </SponsorCard>
                     <SponsorCard span={6} bgColor="rgb(95, 204, 140)" height={240}  callback={this.showMenu.bind(this)} tag="志愿者福利">
                         <h2 style={{
                             wordBreak: 'break-all'
                         }}>志愿者福利</h2>
-                    </SponsorCard>
-                </Row>
-
-                <Row>
-                    <SponsorCard span={8} bgColor="rgb(162, 128, 74)" height={240}  noDisplay={true}>
-                        <h2>QQ群：928111041</h2>
-                    </SponsorCard>
-                    <SponsorCard span={8} bgColor="rgb(234, 195, 131)" height={240} callback={() => {window.location.href = "https://t.me/joinchat/LK3swBM0tPqV-nR8BwrLUA"}}>
-                        <h2 href="https://t.me/joinchat/LK3swBM0tPqV-nR8BwrLUA">电报群</h2>
-                    </SponsorCard>
-                    <SponsorCard span={8} bgColor="rgb(142, 128, 107)" height={240}  noDisplay={true}>
-                        <h3 style={{
-                            wordBreak: 'break-all',
-                            color: 'white'
-                        }}>volunteers@sosconf.org</h3>
                     </SponsorCard>
                 </Row>
             </div>
@@ -150,7 +154,7 @@ class SponsorGroup extends Component {
     renderEnglishCardGroup() {
         return (
             <div key="sosconf__sponsor-group--english" className="sosconf__sponsor-group sosconf__sponsor-group--english" style={{
-                boxShadow: "3px 3px 3px #656565",
+                boxShadow: "0px 3px 10px 1px rgba(0,0,0,0.32)",
                 width: this.props.width,
                 height: this.props.height,
                 ...this.props.style
@@ -207,7 +211,7 @@ class SponsorGroup extends Component {
                         <h2>volunteers@sosconf.org</h2>
                     </SponsorCard>
                     <SponsorCard span={12} bgColor="rgb(234, 195, 131)" height={240} callback={() => {window.location.href = "https://t.me/joinchat/LK3swBM0tPqV-nR8BwrLUA"}}>
-                        <h2 href="https://t.me/joinchat/LK3swBM0tPqV-nR8BwrLUA">Telegran Group</h2>
+                        <h2 href="https://t.me/joinchat/LK3swBM0tPqV-nR8BwrLUA">Telegram Group</h2>
                     </SponsorCard>
                 </Row>
             </div>
@@ -268,4 +272,4 @@ export default connect(
             language: state.language
         }
     }
-)(SponsorGroup);
+)(VolunteerGroup);

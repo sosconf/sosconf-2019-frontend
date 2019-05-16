@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
+import ProgressHOC from '../components/progressHOC';
 import "../themes/venue.css"
 
 class Venue extends Component { 
@@ -31,4 +32,4 @@ class Venue extends Component {
   }
 }
 
-export default Venue;
+export default ProgressHOC(Venue);

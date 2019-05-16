@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import Card from '../components/card.js';
+import ProgressHOC from '../components/progressHOC';
 import track from '../images/Tracks.jpg';
 import '../themes/speaker.css';
 
@@ -64,8 +65,8 @@ class Speaker extends Component {
   }
 }
 
-export default connect(state => {
+export default ProgressHOC(connect(state => {
   return {
     language: state.language
   }
-})(Speaker);
+})(Speaker));

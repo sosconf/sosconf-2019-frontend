@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from '../components/card.js';
+import ProgressHOC from '../components/progressHOC';
 import '../themes/about.css';
 
 class About extends Component {
@@ -40,4 +41,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default ProgressHOC(About);
