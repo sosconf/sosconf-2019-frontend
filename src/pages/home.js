@@ -147,7 +147,7 @@ class Home extends Component {
               <div className="sosconf-footer__middle-button-wrapper">
                 <a target="_black" href="https://twitter.com/sosconf" className="sosconf-footer__middle-button sosconf-footer__middle-twitter"> </a>
               </div>
-              <div className="sosconf-home__mail-list">
+              <div className="sosconf-home__mail-list" onClick={() => {window.location.href="https://sosconf.org"}}>
                 Mailing List
                 <a target="_black" href="" className="sosconf-footer__middle-button sosconf-footer__middle-mail" href="https://sosconf.org"></a>
               </div>
