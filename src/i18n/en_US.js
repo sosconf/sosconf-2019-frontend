@@ -35,7 +35,8 @@ const enUS = {
   time: 'September 1, 2019',
   commitApply: 'Apply',
   profile: 'Profile',
-  logout: 'Log out'
+  logout: 'Log out',
+  mailinglist: 'Mailing list'
 };
 
 export default enUS;

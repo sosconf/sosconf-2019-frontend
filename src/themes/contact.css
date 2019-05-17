@@ -1,0 +1,8 @@
+.sosconf__contact-card-content p{
+    text-align: center;
+}
+
+.sosconf__contact-card-content a{
+    font-size: 32px;
+    line-height: 70px;
+}

@@ -1,215 +1,58 @@
 export default {
-"en":`## Participants
+"en":`## Call for Sponsors
 
-sosconf brings together student elites, internationally renowned speakers and open-source communities from around the world. In SOSCON held in 2018, the number of participants was nearly 1,000, among which the majority were college students, while some were middle school and elementary school students. For sponsors, it will be a great opportunity to reach out to students, share with them experience gained from the open source community and discover talents. sosconf 2019 is expected to attract more than 1,000 participants and generate an estimated impact on more than 100,000 people.
+sosconf is committed to exchange of technology and the collision of diverse ideas, and is dedicated to establishing active and diverse technology communities focusing on learning and our common future for students. How can sosconf enable students to actively communicate and step forward on the international stage to show their innovative ideas? We sincerely invite you to join the discussion.
 
- 
-## Call for Sponsors  
-
-We seek to provide financial assistance for student speakers who need it. In addition, we hope to enrich the content of relevant activities and banquets to bring the participants a more meaningful experience. The conference aims to encourage students to understand, participate in and contribute to open source communities while creating opportunities for students actively involved in open source to exchange ideas and experience. Therefore, we welcome sponsorship from relevant enterprises and organizations to ensure the success of this far-reaching global conference.
+We seek to provide financial assistance for student speakers who need it. In addition, we hope to enrich the content of relevant activities and banquets to enrich the participants’ experience. Therefore, we welcome sponsorship from relevant enterprises and organizations to ensure the success of this far-reaching global conference. *Sponsors will be offered opportunities for the following benefits:*
 
 ### Sponsors will be offered opportunities for the following benefits:
 
 - Supporting open source with our actions.
-- Exchanging ideas with eminent academic institutions and outstanding students all over the world.
-- Helping enterprises to discover students with great potential and recruit high-quality students in advance.
-- Helping enterprises expand business opportunities.
-- Helping to promote brand influence.
+- Support student speakers and volunteers with diverse backgrounds.
+- Discover students with great potential.
+- Expand business opportunities on a global scale.
 
-### Diamond Sponsorship
-- sosconf 2019 admission tickets × 8
-- Conference banquet VIP invitation tickets × 4
-- Diamond level booth and customized name tags
-- Promotional bag advertising items × 3
-- Company name & logo exposure in the front cover and a single page of the agenda
-- Exclusive tweets posted by our official social media accounts × 2
-- Mass email sending × 2 
-- A 120s video advertisement before the conference 
-- A Diamond tier double-page advertisement in the conference brochure
-- A reserved lightning talk chance
-- Joint exposure of company logo and profile on sosconf official website
-- Company logo exposure in the sign-in area and presentation backdrop
-- Amount of sponsorship: 20,000 USD
+We offer multiple advertising opportunities before, during and after the conference including:
 
-### Platinum Sponsorship
-- sosconf 2019 admission tickets × 6
-- Conference banquet VIP invitation tickets × 2
-- Platinum level booth and customized name tags
-- Promotional bag advertising items ×2
-- Company name & logo exposure in the back cover and half of a page of the agenda
-- An exclusive tweet posted by our official social media accounts
-- Mass email sending ×2
-- A 90s video advertisement before the conference
-- A Platinum level single-page advertisement in the conference brochure
-- Joint exposure of company logo and profile on sosconf official website
-- Company logo exposure in the sign-in area welcome backdrop and presentation backdrop
-- Amount of sponsorship: 10,000 USD
+- Branding opportunities during events (booths will be available) and banquets.
+- Exposure in press releases and event programs.
+- Marketing materials distributed at banquets and the conference.
+- Exposure on T-shirts and other promotional products
+- Exposure on our social media posts.
+- Promotional emails.
 
-### Gold Sponsorship
-- sosconf 2019 admission tickets × 4
-- Conference banquet VIP invitation ticket × 1
-- Diamond level booth and customized name tags
-- Promotional bag advertising item × 1
-- Company name & logo exposure in 1/4 page of the agenda
-- An exclusive tweet posted by our official social media accounts
-- Mass email sending × 1
-- A 60s video advertisement before the conference
-- A Gold level sidebar advertisement in the conference brochure
-- Joint exposure of company logo and profile on sosconf official website
-- Company logo exposure in the sign-in area welcome backdrop
-- Amount of sponsorship: 7,000 USD
-
-### Silver Sponsorship
-- sosconf 2019 admission tickets × 2
-- Silver level booth and customized name tags
-- Company name & logo exposure in 1/8 page of the agenda
-- Joint exposure of company logo and profile on sosconf official website
-- Company logo exposure in the sign-in area welcome backdrop
-- Amount of sponsorship: 4,000 USD
-- Bronze Sponsorship
-- sosconf 2019 admission ticket × 1
-- Bronze level booth and customized name tags
-- Joint exposure of company logo and profile on sosconf official website
-- Company logo exposure in the sign-in area welcome backdrop
-- Amount of sponsorship: 2,000 USD
-
-## Sponsorship Package & Customized Supporting Services
-
-
-We provide sponsorship package discount and it would be our privilege to establish customized supporting services in cooperation with you to satisfy your unique requirements.  
-
-Note: The sosconf 2019 organizing committee offers sponsorship package discount to collaborative community members of  Opening Source Org  and SOSSC.
- 
-
-
-Follow us & Contact us
-
-For detailed information, please contact us at sponsors@sosconf.org
+For more information on sponsorship plans and benefits, please request the information handbook by emailing sponsors@sosconf.org. We look forward to working closely with you!
 `,
 
-"zh":`## 与会人员
-全球学生开源年会( sosconf )汇集了来自世界各地的高等院校的学术精英，核心开源项目的开发者和国际知名演讲者。在过去的2018年的活动中，与会人数近 1000 人，通过观看在线直播、录播等方式影响数万人，其中以高校计算机、软件工程专业学生占大多数，也有部分中学生和小学生。对赞助商而言，可以帮助学生获取顶尖企业的关注，同时有利于企业发掘开源领域的种子学生。在2019年，sosconf 全球学生开源年会将会吸引全球超过 1500 名与会者亲临现场一起共襄盛举，带来的影响预计将超过数十万人。
+"zh":`## 赞助商征集
+为了把全球学生开源年会办成名副其实的国际会议，我们邀请到了来自世界各所顶尖学府的技术爱好者参与，从讲者到志愿者再到听众绝大部分都是在校学生。sosconf 2019会议将提供不同层次的赞助和展示机会，作为赞助商，将有机会在世界一流的顶尖学府南加州大学，最大限度地提高公司的知名度和美誉度。我们诚挚地向社会开放征集赞助商，以确保本次大会的成功召开！不论你是公司还是个人，我们都欢迎你的加入！我们寻求对开源感兴趣的朋友，也期待一起学习交流的友人，更希望找到想参与进来的你！让我们互帮互助，共同发展，实现合作共赢！ 
 
-## 赞助计划
-全球学生开源年会邀请了来自世界各所顶级的学校、不同院系的开源技术爱好者参与，从讲者到工作人员到听众绝大部分都是学生，享受开源乐趣，参与开源贡献，关于畅想未来这件事，我们学生更有感觉。
+## 我们的承诺
 
-我们寻求为世界各地不同国家的学生讲者提供经济援助。此外，我们希望丰富相关活动和宴会的内容，给参会人员留下深刻的印象。会议致力于鼓励学生了解、参与、贡献开源，同时也为认同开源理念和长期参与开源项目的学生创造交流技术和分享经验的机会。因此，我们欢迎相关企业和组织提供必要的赞助，以确保这次影响深远的的全球学生开源年会能够取得成功。
-
-
-### 赞助商将获得以下好处和机会：
-
-- 用行动支持开源
-- 与来自世界各地顶级的教育机构和学生精英交流意见
-
-> 可将贵公司、团体拥有的有关开源运动的经验和技能，在从事开源项目的核心开发者和全球一线的学生精英面前直接展示，交流意见。
-
-- 帮助企业挖掘有潜力的学生，提前卡位招聘优质的学生
-
-> 全球学生开源年会的绝大部分参与者都是学生群体，其中有很多是来自世界顶级高校的学术精英和技术人才。年会一定能够帮助企业挖掘有潜力的学生，提前卡位招聘优质的人才。
-
-- 扩大商机
-
-> 可得知计算机的前沿领域、新趋势和最新消息，寻找扩大商机和业务领域的契机。
-
-- 提高品牌力
-
-> 作为致力于纯粹的全球学生开源运动的贵公司、团体，可扩大提高海外的知名度，并进一步提高其在海外市场及举办地的价值和魅力。
+- 保证赞助商品牌的多次出现。在确定赞助意向之后，会先履行一部分的赞助权益，实施发文推广，在网站上发布赞助商LOGO等，实现互惠互利。 
+- 实现赞助后及时安排宣传。我们会在年会的官网、开源工场、微博、微信公众号、Facebook 、Twitter等平台同步宣传，把推广范围实现最大化。
+- 赞助商品牌的线下全面推广。年会当天会在美国南加州大学推出展位来吸引学生、行业大咖和科研人员的目光。不仅如此，我们还提供在签到区，主会场和分会场，以及演讲者背板展出您的LOGO，保证高质量的关注度和醒目程度。 
+- 年会晚宴上的高品质交流。我们会为到场的赞助商代表划定VIP席位，并邀请赞助商在晚宴现场致辞。在晚宴中，我们会安排赞助商代表与 sosconf 组委员会成员、学术精英、核心开发者等会面交谈。面对面享受思维碰撞，深入了解未来发展趋势，认识国内外精英人士，有益于品牌推广。 
+- 宣传资料入袋。在大会当天发放的官方独家定制的迎宾袋中，加入赞助商的宣传广告，广告由赞助商自行提供。 
+- 放入宣传片的会前广播。在会议开展期间恰到好处地插播赞助商的品牌宣传视频，时长从60s到120s不等。视频宣传内容需赞助商自行提供。 
+- 赞助商获得更多的折扣。大会结束后，所有的赞助商自动成为sosconf的合作伙伴，在之后召开的年会上拥有比其他赞助商更大的优势。 
+- 颁发致谢赞助商纪念证书。在年会即将结束时，我们会给每家赞助商特别定制纪念证书，用以表彰赞助商成为sosconf的战略合作伙伴，享受特别待遇。同时赠予年会独家纪念礼品，向所有与会者发送会后致谢邮件，把赞助商的名字印在上面，实现最后的宣传。 
 
 
+## 特别定制
 
-### 赞助方案——钻石级
-- sosconf 2019 年会入场票 ×8
-- 年会晚宴VIP邀请票 ×4
-- 钻石级展位及定制胸牌
-- 赞助商宣传资料入袋 ×3
-- 活动手册跨页广告
-- 议程表显示公司名称及 Logo ：整页及单页
-- 官方社群媒体网站发表钻石级赞助商专属推文两篇
-- 会议前后的群发电子邮件 ×2
-- 会前宣传视频时长 120s
-- 钻石级手册跨页广告
-- 闪电演讲保留1个名额
-- 宣传资料入袋 ×3
-- 赞助商 Logo 于官网露出及公司介绍
-- 活动会场签到区及主会场背板 Logo 联名露出 
-- 赞助金：20,000 USD
+在赞助到一定程度后，即可获得特别专案！年会联名制作T恤、联名胸牌挂绳、联名吉祥物，以及官方联名迎宾袋！每位参与者都会佩戴上印有您独家LOGO的产品，让年会的各个角落都能看到您家的LOGO品牌！ 
 
-### 赞助方案——铂金级
-- sosconf 2019 年会入场票 ×6
-- 年会晚宴VIP邀请票 ×2
-- 铂金级展位及定制胸牌
-- 赞助商宣传资料入袋 ×2
-- 活动手册整页广告
-- 议程表显示公司名称及 Logo ：封底及半页
-- 官方社群媒体网站发表铂金级赞助商专属推文一篇
-- 会议前后的群发电子邮件 ×2
-- 会前宣传视频时长 90s
-- 铂金级手册整页广告
-- 赞助商 Logo 于官网露出及公司介绍
-- 活动会场签到区及主会场背板上 Logo 联名露出
-- 赞助金：10,000 USD 
+除了特别专案之外，我们还提供自由化选择。不仅仅让您的品牌出现在衣服，展台上，在我们提供的茶歇，晚宴上还会继续为您的品牌做推广宣传。丝毫不会浪费任何机会！这里才是与国内外顶尖精英人士做进一步交流的最好选择！ 
 
-### 赞助方案——黄金级
-- sosconf 2019 年会入场票 ×4
-- 年会晚宴VIP邀请票 ×1
-- 黄金级展位及定制胸牌
-- 赞助商宣传资料入袋 ×1
-- 活动手册侧栏广告
-- 议程表显示公司名称及 Logo ：1/4页
-- 官方社群媒体网站发表黄金级赞助商专属推文一篇
-- 会议后的群发电子邮件 ×1
-- 会前宣传视频时长 60s
-- 黄金级手册侧栏广告
-- 赞助商 Logo 于官网露出及公司介绍
-- 活动会场签到区及分会场背板上 Logo 联名露出
-- 赞助金：7,000 USD
+## 赞助商获得的好处和机会
+\n- 用亲身行动支持开源，对学生开源年会给予最大支持。 \n- 与来自世界各所顶级的高等院校和学术精英交流意见，互通有无。 \n- 帮助企业挖掘有潜力的学生，提前进行卡位招聘。 \n- 通过大会得知未来计算机的前沿领域和新趋势，找到更多商机和业务领域的契机。 \n- 扩大并提高企业在国际上的知名度，进一步拓宽企业在海外市场的业务渠道，比竞争对手提前打开计算机前沿领域的大门。 \n- 通过年会认识有知名度，有影响力，有地位的精英人士。 \n- 找到潜在客户，实现商品推广。 \n- 小程度投资，大幅度回报。 
 
+*如果你有意愿了解并支持我们，欢迎随时通过文末的联系方式联系我们！*
 
-### 赞助方案——白银级
-- sosconf 2019 年会入场票 ×2
-- 白银级展位及定制胸牌
-- 活动手册 Logo 露出
-- 议程表显示公司名称及 Logo ：1/8页
-- 赞助商 Logo 于官网露出及公司介绍
-- 活动会场签到区背板上 Logo 联名露出
-- 赞助金：4,000 USD 
-- 赞助方案——青铜级
-- sosconf 2019 年会入场票 ×1
-- 青铜级展位及定制胸牌
-- 活动手册 Logo 露出
-- 赞助商 Logo 于官网露出及公司介绍
-- 活动会场签到区背板上 Logo 联名露出
-- 赞助金：2,000 USD
-
-### 赞助方案——青铜级
-- sosconf 2019 年会入场票 ×1
-- 青铜级展位及定制胸牌
-- 活动手册 Logo 露出
-- 赞助商 Logo 于官网露出及公司介绍
-- 活动会场签到区背板上 Logo 联名露出
-- 赞助金：2,000 USD
-
- 
-注：赞助商的闪电演讲内容和社交媒体推文内容需经过 sosconf 2019 组委会的批准。会前宣传片需由赞助商提供，总时长可以分次累计使用，如90s时长可以分成60s和30s分时段播放。
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 赞助包和定制配套服务
-
-为了表彰作为学生开源年会的赞助商或合作社群伙伴的持续支持，我们很高兴提供成员专享价格，这是常规赞助套餐价格的折扣。如果您有兴趣成为学生开源年会的赞助商或合作社群伙伴，请发送电子邮件至 sponsors@sosconf.org 与我们取得联系。
-
-请注意，本文档中的所有 $ 价格均以美元列出。所有赞助按照先到先得的原则出售。
-
-**如果有任何赞助相关问题，请发送电子邮件至** sponsors@sosconf.org 。`
+## 联系方式
+为了表彰作为全球学生开源年会Students Open Source Conference( sosconf )的赞助商和战略合作伙伴的持续支持，我们很高兴为您提供成员专享优惠价格。
+对赞助全球学生开源年会（sosconf）感兴趣？我们致力于为您量身打造赞助方案，使您的投资获得最大的回报。如果您有兴趣成为全球学生开源年会（sosconf）的赞助商 ，请发送电子邮件至 sponsors@sosconf.org 与我们进一步联系并取得赞助企划案。 
+`
 }
 
