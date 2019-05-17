@@ -297,7 +297,7 @@
         transition: all .5s;
     }
 
-    .sosconf-footer__middle-button-wrapper {
+    .sosconf-body .sosconf-footer__middle-button-wrapper {
         width: 180px;
     }
 

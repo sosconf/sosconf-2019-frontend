@@ -149,7 +149,7 @@ class Home extends Component {
               </div>
               <div className="sosconf-home__mail-list">
                 Mailing List
-                <a target="_black" href="" className="sosconf-footer__middle-button sosconf-footer__middle-mail"></a>
+                <a target="_black" href="" className="sosconf-footer__middle-button sosconf-footer__middle-mail" href="https://sosconf.org"></a>
               </div>
               <div className="sosconf-footer__middle-button-wrapper">
                 <a target="_black" href="https://twitter.com/sosconf" className="sosconf-footer__middle-button sosconf-footer__middle-telegram"> </a>
@@ -159,6 +159,11 @@ class Home extends Component {
               </div>
             </div>
             <div className="sosconf-home__buttons--mobile">
+                <a className="sosconf-home__button--black" href="https://sosconf.org">
+                <FormattedMessage
+                  id="mailinglist"
+                />
+                </a>
                 <a className="sosconf-home__button--black" href="https://fb.com/sosconf">
                 <FormattedMessage
                   id="Facebook"

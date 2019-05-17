@@ -17,24 +17,42 @@ class Sponsor extends Component {
     constructor(props) {
         super(props);
         if (this.props.language == 'en') {
-            this.state = {
-                sponsorDoc: generatorHTML(sponsorDocument.en)
+            let sponsorDoc = generatorHTML(sponsorDocument.en) + `
+                <a class="sosconf__sponsor-download">Download <span>Call For Sponsors.pdf</span></a>
+            `
+            this.state= {
+                sponsorDoc
             }
         } else {
-            this.state = {
-                sponsorDoc: generatorHTML(sponsorDocument.zh)
+            let sponsorDoc = generatorHTML(sponsorDocument.zh) + `
+                <p style="text-align:right">注：最终解释权归学生开源年会组委会所有</p>
+                <p style="text-align:right">编辑：关炳心</p>
+                <p style="text-align:right">指导：李昊轩</p>
+                <a class="sosconf__sponsor-download">Download <span>Call For Sponsors.pdf</span></a>
+            `
+            this.state= {
+                sponsorDoc
             }
         }
     }
 
     componentWillReceiveProps(nextState) {
         if (nextState.language == 'en') {
+            let sponsorDoc = generatorHTML(sponsorDocument.en) + `
+                <a class="sosconf__sponsor-download">Download <span>Call For Sponsors.pdf</span></a>
+            `
             this.setState({
-                sponsorDoc:generatorHTML(sponsorDocument.en)
+                sponsorDoc
             })
         } else {
+            let sponsorDoc = generatorHTML(sponsorDocument.zh) + `
+                <p style="text-align:right">注：最终解释权归学生开源年会组委会所有</p>
+                <p style="text-align:right">编辑：关炳心</p>
+                <p style="text-align:right">指导：李昊轩</p>
+                <a class="sosconf__sponsor-download">Download <span>Call For Sponsors.pdf</span></a>
+            `
             this.setState({
-                sponsorDoc:generatorHTML(sponsorDocument.zh)
+                sponsorDoc
             })
         }
     }
@@ -53,27 +71,6 @@ class Sponsor extends Component {
                 <div className="sosconf-sponsor__content">
                     <div  dangerouslySetInnerHTML={{__html: this.state.sponsorDoc}}>
                     </div>
-                    {/* <div className="sosconf-sponsor__button-group">
-                        <div className="sosconf-sponsor__button--diamond">
-                            钻石级
-                        </div>
-
-                        <div className="sosconf-sponsor__button--platinum">
-                            铂金级
-                        </div>
-
-                        <div className="sosconf-sponsor__button--gold">
-                            黄金级
-                        </div>
-
-                        <div className="sosconf-sponsor__button--sliver">
-                            白银级
-                        </div>
-
-                        <div className="sosconf-sponsor__button--bronze">
-                            青铜级
-                        </div>
-                    </div> */}
                     <div className="sosconf-sponsor__readAll">
                         <div className="sosconf-sponsor__readAll--button" onClick={this.readAll}>READ ALL</div>
                     </div>
