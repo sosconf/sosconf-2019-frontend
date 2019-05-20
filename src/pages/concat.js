@@ -29,7 +29,7 @@ class Concat extends Component {
                         </div>
                     )}
                     body={(
-                        <div className="sosconf__about-card-content">
+                        <div className="sosconf__about-card-content  sosconf__contact-card-content">
                             <p>
                             <a href="https://2019.sosconf.org">Official Website</a><br/>
                             <a href="https://fb.com/sosconf">Facebook</a><br/>
