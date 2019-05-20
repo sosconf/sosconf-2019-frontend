@@ -53,9 +53,9 @@ class Speaker extends Component {
             body={(
               <div className="sosconf__about-card-content sosconf__speaker-card-content">
                   <ApplyButton language={this.props.language}></ApplyButton>
-                  <p>
-                  如果你是一名学生，并热爱开源和开源技术，我们欢迎你来到盛夏的洛杉矶，与我们一同创造一场意义非凡的盛会。 所有的讲者都会收到全额旅行补贴，以及其他专属纪念品。如果你感兴趣，欢迎到年会官网的相关页面报名。 以下是所有演讲主题的列表： 
-                  </p>
+                  <p>如果你是一名学生，并热爱开源和开源技术，我们欢迎你来到盛夏的洛杉矶，与我们一同创造历史。你将认识来自其他国家的优秀学生开发者以及拥有国际视野的公司和企业——更重要的是，分享你的想法并享受其中！</p>
+                  <p>所有的讲者都会收到旅行补贴与支援，以及其他专属纪念品。</p>
+                  <p>讲者申请现已开放。如果你感兴趣，欢迎到年会官网的讲者页面找到报名链接。以下是所有演讲主题的列表：</p>
                   <img src={track}/>
                   <ApplyButton language={this.props.language}></ApplyButton>
               </div>
