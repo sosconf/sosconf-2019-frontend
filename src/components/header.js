@@ -259,7 +259,7 @@ class Header extends Component {
                 id="navigation"
               />
             </button>
-            <button className="sosconf-header__button" onClick={() => { this.props.history.push("/coming"); }}>
+            <button className="sosconf-header__button" onClick={() => { this.props.history.push("/concat"); }}>
               <FormattedMessage
                 id="contact"
               />

@@ -20,6 +20,7 @@ import Speaker from './pages/speaker';
 import BackToTop from './components/backToTop';
 import Personal from './pages/personal';
 import About from './pages/about';
+import Concat from './pages/concat';
 import { getProfile, signin } from './api/index';
 
 // React-transition-group
@@ -115,6 +116,7 @@ class App extends Component {
                   <Route exact path="/speaker" component={Speaker} />
                   <Route exact path="/personal" component={Personal} />
                   <Route exact path="/about" component={About} />
+                  <Route exact path="/concat" component={Concat} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>

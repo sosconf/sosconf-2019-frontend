@@ -41,7 +41,7 @@ class Footer extends Component {
           </div>
         </div>
         <div className="sosconf-footer__links">
-          <a onClick={() => {this.props.history.push("sponsor")}}><FormattedMessage id="contactUs"/></a> / 
+          <a onClick={() => {this.props.history.push("concat")}}><FormattedMessage id="contactUs"/></a> / 
           <a onClick={() => {this.props.history.push("about")}}><FormattedMessage id="aboutUs"/></a> / 
           <a onClick={() => {this.props.history.push("volunteer")}}><FormattedMessage id="joinUs"/></a> 
         </div>
