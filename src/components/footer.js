@@ -15,7 +15,7 @@ class Footer extends Component {
             <a target="_black" href="https://weibo.com/sosconf" className="sosconf-footer__middle-button sosconf-footer__middle-hexang"></a>
           </div>
           <div className="sosconf-footer__middle-button-wrapper">
-            <a target="_black" href="mailto:pr@sosconf.org" className="sosconf-footer__middle-button sosconf-footer__middle-mail"></a>
+            <a target="_black" href="mailto:hi@sosconf.org" className="sosconf-footer__middle-button sosconf-footer__middle-mail"></a>
           </div>
           <div className="sosconf-footer__middle-button-wrapper">
             <a target="_black" href="https://fb.com/sosconf" className="sosconf-footer__middle-button sosconf-footer__middle-facebook"></a>
