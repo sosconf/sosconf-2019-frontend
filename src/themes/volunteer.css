@@ -11,6 +11,10 @@
     font-size: 30px;
 }
 
+.sosconf__sponsor-group--english h2{
+    font-size: 20px;
+}
+
 @media screen and (max-width: 1050px) {
     .sosconf-volunteer__card-group {
         display: flex;

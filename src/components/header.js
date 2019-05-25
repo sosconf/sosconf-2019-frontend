@@ -48,13 +48,13 @@ class Header extends Component {
   }
 
   signin() {
-    // this.showModal();
-    window.location.href = "https://api.sosconf.org/login"
+    this.showModal();
+    // window.location.href = "https://api.sosconf.org/login"
   }
 
   signup() {
-    // this.showModal();
-    window.location.href = "https://api.sosconf.org/register"
+    this.showModal();
+    // window.location.href = "https://api.sosconf.org/register"
   }
 
   // 切换英文
@@ -259,7 +259,7 @@ class Header extends Component {
                 id="navigation"
               />
             </button>
-            <button className="sosconf-header__button" onClick={() => { this.props.history.push("/coming"); }}>
+            <button className="sosconf-header__button" onClick={() => { this.props.history.push("/concat"); }}>
               <FormattedMessage
                 id="contact"
               />

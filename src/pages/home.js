@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Card from '../components/card';
+import ProgressHOC from '../components/progressHOC';
 import { withRouter } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 import PropTypes from 'prop-types';
@@ -57,6 +58,36 @@ class Home extends Component {
     clearInterval(this.state.followTimer);
   }
 
+  componentWillReceiveProps(nextProps) {
+    let that = this;
+    let followString = '';
+    if (nextProps.language == 'en') {
+      followString = this.state.followStringEn;
+    } else {
+      followString = this.state.followStringZh;
+    }
+    let followArray = followString.split('');
+      that.setState({
+        follow: ''
+      })
+      clearInterval(this.state.followTimer);
+      let followTimer = setInterval(() => {
+        if (followArray.length)
+          that.setState({
+            follow:that.state.follow += followArray.shift()
+          })
+        else {
+          followArray = followString.split('');
+          that.setState({
+            follow:""
+          })
+        }
+      }, 500);
+      this.setState({
+        followTimer
+      })
+  }
+
   render() {
     return (
       <div className="sosconf-home__wrap">
@@ -109,23 +140,46 @@ class Home extends Component {
                 }}>>_</span>
               </div>
             </div>
-            <div className="sosconf-home__buttons">
-              <a className="sosconf-home__button--black" href="https://fb.com/sosconf">
-              <FormattedMessage
-                id="Facebook"
-              />
-              </a>
-              <a className="sosconf-home__button--black" href="https://twitter.com/sosconf">
-              <FormattedMessage
-                id="Twitter"
-              />
-              </a>
-              <a className="sosconf-home__button--black" href="https://t.me/sosconf">
-              <FormattedMessage
-                id="Telegram"
-              />
-              </a>
+            <div className="sosconf-home__buttons sosconf-home__buttons--pc">
+              <div className="sosconf-footer__middle-button-wrapper">
+                <a target="_black" href="https://fb.com/sosconf" className="sosconf-footer__middle-button sosconf-footer__middle-facebook"></a>
+              </div>
+              <div className="sosconf-footer__middle-button-wrapper">
+                <a target="_black" href="https://twitter.com/sosconf" className="sosconf-footer__middle-button sosconf-footer__middle-twitter"> </a>
+              </div>
+              <div className="sosconf-home__mail-list" onClick={() => {window.location.href="https://sosconf.org"}}>
+                Mailing List
+                <a target="_black" href="" className="sosconf-footer__middle-button sosconf-footer__middle-mail" href="https://sosconf.org"></a>
+              </div>
+              <div className="sosconf-footer__middle-button-wrapper">
+                <a target="_black" href="https://twitter.com/sosconf" className="sosconf-footer__middle-button sosconf-footer__middle-telegram"> </a>
+              </div>
+              <div className="sosconf-footer__middle-button-wrapper">
+                <a target="_black" href="https://twitter.com/sosconf" className="sosconf-footer__middle-button sosconf-footer__middle-youtube"> </a>
+              </div>
             </div>
+            <div className="sosconf-home__buttons--mobile">
+                <a className="sosconf-home__button--black" href="https://sosconf.org">
+                <FormattedMessage
+                  id="mailinglist"
+                />
+                </a>
+                <a className="sosconf-home__button--black" href="https://fb.com/sosconf">
+                <FormattedMessage
+                  id="Facebook"
+                />
+                </a>
+                <a className="sosconf-home__button--black" href="https://twitter.com/sosconf">
+                <FormattedMessage
+                  id="Twitter"
+                />
+                </a>
+                <a className="sosconf-home__button--black" href="https://t.me/sosconf">
+                <FormattedMessage
+                  id="Telegram"
+                />
+                </a>
+              </div>
           </div>
         </div>)}></Card>
       </div>
@@ -133,8 +187,8 @@ class Home extends Component {
   }
 }
 
-export default connect(state => {
+export default ProgressHOC(connect(state => {
   return {
     language: state.language
   }
-})(Home);
+})(Home));

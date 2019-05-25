@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { HashRouter, Route, Switch, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { changeUser } from './actions/action';
+import ProgressHOC from './components/progressHOC';
 
 // Components
 import Header from './components/header';
@@ -19,6 +20,7 @@ import Speaker from './pages/speaker';
 import BackToTop from './components/backToTop';
 import Personal from './pages/personal';
 import About from './pages/about';
+import Concat from './pages/concat';
 import { getProfile, signin } from './api/index';
 
 // React-transition-group
@@ -27,7 +29,9 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 // Themes
 import './themes/common.css';
 
+
 class App extends Component {
+
   constructor() {
     super();
     this.state = {
@@ -76,7 +80,6 @@ class App extends Component {
     }, false);
   }
 
-
   render() {
     return (
       <HashRouter>
@@ -113,6 +116,7 @@ class App extends Component {
                   <Route exact path="/speaker" component={Speaker} />
                   <Route exact path="/personal" component={Personal} />
                   <Route exact path="/about" component={About} />
+                  <Route exact path="/concat" component={Concat} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>
@@ -131,11 +135,11 @@ class App extends Component {
   }
 }
 
-export default connect(
+export default ProgressHOC(connect(
   state => {
     return {
       userProfile: state.userProfile
     }
   },
   { changeUser }
-)(App);
+)(App));

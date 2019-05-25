@@ -1,6 +1,41 @@
+.sosconf-home__buttons .sosconf-footer__middle-facebook {
+    background: url("../images/homeIcon/Facebook.png");
+    background-size: contain;
+}
+
+.sosconf-home__buttons .sosconf-footer__middle-twitter {
+    background: url("../images/homeIcon/Twitter.png");
+    background-size: contain;
+}
+
+.sosconf-home__buttons .sosconf-footer__middle-telegram {
+    background: url("../images/homeIcon/Telegram.png");
+    background-size: contain;
+}
+
+.sosconf-home__buttons .sosconf-footer__middle-youtube {
+    background: url("../images/homeIcon/Youtube.png");
+    background-size: contain;
+}
+
+.sosconf-home__buttons .sosconf-footer__middle-mail {
+    background: url("../images/homeIcon/Mail.png");
+    background-size: contain;
+}
+
+.sosconf-home__buttons .sosconf-footer__middle-button {
+    width: 40px;
+    height: 40px;
+}
+
+
 @media screen and (min-width: 1050px) {
     .sosconf-home__wrap {
         min-height: 800px;
+    }
+
+    .sosconf-home__buttons {
+        display: flex;
     }
     
     .sosconf-home__title {
@@ -239,7 +274,46 @@
         margin-bottom: 10px;
     }
 
+    .sosconf-home__mail-list {
+        width:200px;
+        height:40px;
+        background:rgba(223,61,145,1);
+        border-radius:50px;
+        position: relative;
+        color: white;
+        line-height: 40px;
+        top: 25px;
+        padding-left: 30px;
+    }
+
+    .sosconf-home__mail-list a {
+        position: absolute;
+        left: 0;
+        top: -25px;
+    }
+
+    .sosconf-home__mail-list:hover > a {
+        transform: translateX(110px) rotate(90deg);
+        transition: all .5s;
+    }
+
+    .sosconf-body .sosconf-footer__middle-button-wrapper {
+        width: 180px;
+    }
+
+    .sosconf-home__buttons--mobile {
+        display: none;
+    }
+
 } @media screen and (max-width: 1050px) {
+    .sosconf-home__buttons--mobile {
+        display: block;
+    }
+
+    .sosconf-home__buttons--pc {
+        display: none;
+    }
+
     .sosconf-home__news--content ul {
         padding-left: 20px;
     }
