@@ -18,7 +18,7 @@ class Sponsor extends Component {
         super(props);
         if (this.props.language == 'en') {
             let sponsorDoc = generatorHTML(sponsorDocument.en) + `
-                <a class="sosconf__sponsor-download" href="https://s3-ap-northeast-1.amazonaws.com/catone/sosconf-frontend/Call+For+Sponsors.pdf">Download <span>Call For Sponsors.pdf</span></a>
+                <a class="sosconf__sponsor-download" href="https://sosconf.org/wp-content/uploads/2019/05/sosconf-2019-sponsorship-proposal-en.pdf">Download <span>Call For Sponsors.pdf</span></a>
             `
             this.state= {
                 sponsorDoc
@@ -28,7 +28,7 @@ class Sponsor extends Component {
                 <p style="text-align:right">注：最终解释权归学生开源年会组委会所有</p>
                 <p style="text-align:right">编辑：关炳心</p>
                 <p style="text-align:right">指导：李昊轩</p>
-                <a class="sosconf__sponsor-download" href="https://s3-ap-northeast-1.amazonaws.com/catone/sosconf-frontend/Call+For+Sponsors.pdf">Download <span>Call For Sponsors.pdf</span></a>
+                <a class="sosconf__sponsor-download" href="https://sosconf.org/wp-content/uploads/2019/05/sosconf-2019-sponsorship-proposal-en.pdf">Download <span>Call For Sponsors.pdf</span></a>
             `
             this.state= {
                 sponsorDoc
@@ -39,7 +39,7 @@ class Sponsor extends Component {
     componentWillReceiveProps(nextState) {
         if (nextState.language == 'en') {
             let sponsorDoc = generatorHTML(sponsorDocument.en) + `
-                <a class="sosconf__sponsor-download" href="https://s3-ap-northeast-1.amazonaws.com/catone/sosconf-frontend/Call+For+Sponsors.pdf">Download <span>Call For Sponsors.pdf</span></a>
+                <a class="sosconf__sponsor-download" href="https://sosconf.org/wp-content/uploads/2019/05/sosconf-2019-sponsorship-proposal-en.pdf">Download <span>Call For Sponsors.pdf</span></a>
             `
             this.setState({
                 sponsorDoc
@@ -49,7 +49,7 @@ class Sponsor extends Component {
                 <p style="text-align:right">注：最终解释权归学生开源年会组委会所有</p>
                 <p style="text-align:right">编辑：关炳心</p>
                 <p style="text-align:right">指导：李昊轩</p>
-                <a class="sosconf__sponsor-download" href="">Download <span>Call For Sponsors.pdf</span></a>
+                <a class="sosconf__sponsor-download" href="https://sosconf.org/wp-content/uploads/2019/05/sosconf-2019-sponsorship-proposal-zh-hans.pdf">Download <span>Call For Sponsors.pdf</span></a>
             `
             this.setState({
                 sponsorDoc
