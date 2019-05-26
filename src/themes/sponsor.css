@@ -201,4 +201,21 @@
         color: #040744;
         text-align: center;
     }
+
+    .sosconf-sponsor__wrapper--open {
+        height: auto;
+        transition: all .5s;
+    }
+
+    .sosconf-sponsor__wrapper {
+        transition: all .5s;
+    }
+
+    .sosconf-sponsor__readAll--open {
+        display: none;
+    }
+
+    .sosconf__sponsor-download  {
+        width: 90%;
+    }
 }
