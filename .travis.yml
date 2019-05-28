@@ -33,12 +33,7 @@ after_success:
 
   - if [[ -n "$TRAVIS_TAG" ]]; then
       docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD_SECURE";
-      docker tag "build/$IMAGENAME" "$IMAGENAME:$TRAVIS_TAG";
+      docker tag "build/$IMAGE_NAME" "$IMAGE_NAME:$TRAVIS_TAG";
       docker push "$IMAGE_NAME:$TRAVIS_TAG";
     fi
 
-  - if [[ "$TRAVIS_BRANCH" == "dev" ]]; then
-      docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD_SECURE";
-      docker tag "build/$IMAGENAME" "$IMAGE_NAME:dev";
-      docker push "$IMAGE_NAME:dev";
-    fi
