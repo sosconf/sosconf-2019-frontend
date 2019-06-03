@@ -6,6 +6,9 @@ sosconf 2019 Official Website（V2.2）
 
 The mirror of sosconf 2019 official website source code.
 
+## Translations
+[简体中文](README_zh-CN.md)
+
 ## Deploy
 ```
 npm install cnpm yarn -g
