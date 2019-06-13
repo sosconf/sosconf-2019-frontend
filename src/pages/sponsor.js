@@ -18,17 +18,18 @@ class Sponsor extends Component {
         super(props);
         if (this.props.language == 'en') {
             let sponsorDoc = generatorHTML(sponsorDocument.en) + `
-                <a class="sosconf__sponsor-download" href="https://s3-ap-northeast-1.amazonaws.com/catone/sosconf-frontend/Call+For+Sponsors.pdf">Download <span>Call For Sponsors.pdf</span></a>
+                <a class="sosconf__sponsor-download" href="https://sosconf.org/wp-content/uploads/2019/05/sosconf-2019-sponsorship-proposal-en.pdf">Download <span>Call For Sponsors.pdf</span></a>
             `
             this.state= {
-                sponsorDoc
+                sponsorDoc,
+                open: false
             }
         } else {
             let sponsorDoc = generatorHTML(sponsorDocument.zh) + `
                 <p style="text-align:right">注：最终解释权归学生开源年会组委会所有</p>
                 <p style="text-align:right">编辑：关炳心</p>
                 <p style="text-align:right">指导：李昊轩</p>
-                <a class="sosconf__sponsor-download" href="https://s3-ap-northeast-1.amazonaws.com/catone/sosconf-frontend/Call+For+Sponsors.pdf">Download <span>Call For Sponsors.pdf</span></a>
+                <a class="sosconf__sponsor-download" href="https://sosconf.org/wp-content/uploads/2019/05/sosconf-2019-sponsorship-proposal-en.pdf">Download <span>Call For Sponsors.pdf</span></a>
             `
             this.state= {
                 sponsorDoc
@@ -39,7 +40,7 @@ class Sponsor extends Component {
     componentWillReceiveProps(nextState) {
         if (nextState.language == 'en') {
             let sponsorDoc = generatorHTML(sponsorDocument.en) + `
-                <a class="sosconf__sponsor-download" href="https://s3-ap-northeast-1.amazonaws.com/catone/sosconf-frontend/Call+For+Sponsors.pdf">Download <span>Call For Sponsors.pdf</span></a>
+                <a class="sosconf__sponsor-download" href="https://sosconf.org/wp-content/uploads/2019/05/sosconf-2019-sponsorship-proposal-en.pdf">Download <span>Call For Sponsors.pdf</span></a>
             `
             this.setState({
                 sponsorDoc
@@ -49,7 +50,7 @@ class Sponsor extends Component {
                 <p style="text-align:right">注：最终解释权归学生开源年会组委会所有</p>
                 <p style="text-align:right">编辑：关炳心</p>
                 <p style="text-align:right">指导：李昊轩</p>
-                <a class="sosconf__sponsor-download" href="">Download <span>Call For Sponsors.pdf</span></a>
+                <a class="sosconf__sponsor-download" href="https://sosconf.org/wp-content/uploads/2019/05/sosconf-2019-sponsorship-proposal-zh-hans.pdf">Download <span>Call For Sponsors.pdf</span></a>
             `
             this.setState({
                 sponsorDoc
@@ -57,21 +58,22 @@ class Sponsor extends Component {
         }
     }
 
-    readAll(){
-        document.getElementsByClassName('sosconf-sponsor__wrapper')[0].style.height = 'auto';
-        document.getElementsByClassName('sosconf-sponsor__readAll')[0].style.display = 'none';
+    readAll= () => {
+        this.setState({
+            open: true
+        })
     }
 
     render() {
         return (
-            <div className="sosconf-sponsor__wrapper">
+            <div className={`sosconf-sponsor__wrapper ${this.state.open?'sosconf-sponsor__wrapper--open':''}`}>
                 <h1 className="sosconf-sponsor__title"><FormattedMessage id="sponsorshipContact"/></h1>
                 <div className="sosconf-sponsor__span"></div>
                 <h3 className="sosconf-sponsor__sub"><FormattedMessage id="welcomeContact"/> sponsors@sosconf.org</h3>
                 <div className="sosconf-sponsor__content">
                     <div  dangerouslySetInnerHTML={{__html: this.state.sponsorDoc}}>
                     </div>
-                    <div className="sosconf-sponsor__readAll">
+                    <div className={`sosconf-sponsor__readAll ${this.state.open?'sosconf-sponsor__readAll--open':''}`}>
                         <div className="sosconf-sponsor__readAll--button" onClick={this.readAll}>READ ALL</div>
                     </div>
                 </div>
