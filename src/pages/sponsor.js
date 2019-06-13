@@ -18,7 +18,7 @@ class Sponsor extends Component {
         super(props);
         if (this.props.language == 'en') {
             let sponsorDoc = generatorHTML(sponsorDocument.en) + `
-                <a class="sosconf__sponsor-download" href="https://sosconf.org/wp-content/uploads/2019/05/sosconf-2019-sponsorship-proposal-en.pdf">Download <span>Call For Sponsors.pdf</span></a>
+                <a class="sosconf__sponsor-download" href="https://sosconf.org/wp-content/uploads/2019/06/sosconf-2019-sponsorship-proposal-en.pdf">Download <span>Call For Sponsors.pdf</span></a>
             `
             this.state= {
                 sponsorDoc,
@@ -40,7 +40,7 @@ class Sponsor extends Component {
     componentWillReceiveProps(nextState) {
         if (nextState.language == 'en') {
             let sponsorDoc = generatorHTML(sponsorDocument.en) + `
-                <a class="sosconf__sponsor-download" href="https://sosconf.org/wp-content/uploads/2019/05/sosconf-2019-sponsorship-proposal-en.pdf">Download <span>Call For Sponsors.pdf</span></a>
+                <a class="sosconf__sponsor-download" href="https://sosconf.org/wp-content/uploads/2019/06/sosconf-2019-sponsorship-proposal-en.pdf">Download <span>Call For Sponsors.pdf</span></a>
             `
             this.setState({
                 sponsorDoc
