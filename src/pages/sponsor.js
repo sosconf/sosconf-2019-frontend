@@ -29,7 +29,7 @@ class Sponsor extends Component {
                 <p style="text-align:right">注：最终解释权归学生开源年会组委会所有</p>
                 <p style="text-align:right">编辑：关炳心</p>
                 <p style="text-align:right">指导：李昊轩</p>
-                <a class="sosconf__sponsor-download" href="https://sosconf.org/wp-content/uploads/2019/05/sosconf-2019-sponsorship-proposal-en.pdf">Download <span>Call For Sponsors.pdf</span></a>
+                <a class="sosconf__sponsor-download" href="https://sosconf.org/wp-content/uploads/2019/05/sosconf-2019-sponsorship-proposal-zh-hans.pdf">Download <span>Call For Sponsors.pdf</span></a>
             `
             this.state= {
                 sponsorDoc
