@@ -21,7 +21,7 @@ We offer multiple advertising opportunities before, during and after the confere
 - Exposure on our social media posts.
 - Promotional emails.
 
-For more information on sponsorship plans and benefits, please request the information handbook by emailing sponsors@sosconf.org. We look forward to working closely with you!
+For more information on sponsorship plans and benefits, please download the sponsorship proposal below, and email sponsors@sosconf.org if necessary. We look forward to working closely with you!
 `,
 
 "zh":`
