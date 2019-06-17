@@ -1,6 +1,6 @@
 # sosconf-2019 
 sosconf 2019 Official Website（V2.2）
-[sosconf](https://sosconf.org)
+[sosconf 2019](https://2019.sosconf.org)
 
 ![](https://travis-ci.com/sosconf/sosconf-2019-frontend.svg?branch=master)
 
