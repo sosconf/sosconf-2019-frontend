@@ -1,5 +1,5 @@
 export default {
-"en":`## Call for Sponsors
+"en":`
 
 sosconf is committed to exchange of technology and the collision of diverse ideas, and is dedicated to establishing active and diverse technology communities focusing on learning and our common future for students. How can sosconf enable students to actively communicate and step forward on the international stage to show their innovative ideas? We sincerely invite you to join the discussion.
 
@@ -21,10 +21,10 @@ We offer multiple advertising opportunities before, during and after the confere
 - Exposure on our social media posts.
 - Promotional emails.
 
-For more information on sponsorship plans and benefits, please request the information handbook by emailing sponsors@sosconf.org. We look forward to working closely with you!
+For more information on sponsorship plans and benefits, please download the sponsorship proposal below, and email sponsors@sosconf.org if necessary. We look forward to working closely with you!
 `,
 
-"zh":`## 赞助商征集
+"zh":`
 为了把全球学生开源年会办成名副其实的国际会议，我们邀请到了来自世界各所顶尖学府的技术爱好者参与，从讲者到志愿者再到听众绝大部分都是在校学生。sosconf 2019会议将提供不同层次的赞助和展示机会，作为赞助商，将有机会在世界一流的顶尖学府南加州大学，最大限度地提高公司的知名度和美誉度。我们诚挚地向社会开放征集赞助商，以确保本次大会的成功召开！不论你是公司还是个人，我们都欢迎你的加入！我们寻求对开源感兴趣的朋友，也期待一起学习交流的友人，更希望找到想参与进来的你！让我们互帮互助，共同发展，实现合作共赢！ 
 
 ## 我们的承诺

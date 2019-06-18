@@ -1,5 +1,6 @@
-
 # Contributing
+
+Please fork this repo, and make a pull request to the original repo after changes are made. If you have any questions or concerns, please submit an issue in the original repo.
 
 ### Commit message
 

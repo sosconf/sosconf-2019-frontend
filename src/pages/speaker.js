@@ -87,10 +87,13 @@ class Speaker extends Component {
             <div className="sosconf__about-card-content sosconf__speaker-card-content">
                 <ApplyButton language={this.props.language}></ApplyButton>
                 <p>
-                If you are a student excited about open source and technologies, we sincerely welcome you to join us this summer in Los Angeles to create the history together. Get to know students from institutions at other parts of the world, and connect with companies and corporations with an international vision. But most importantly, let you voice be heard and enjoy!
-                No matter which continent you are from, we will provide you full travel reimbursement and local support. You will also get exclusive swags and souvenirs for speakers. Speaker application is now open, and can be found on Speakers page on https://2019.sosconf.org. Below are the tracks of sosconf 2019:
+                Would you like to share your experience with a tool that saved your day, or a project meaningful to your growth? If you are a student excited about open source and technologies, we sincerely welcome you to join us this summer in Los Angeles to create the history together. Get to know students from institutions at other parts of the world, and connect with companies and corporations with an international vision. But most importantly, let you voice be heard and show your talents!
+                No matter which part of the world you are from, we will provide you travel reimbursement and local support. You will also get exclusive swags and souvenirs for speakers. Speaker application is now open. If you have any questions, please don’t hesitate to email speakers@sosconf.org. Below are the tracks of sosconf 2019:
                 </p>
                 <img src={track}/>
+                <p>
+                Applications will be carefully reviewed by sosconf 2019 Agenda Team, Committee and Scholar Committee. Notifications of decisions will be sent out no later than July, and later applications will be reviewed on a rolling basis.
+                </p>
                 <ApplyButton language={this.props.language}></ApplyButton>
             </div>
         )} />
