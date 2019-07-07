@@ -1,5 +1,5 @@
 const enUS = {
-  sponsor: 'Sponsor',
+  sponsor: 'Sponsors',
   home: 'Home',
   aboutAnnualConvention: 'About the meeting',
   staffList: 'Staff List',

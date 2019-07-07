@@ -556,4 +556,12 @@
         width: 100%;
         height: 200px;
     }
+
+    .sosconf-home__news-container--open {
+        height: auto;
+    }
+
+    .sosconf-home__readAll--open {
+        display: none;
+    }
 }

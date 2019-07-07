@@ -15,18 +15,21 @@ import '../themes/animate.css';
 class Introduce extends Component {
     constructor() {
         super();
-        console.log(generatorHTML("#1231231"))
+        this.state = {
+            open: false
+        }
     }
 
-    readAll() {
-        document.getElementsByClassName('sosconf-home__news--container')[0].style.height = 'auto';
-        document.getElementsByClassName('sosconf-home__readAll')[0].style.display = 'none';
+    readAll = () => {
+        this.setState({
+            open: true
+        })
     }
 
     render() {
         let news;
         if (this.props.language == 'zh') {
-            news = <div className="sosconf-home__news--container">
+            news = <div className={`sosconf-home__news--container ${this.state.open?'sosconf-home__news-container--open':''}`}>
                     <div className="sosconf-home__news--head"><FormattedMessage id="recentNews"/></div>
                     <div className="sosconf-home__news--more"><FormattedMessage id="moreNews"/>-></div>
                     <div className="sosconf-home__news--block"></div>
@@ -59,12 +62,12 @@ class Introduce extends Component {
                         </ul>
                         <p>全球学生开源年会提供一个绝佳的、多元友好的国际学生交流平台，帮助学生获取顶尖企业的关注，同时有利于企业发掘开源领域的种子学生。世界各地不同国家的学生讲者和各个领域的专业人士的协作交流将会进一步促进开源的发展和对学生、青年人的吸引力，我们鼓励学生亲临现场，交流在开源项目和社区中积累的想法与经验，分享蕴含在编码中的激情，同时畅聊属于开源理念的未来。</p>
                     </div>
-                    <div className="sosconf-home__readAll">
+                    <div className={`sosconf-home__readAll ${this.state.open?'sosconf-home__readAll--open':''}`}>
                         <div className="sosconf-home__readAll--button" onClick={this.readAll}>READ ALL</div>
                     </div>
                 </div>
         } else {
-            news = <div className="sosconf-home__news--container">
+            news = <div className={`sosconf-home__news--container ${this.state.open?'sosconf-home__news-container--open':''}`}>
                     <div className="sosconf-home__news--head"><FormattedMessage id="recentNews"/></div>
                     <div className="sosconf-home__news--more"><FormattedMessage id="moreNews"/>-></div>
                     <div className="sosconf-home__news--block"></div>
@@ -79,21 +82,13 @@ class Introduce extends Component {
                     <div className="sosconf-home__news--content">
                         <p>Student Open Source Conference (sosconf) is the very first student-held, student-centered international conference focusing on open source. It will be a great opportunity for students around the world to gather, connect and learn from each other. For companies and organizations, it will be a chance to show their commitment to open source and to search for student talents. The conference will be held in Los Angeles in August, with mini-events and talks focusing on different technology fields in a two-day span. Students of any education levels around the world are welcome to participate as audience, volunteers or speakers, with an opportunity of obtaining travel reimbursement.</p>
                         <p>Open-source software is a piece of software whose source code is distributed, modified and reused by the public with a few restrictions. The emphasis of open-source development on freedom, collaboration and community appeals to Silicon Valley companies and student organizations alike.</p>
-                        <p>“sosconf is brought to students, by students,” said Ivan, an undergraduate student at University of Southern California (a.k.a. USC) and Convenor of sosconf 2019 Committee. The conference is brought by Opening Source Org and Society of Opening Source SC, the former being an international group of student enthusiasts who make great contributions to open source, the latter being a newborn student organization at USC. On the other hand, only students are eligible to be speakers and volunteers, but attendee qualification is open to everyone. Reimbursements will be provided to all speakers and volunteers with outstanding work, and may be extended to Scholar Committee members and a wider range of participants if enough funding is available. The sosconf 2019 committee is dedicated to making the conference accessible to all students in the world.</p>
-                        <p>Today’s student communities have diverse interests in the most exciting technology areas where evolution is a constant. “Students at USC(University of Southern California), even less experienced undergraduates, are developing their own interests in specific dimensions,” said Ivan, “and that deserves more attention.” The conference will be divided into several tracks each dedicated to a technology domain, such as Machine Learning, Information Security, Decentralization and Arts and Design. There will also be a female-only track. The main track will be located at an auditorium featuring the most breathtaking talks.</p>
-                        <p>	The conference will be more than talks and networking. It is shaped to be a template for future sosconf’s organized by students in different parts of the world. “This is why the conference will be highly modularized and configurable,” said Ivan. The team is developing open-source tools such as a ticket system, where most settings can be customized. The student groups also use Hexang.org, an “open-source lifestyle platform” created by themselves, for project management. The organization process of sosconf will also be provided to student communities around the world for reference and “forking”.</p>
-                        <p>“The conference itself is an open-source project,” said Ivan, “and we welcome students or sponsors who identify with our goals to join us to make this happen.” Contact information and event details are now available on sosconf’s official website, https://2019.sosconf.org/.</p>
-                        {/* <ul>
-                            <li><a href="https://fb.com/sosconf">Facebook：https://fb.com/sosconf</a></li>
-                            <li><a href="https://twitter.com/sosconf">Twitter：https://twitter.com/sosconf</a></li>
-                            <li><a href="https://t.me/sosconf">Telegram：https://t.me/sosconf</a></li>
-                            <li><a href="https://weibo.com/sosconf">官方微博：https://weibo.com/sosconf</a></li>
-                            <li><a href="https://t.me/soscon">电报中文群组：https://t.me/soscon</a></li>
-                            <li><a href="./">中文交流QQ群：932119765</a></li>
-                        </ul>
-                        <p>全球学生开源年会提供一个绝佳的、多元友好的国际学生交流平台，帮助学生获取顶尖企业的关注，同时有利于企业发掘开源领域的种子学生。世界各地不同国家的学生讲者和各个领域的专业人士的协作交流将会进一步促进开源的发展和对学生、青年人的吸引力，我们鼓励学生亲临现场，交流在开源项目和社区中积累的想法与经验，分享蕴含在编码中的激情，同时畅聊属于开源理念的未来。</p> */}
+                        <p>“sosconf is brought to students, by students,” said Ivan, an undergraduate student at University of Southern California (a.k.a. USC) and Convenor of sosconf 2019 Committee. The conference is organized by an international community of students, who have also contributed to events such as TEDx, FOSSASIA, Jugaad Fest and IBM Developer Day. Some are members of Society of Opening Source SC (a student organization at University of Southern California), and some are members of Opening Source Org. On the other hand, only students are eligible to be speakers and volunteers, but anyone can participate. Our supporters and supervisors include active community members such as the convenor of GNOME.Asia, and also include professors from colleges in multiple countries.</p>
+                        <p>Reimbursements will be provided to all speakers and volunteers with outstanding work, and may be extended to Scholar Committee members and a wider range of participants if enough funding is available. The sosconf 2019 Committee is dedicated to making the conference accessible to all students in the world.</p>
+                        <p>Today’s student communities have diverse interests in the most exciting technology areas where evolution is a constant. “Students at USC(University of Southern California), even less experienced undergraduates, are developing their own interests in specific dimensions,” said Ivan, “and that deserves more attention.” The conference will be divided into several tracks each dedicated to a technology domain, such as Machine Learning, Operating Systems, Information Security, Decentralization and Arts and Design. There will also be a female-only track. The main track will be located at an auditorium featuring the most breathtaking talks.</p>
+                        <p>	The conference will be more than talks and networking. It will be a template for future sosconf’s organized by students in different parts of the world. The team is developing open-source tools such as a user system and a ticket system. The members also created Hexang.org, an “open-source lifestyle platform”, for project management. Other resources will also be available to student communities around the world for reference and “forking”.</p>
+                        <p>“The conference itself is an open-source project,” said Ivan, “and we welcome students and sponsors who identify with our goals to join us to make this happen.” Contact information and event details are now available on sosconf’s official website, https://2019.sosconf.org/.</p>
                     </div>
-                    <div className="sosconf-home__readAll">
+                    <div className={`sosconf-home__readAll ${this.state.open?'sosconf-home__readAll--open':''}`}>
                         <div className="sosconf-home__readAll--button" onClick={this.readAll}>READ ALL</div>
                     </div>
                 </div>
